@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese');
+
+.header .sticky-wrapper {
+    position: relative;
+    z-index: 99;
+}
+
+ul.products li.product-category a {
+    display: inline-block;
+    padding: 0;
+    background-color: transparent;
+}
+
+.product-thumb .flas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.nexio-tabs .tab-head .tab-link > li.active {
+    color: #00aeef;
+}
+
+.horizon-menu .main-menu > .menu-item > a {
+    color: #484848;
+}
+
+.header .menu-social > a {
+    color: #484848;
+}
+
+.header-control-right .menu-social::before {
+    border-color: #484848;
+}
+
+.header-control-wrap a,
+.header .nexio-minicart .mini-cart-icon,
+.header-search-box .search-icon {
+    color: #484848;
+}
+
+.brand-product, .prdctfltr_filter[data-filter="product_brand"], .main-product .prdctfltr_woocommerce .prdctfltr_filter[data-filter="product_brand"] {
+    display: block !important;
+}
+
+.sidebar .prdctfltr_filter[data-filter="product_brand"] .prdctfltr_checkboxes {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .prdctfltr_filter[data-filter="product_brand"] .prdctfltr_checkboxes label {
+    width: 100% !important;
+}
+
+.sidebar .prdctfltr_filter label {
+    color: #000;
+}
+
+.prdctfltr_wc.prdctfltr_checkbox .prdctfltr_filter label.prdctfltr_active > span:after {
+    margin-top: 3px;
+}
+
+.comment-text .comment-edit-link {
+    right: 95px;
+}

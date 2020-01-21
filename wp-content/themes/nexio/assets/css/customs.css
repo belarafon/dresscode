@@ -1,0 +1,37 @@
+/* This may be a blank file, but please do not delete this file. It uses to customize css code. */
+.style-02 h3.name {
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 30px 0 2px;
+} 
+.owl-carousel.nav-dark-2 .owl-nav button{
+	top: 48%;
+	font-size: 20px!important;
+}
+.owl-carousel.nav-dark-2 .owl-nav button i::before {
+    font-weight: 700;
+} 
+.nexio-newsletter.style-12.no-border {
+    border: none;
+}
+.nexio-banner.style-40 .banner-info {
+    -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+@media(min-width: 768px) and (max-width: 1199px){
+	div.nexio-banner.style-40 h3.bigtitle {
+	    font-size: 30px !important;
+	}
+}
+@media(max-width: 767px){
+	div.nexio-banner.style-40 h3.bigtitle {
+	    font-size: 17px !important;
+	}
+	div.nexio-banner.style-40 h6.title {
+	    margin: 0 0 15px;
+	}
+}

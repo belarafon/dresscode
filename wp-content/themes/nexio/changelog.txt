@@ -1,0 +1,69 @@
+=== Nexio ===
+
+Requires at least: 4.6
+Tested up to: 5.3.0
+Stable tag: 1.0.9
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+== Description ==
+
+Nexio is a modern, clean and professional multi-purpose WordPress WooCommerce theme, It is fully responsive, it looks stunning on all types of screens and devices.
+It is super for fashion shop, digital shop, accessories shop, food shop, devices shop, household appliances shop or any other categories.
+
+== Installation ==
+	
+1. In your admin panel, go to Appearance > Themes and click the Add New button.
+2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
+3. Click Activate to use your new theme right away.
+
+== Changelog ==
+
+= 1.1.0 - December 12 2019 =
+	- Fixed: "WC_Prdctfltr" class not found when edit post with Gutenberg editor
+	- Updated: Nexio Toolkit version 1.0.8
+
+= 1.0.9 - November 22 2019 =
+    - Fixed: Color attribute bug
+    - Fixed: Product secondary image size bug
+    - Updated: Nexio Toolkit 1.0.7
+    - Updated: WooCommerce version 3.8.0
+    - Tested: WordPress version 5.3.0
+
+= 1.08 - October 18 2019 =
+    - Updated: Nexio Toolkit 1.0.6
+    - Added: Function On/Off Topbar text.
+
+= 1.07 - September 28 2019 =
+    - Fixed: Bug Product Sticky Details
+    - Fixed: Bug Crop Products Thumbnails.
+    - Updated: Nexio Toolkit 1.0.5
+    - Updated: Function On/Off Label New, Sale product.
+
+= 1.06 - September 16 2019 =
+    - Changed: Set MailChimp "double_optin" option to false by default.
+    - Updated: Nexio Toolkit 1.0.4
+    - Tested: WordPress version 5.2.3
+
+= 1.0.5 - September 03 2019 =
+    - Updated: Single product mobile variation layout.
+    - Updated: Nexio Toolkit 1.0.3
+
+= 1.0.4 - August 28 2019 =
+	- Updated: WooCommerce version 3.7.0
+
+= 1.0.3 - August 05 2019 =
+	- Improved: CSS RTL
+
+= 1.0.2 - July 26 2019 =
+	- Updated: Support RTL
+	- Added: About Us v2, Contact v2, FAQs v2
+	- Improved: CSS
+
+= 1.0.1 - July 24 2019 =
+    - Fixed: Import demo issue
+    - Added: Lazy load for menu item image
+    - Updated: Nexio Toolkit version 1.0.1
+
+= 1.0.0 - July 23 2019 =
+    - Initial release

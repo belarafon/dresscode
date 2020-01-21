@@ -1,0 +1,997 @@
+0000.000 (0) Opened log file at time: Sun, 15 Dec 2019 02:02:21 +0000 on http://beta.dcode.com.ua
+0000.002 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.21 WP: 5.3.1 PHP: 7.3.12 (litespeed, Linux skm272.hostsila.org 3.10.0-962.3.2.lve1.5.26.7.el7.x86_64 #1 SMP Wed Oct 2 07:53:12 EDT 2019 x86_64) MySQL: 10.3.20-MariaDB-cll-lve WPLANG: uk Server: LiteSpeed safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 84.8M | 47M) multisite: N openssl: OpenSSL 1.0.2k  26 Jan 2017 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.081 (0) Free space on disk containing Updraft's temporary directory: 921147.2 MB
+0000.085 (0) Tasks: Backup files: 1 (schedule: manual) Backup DB: 1 (schedule: manual)
+0000.088 (0) Semaphore (fd, wpbk_options) being initialised
+0000.092 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.095 (0) Set semaphore last lock (fd) time to 2019-12-15 02:02:21
+0000.096 (0) Semaphore lock (fd) complete
+0000.101 (0) Backup run: resumption=0, nonce=163e6bc61494, file_nonce=163e6bc61494 begun at=1576375341 (0s ago), job type=backup
+0000.103 (0) Scheduling a resumption (1) after 300 seconds (1576375641) in case this run gets aborted
+0000.116 (0) Checking if we have a zip executable available
+0000.118 (0) Testing: /usr/bin/zip
+0000.131 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.133 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.134 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.135 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=131) (out=107) (deflated 18%)
+0000.136 (0) Output: total bytes=131, compressed=107 -> 18% savings
+0000.151 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=138) (out=113) (deflated 18%)
+0000.154 (0) Output: total bytes=269, compressed=220 -> 18% savings
+0000.164 (0) Working binary zip found: /usr/bin/zip
+0000.166 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.167 (0) Creation of backups of directories: beginning
+0000.171 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0000.527 (0) Total entities for the zip file: 1279 directories, 8477 files (0 skipped as non-modified), 122.7 MB
+0000.536 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.540 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.546 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.551 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.556 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.559 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (8.8 MB, 8477 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0001.496 (0) backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: size is now: 4.50 MB
+0001.502 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 600 files added (on-disk size: 4657.8 KB)
+0001.506 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 700 files added (on-disk size: 4657.8 KB)
+0001.511 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 800 files added (on-disk size: 4657.8 KB)
+0001.515 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 900 files added (on-disk size: 4657.8 KB)
+0001.519 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 1000 files added (on-disk size: 4657.8 KB)
+0001.520 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (9.4 MB, 8477 files batched, 501 (1002) added so far); re-opening (prior size: 4657.8 KB)
+0002.151 (0) backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: size is now: 6.70 MB
+0002.159 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 1100 files added (on-disk size: 6895.3 KB)
+0002.166 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 1200 files added (on-disk size: 6895.3 KB)
+0002.173 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 1300 files added (on-disk size: 6895.3 KB)
+0002.180 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 1400 files added (on-disk size: 6895.3 KB)
+0002.188 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 1500 files added (on-disk size: 6895.3 KB)
+0002.190 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (4.5 MB, 8477 files batched, 501 (1503) added so far); re-opening (prior size: 6895.3 KB)
+0005.239 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 1600 files added (on-disk size: 8078.7 KB)
+0005.245 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 1700 files added (on-disk size: 8078.7 KB)
+0005.250 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 1800 files added (on-disk size: 8078.7 KB)
+0005.254 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 1900 files added (on-disk size: 8078.7 KB)
+0005.259 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 2000 files added (on-disk size: 8078.7 KB)
+0005.261 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (4.7 MB, 8477 files batched, 501 (2004) added so far); re-opening (prior size: 8078.7 KB)
+0006.094 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 2100 files added (on-disk size: 9550.5 KB)
+0006.101 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 2200 files added (on-disk size: 9550.5 KB)
+0006.106 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 2300 files added (on-disk size: 9550.5 KB)
+0006.110 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 2400 files added (on-disk size: 9550.5 KB)
+0006.115 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 2500 files added (on-disk size: 9550.5 KB)
+0006.116 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (4.3 MB, 8477 files batched, 501 (2505) added so far); re-opening (prior size: 9550.5 KB)
+0007.526 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 2600 files added (on-disk size: 10820.8 KB)
+0007.530 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 2700 files added (on-disk size: 10820.8 KB)
+0007.535 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 2800 files added (on-disk size: 10820.8 KB)
+0007.539 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 2900 files added (on-disk size: 10820.8 KB)
+0007.543 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 3000 files added (on-disk size: 10820.8 KB)
+0007.544 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (11 MB, 8477 files batched, 501 (3006) added so far); re-opening (prior size: 10820.8 KB)
+0009.850 (0) backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: size is now: 17.30 MB
+0009.856 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 3100 files added (on-disk size: 17761.8 KB)
+0009.860 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 3200 files added (on-disk size: 17761.8 KB)
+0009.864 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 3300 files added (on-disk size: 17761.8 KB)
+0009.868 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 3400 files added (on-disk size: 17761.8 KB)
+0009.872 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 3500 files added (on-disk size: 17761.8 KB)
+0009.874 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (1.9 MB, 8477 files batched, 501 (3507) added so far); re-opening (prior size: 17761.8 KB)
+0011.079 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 3600 files added (on-disk size: 18512.6 KB)
+0011.083 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 3700 files added (on-disk size: 18512.6 KB)
+0011.087 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 3800 files added (on-disk size: 18512.6 KB)
+0011.091 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 3900 files added (on-disk size: 18512.6 KB)
+0011.095 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 4000 files added (on-disk size: 18512.6 KB)
+0011.097 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (15.8 MB, 8477 files batched, 501 (4008) added so far); re-opening (prior size: 18512.6 KB)
+0012.641 (0) backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: size is now: 22.30 MB
+0012.650 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 4100 files added (on-disk size: 22839.7 KB)
+0012.657 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 4200 files added (on-disk size: 22839.7 KB)
+0012.663 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 4300 files added (on-disk size: 22839.7 KB)
+0012.670 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 4400 files added (on-disk size: 22839.7 KB)
+0012.676 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 4500 files added (on-disk size: 22839.7 KB)
+0012.677 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (7.5 MB, 8477 files batched, 501 (4509) added so far); re-opening (prior size: 22839.7 KB)
+0014.407 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 4600 files added (on-disk size: 26061.4 KB)
+0014.415 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 4700 files added (on-disk size: 26061.4 KB)
+0014.421 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 4800 files added (on-disk size: 26061.4 KB)
+0014.428 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 4900 files added (on-disk size: 26061.4 KB)
+0014.435 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 5000 files added (on-disk size: 26061.4 KB)
+0014.437 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (13.4 MB, 8477 files batched, 501 (5010) added so far); re-opening (prior size: 26061.4 KB)
+0017.848 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 5100 files added (on-disk size: 30089.5 KB)
+0017.853 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 5200 files added (on-disk size: 30089.5 KB)
+0017.857 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 5300 files added (on-disk size: 30089.5 KB)
+0017.861 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 5400 files added (on-disk size: 30089.5 KB)
+0017.867 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 5500 files added (on-disk size: 30089.5 KB)
+0017.868 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (1.7 MB, 8477 files batched, 501 (5511) added so far); re-opening (prior size: 30089.5 KB)
+0021.762 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 5600 files added (on-disk size: 30711.3 KB)
+0021.767 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 5700 files added (on-disk size: 30711.3 KB)
+0021.771 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 5800 files added (on-disk size: 30711.3 KB)
+0021.775 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 5900 files added (on-disk size: 30711.3 KB)
+0021.779 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 6000 files added (on-disk size: 30711.3 KB)
+0021.781 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (8.6 MB, 8477 files batched, 501 (6012) added so far); re-opening (prior size: 30711.3 KB)
+0022.668 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 6100 files added (on-disk size: 32720.4 KB)
+0022.675 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 6200 files added (on-disk size: 32720.4 KB)
+0022.682 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 6300 files added (on-disk size: 32720.4 KB)
+0022.690 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 6400 files added (on-disk size: 32720.4 KB)
+0022.697 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 6500 files added (on-disk size: 32720.4 KB)
+0022.700 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (2.4 MB, 8477 files batched, 501 (6513) added so far); re-opening (prior size: 32720.4 KB)
+0026.660 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 6600 files added (on-disk size: 34022.8 KB)
+0026.668 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 6700 files added (on-disk size: 34022.8 KB)
+0026.674 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 6800 files added (on-disk size: 34022.8 KB)
+0026.682 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 6900 files added (on-disk size: 34022.8 KB)
+0026.689 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 7000 files added (on-disk size: 34022.8 KB)
+0026.692 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (0.2 MB, 8477 files batched, 501 (7014) added so far); re-opening (prior size: 34022.8 KB)
+0028.003 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 7100 files added (on-disk size: 34262.3 KB)
+0028.011 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 7200 files added (on-disk size: 34262.3 KB)
+0028.019 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 7300 files added (on-disk size: 34262.3 KB)
+0028.025 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 7400 files added (on-disk size: 34262.3 KB)
+0028.030 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 7500 files added (on-disk size: 34262.3 KB)
+0028.032 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (8.5 MB, 8477 files batched, 501 (7515) added so far); re-opening (prior size: 34262.3 KB)
+0030.096 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 7600 files added (on-disk size: 38496.3 KB)
+0030.101 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 7700 files added (on-disk size: 38496.3 KB)
+0030.105 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 7800 files added (on-disk size: 38496.3 KB)
+0030.109 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 7900 files added (on-disk size: 38496.3 KB)
+0030.113 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 8000 files added (on-disk size: 38496.3 KB)
+0030.114 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (7.3 MB, 8477 files batched, 501 (8016) added so far); re-opening (prior size: 38496.3 KB)
+0032.478 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 8100 files added (on-disk size: 40464.2 KB)
+0032.482 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 8200 files added (on-disk size: 40464.2 KB)
+0032.487 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 8300 files added (on-disk size: 40464.2 KB)
+0032.492 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip.tmp: 8400 files added (on-disk size: 40464.2 KB)
+0037.741 (0) Created plugins zip (0) - 46916.9 KB in 37.5 s (1251.9 KB/s) (sha1: c8505ca218c9de9efbe21754142571529cb2ed66, sha256: bd21af03d9bc447eed047e4adc899e7e3de918835712234e701199042e57a044)
+0037.745 (0) Beginning creation of dump of themes (split every: 400 MB)
+0037.850 (0) Total entities for the zip file: 68 directories, 496 files (0 skipped as non-modified), 36.9 MB
+0037.855 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0037.861 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0037.868 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0037.873 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-themes.zip.tmp: 400 files added (on-disk size: 0 KB)
+0037.876 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 25 MB added on this batch (27.5 MB, 496 files batched, 449 (449) added so far); re-opening (prior size: 0 KB)
+0041.377 (0) backup_2019-12-15-0202_Dress_Code_163e6bc61494-themes.zip.tmp: size is now: 24.80 MB
+0041.381 (0) A useful amount of data was added after this amount of zip processing: 4.2 s (normalised: 3.8 s, rate: 6698 KB/s)
+0041.384 (0) Performance is good - will increase the amount of data we attempt to batch (time=4.2069330215454, normalised_time=3.8220135498529, max_time=41.382302045822, data points known=1, old_max_bytes=26214400, new_max_bytes=170299587)
+0049.738 (0) backup_2019-12-15-0202_Dress_Code_163e6bc61494-themes.zip.tmp: size is now: 33.70 MB
+0050.521 (0) Created themes zip (0) - 34507.7 KB in 12.7 s (2717.5 KB/s) (sha1: 1cfcec0e89ec30042c70d08efc6060e06847e27c, sha256: 19ce1d31fb384ce452ae871365d9b3f2038e45a77205db461b194a163ff7bbdb)
+0050.525 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0050.527 (0) Looking for candidates to backup in: /home/eqlutody/beta.dcode.com.ua/wp-content/uploads
+0050.528 (0) finding files: woocommerce-placeholder-300x300.png: adding to list (1)
+0050.529 (0) finding files: 2019: adding to list (2)
+0050.530 (0) finding files: woocommerce-placeholder.png: adding to list (3)
+0050.531 (0) finding files: GeoLite2-Country.mmdb: adding to list (4)
+0050.532 (0) finding files: nexio: adding to list (5)
+0050.533 (0) finding files: woocommerce-placeholder-600x641.png: adding to list (6)
+0050.534 (0) finding files: cache: adding to list (7)
+0050.536 (0) finding files: woocommerce-placeholder-100x100.png: adding to list (8)
+0050.537 (0) finding files: js_composer: adding to list (9)
+0050.539 (0) finding files: revslider: adding to list (10)
+0050.539 (0) finding files: woocommerce-placeholder-150x150.png: adding to list (11)
+0050.540 (0) finding files: woocommerce-placeholder-600x600.png: adding to list (12)
+0050.541 (0) finding files: woocommerce-placeholder-768x768.png: adding to list (13)
+0050.542 (0) finding files: woocommerce-placeholder-300x321.png: adding to list (14)
+0050.543 (0) finding files: wc-logs: adding to list (15)
+0050.544 (0) finding files: woocommerce-placeholder-1024x1024.png: adding to list (16)
+0050.545 (0) finding files: woocommerce-placeholder-440x333.png: adding to list (17)
+0050.546 (0) finding files: woocommerce_uploads: adding to list (18)
+0050.547 (0) finding files: woocommerce-placeholder-90x150.png: adding to list (19)
+0050.547 (0) finding files: woocommerce-placeholder-825x510.png: adding to list (20)
+0050.548 (0) finding files: woocommerce-placeholder-800x800.png: adding to list (21)
+0050.549 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0050.837 (0) Total entities for the zip file: 15 directories, 6020 files (0 skipped as non-modified), 224.9 MB
+0050.842 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0050.847 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 200 files added (on-disk size: 0 KB)
+0050.852 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 300 files added (on-disk size: 0 KB)
+0050.858 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 400 files added (on-disk size: 0 KB)
+0050.863 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 500 files added (on-disk size: 0 KB)
+0050.865 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (18.7 MB, 6020 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0051.308 (0) backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: size is now: 18.80 MB
+0051.314 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 600 files added (on-disk size: 19224.5 KB)
+0051.318 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 700 files added (on-disk size: 19224.5 KB)
+0051.323 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 800 files added (on-disk size: 19224.5 KB)
+0051.327 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 900 files added (on-disk size: 19224.5 KB)
+0051.332 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 1000 files added (on-disk size: 19224.5 KB)
+0051.333 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (17.9 MB, 6020 files batched, 501 (1002) added so far); re-opening (prior size: 19224.5 KB)
+0059.376 (0) backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: size is now: 36.80 MB
+0059.385 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 1100 files added (on-disk size: 37698.4 KB)
+0059.390 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 1200 files added (on-disk size: 37698.4 KB)
+0059.395 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 1300 files added (on-disk size: 37698.4 KB)
+0059.399 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 1400 files added (on-disk size: 37698.4 KB)
+0059.404 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 1500 files added (on-disk size: 37698.4 KB)
+0059.405 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (18.6 MB, 6020 files batched, 501 (1503) added so far); re-opening (prior size: 37698.4 KB)
+0067.827 (0) backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: size is now: 55.50 MB
+0067.834 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 1600 files added (on-disk size: 56876.9 KB)
+0067.839 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 1700 files added (on-disk size: 56876.9 KB)
+0067.844 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 1800 files added (on-disk size: 56876.9 KB)
+0067.849 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 1900 files added (on-disk size: 56876.9 KB)
+0067.854 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 2000 files added (on-disk size: 56876.9 KB)
+0067.855 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (18.1 MB, 6020 files batched, 501 (2004) added so far); re-opening (prior size: 56876.9 KB)
+0076.042 (0) backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: size is now: 73.80 MB
+0076.052 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 2100 files added (on-disk size: 75534.1 KB)
+0076.057 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 2200 files added (on-disk size: 75534.1 KB)
+0076.062 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 2300 files added (on-disk size: 75534.1 KB)
+0076.066 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 2400 files added (on-disk size: 75534.1 KB)
+0076.071 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 2500 files added (on-disk size: 75534.1 KB)
+0076.072 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (17.8 MB, 6020 files batched, 501 (2505) added so far); re-opening (prior size: 75534.1 KB)
+0083.530 (0) backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: size is now: 91.70 MB
+0083.537 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 2600 files added (on-disk size: 93903 KB)
+0083.541 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 2700 files added (on-disk size: 93903 KB)
+0083.545 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 2800 files added (on-disk size: 93903 KB)
+0083.550 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 2900 files added (on-disk size: 93903 KB)
+0083.555 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 3000 files added (on-disk size: 93903 KB)
+0083.556 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (18.9 MB, 6020 files batched, 501 (3006) added so far); re-opening (prior size: 93903 KB)
+0091.866 (0) backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: size is now: 110.70 MB
+0091.872 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 3100 files added (on-disk size: 113376.9 KB)
+0091.877 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 3200 files added (on-disk size: 113376.9 KB)
+0091.881 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 3300 files added (on-disk size: 113376.9 KB)
+0091.885 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 3400 files added (on-disk size: 113376.9 KB)
+0091.889 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 3500 files added (on-disk size: 113376.9 KB)
+0091.890 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (17.8 MB, 6020 files batched, 501 (3507) added so far); re-opening (prior size: 113376.9 KB)
+0099.707 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 3600 files added (on-disk size: 131657.4 KB)
+0099.713 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 3700 files added (on-disk size: 131657.4 KB)
+0099.720 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 3800 files added (on-disk size: 131657.4 KB)
+0099.725 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 3900 files added (on-disk size: 131657.4 KB)
+0099.729 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 4000 files added (on-disk size: 131657.4 KB)
+0099.731 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (19.8 MB, 6020 files batched, 501 (4008) added so far); re-opening (prior size: 131657.4 KB)
+0108.286 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 4100 files added (on-disk size: 152038.2 KB)
+0108.290 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 4200 files added (on-disk size: 152038.2 KB)
+0108.294 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 4300 files added (on-disk size: 152038.2 KB)
+0108.299 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 4400 files added (on-disk size: 152038.2 KB)
+0108.303 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 4500 files added (on-disk size: 152038.2 KB)
+0108.305 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (17.8 MB, 6020 files batched, 501 (4509) added so far); re-opening (prior size: 152038.2 KB)
+0116.721 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 4600 files added (on-disk size: 170329.7 KB)
+0116.726 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 4700 files added (on-disk size: 170329.7 KB)
+0116.731 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 4800 files added (on-disk size: 170329.7 KB)
+0116.736 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 4900 files added (on-disk size: 170329.7 KB)
+0116.740 (0) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 5000 files added (on-disk size: 170329.7 KB)
+0116.741 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (19.4 MB, 6020 files batched, 501 (5010) added so far); re-opening (prior size: 170329.7 KB)
+0301.597 (1) Opened log file at time: Sun, 15 Dec 2019 02:07:23 +0000 on http://beta.dcode.com.ua
+0301.599 (1) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.21 WP: 5.3.1 PHP: 7.3.12 (litespeed, Linux skm272.hostsila.org 3.10.0-962.3.2.lve1.5.26.7.el7.x86_64 #1 SMP Wed Oct 2 07:53:12 EDT 2019 x86_64) MySQL: 10.3.20-MariaDB-cll-lve WPLANG: uk Server: LiteSpeed safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 68.6M | 70.5M) multisite: N openssl: OpenSSL 1.0.2k  26 Jan 2017 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0301.673 (1) Free space on disk containing Updraft's temporary directory: 920881.9 MB
+0301.677 (1) Backup run: resumption=1, nonce=163e6bc61494, file_nonce=163e6bc61494 begun at=1576375341 (302s ago), job type=backup, previous check-in=116.7s
+0301.680 (1) Scheduling a resumption (2) after 300 seconds (1576375943) in case this run gets aborted
+0301.692 (1) Checking if we have a zip executable available
+0301.693 (1) Zip engine: found/will use a binary zip: /usr/bin/zip
+0301.694 (1) Creation of backups of directories: had begun; will resume
+0301.697 (1) Beginning creation of dump of plugins (split every: 400 MB)
+0301.699 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip: this file has already been created (age: 265 s)
+0301.702 (1) Beginning creation of dump of themes (split every: 400 MB)
+0301.703 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-themes.zip: this file has already been created (age: 252 s)
+0301.706 (1) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0301.707 (1) Looking for candidates to backup in: /home/eqlutody/beta.dcode.com.ua/wp-content/uploads
+0301.708 (1) finding files: woocommerce-placeholder-300x300.png: adding to list (1)
+0301.709 (1) finding files: 2019: adding to list (2)
+0301.710 (1) finding files: woocommerce-placeholder.png: adding to list (3)
+0301.712 (1) finding files: GeoLite2-Country.mmdb: adding to list (4)
+0301.713 (1) finding files: nexio: adding to list (5)
+0301.714 (1) finding files: woocommerce-placeholder-600x641.png: adding to list (6)
+0301.715 (1) finding files: cache: adding to list (7)
+0301.716 (1) finding files: woocommerce-placeholder-100x100.png: adding to list (8)
+0301.717 (1) finding files: js_composer: adding to list (9)
+0301.718 (1) finding files: revslider: adding to list (10)
+0301.719 (1) finding files: woocommerce-placeholder-150x150.png: adding to list (11)
+0301.720 (1) finding files: woocommerce-placeholder-600x600.png: adding to list (12)
+0301.722 (1) finding files: woocommerce-placeholder-768x768.png: adding to list (13)
+0301.722 (1) finding files: woocommerce-placeholder-300x321.png: adding to list (14)
+0301.723 (1) finding files: wc-logs: adding to list (15)
+0301.725 (1) finding files: woocommerce-placeholder-1024x1024.png: adding to list (16)
+0301.726 (1) finding files: woocommerce-placeholder-440x333.png: adding to list (17)
+0301.727 (1) finding files: woocommerce_uploads: adding to list (18)
+0301.728 (1) finding files: woocommerce-placeholder-90x150.png: adding to list (19)
+0301.729 (1) finding files: woocommerce-placeholder-825x510.png: adding to list (20)
+0301.730 (1) finding files: woocommerce-placeholder-800x800.png: adding to list (21)
+0301.731 (1) Beginning creation of dump of uploads (split every: 400 MB)
+0301.732 (1) File exists (/home/eqlutody/beta.dcode.com.ua/wp-content/updraft/backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp), but was apparently not modified within the last 30 seconds, so we assume that any previous run has now terminated (time_mod=1576375489, time_now=1576375643, diff=154)
+0301.930 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: Zip file already exists, with 5010 files
+0302.040 (1) Total entities for the zip file: 15 directories, 6020 files (0 skipped as non-modified), 224.9 MB
+0302.043 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 100 files added (on-disk size: 190247 KB)
+0302.045 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 200 files added (on-disk size: 190247 KB)
+0302.046 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 300 files added (on-disk size: 190247 KB)
+0302.048 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 400 files added (on-disk size: 190247 KB)
+0302.049 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 500 files added (on-disk size: 190247 KB)
+0302.050 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 600 files added (on-disk size: 190247 KB)
+0302.051 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 700 files added (on-disk size: 190247 KB)
+0302.053 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 800 files added (on-disk size: 190247 KB)
+0302.054 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 900 files added (on-disk size: 190247 KB)
+0302.056 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 1000 files added (on-disk size: 190247 KB)
+0302.059 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 1100 files added (on-disk size: 190247 KB)
+0302.060 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 1200 files added (on-disk size: 190247 KB)
+0302.062 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 1300 files added (on-disk size: 190247 KB)
+0302.063 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 1400 files added (on-disk size: 190247 KB)
+0302.064 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 1500 files added (on-disk size: 190247 KB)
+0302.066 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 1600 files added (on-disk size: 190247 KB)
+0302.068 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 1700 files added (on-disk size: 190247 KB)
+0302.070 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 1800 files added (on-disk size: 190247 KB)
+0302.071 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 1900 files added (on-disk size: 190247 KB)
+0302.072 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 2000 files added (on-disk size: 190247 KB)
+0302.075 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 2100 files added (on-disk size: 190247 KB)
+0302.076 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 2200 files added (on-disk size: 190247 KB)
+0302.078 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 2300 files added (on-disk size: 190247 KB)
+0302.079 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 2400 files added (on-disk size: 190247 KB)
+0302.080 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 2500 files added (on-disk size: 190247 KB)
+0302.082 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 2600 files added (on-disk size: 190247 KB)
+0302.083 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 2700 files added (on-disk size: 190247 KB)
+0302.084 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 2800 files added (on-disk size: 190247 KB)
+0302.085 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 2900 files added (on-disk size: 190247 KB)
+0302.087 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 3000 files added (on-disk size: 190247 KB)
+0302.089 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 3100 files added (on-disk size: 190247 KB)
+0302.091 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 3200 files added (on-disk size: 190247 KB)
+0302.092 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 3300 files added (on-disk size: 190247 KB)
+0302.093 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 3400 files added (on-disk size: 190247 KB)
+0302.095 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 3500 files added (on-disk size: 190247 KB)
+0302.096 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 3600 files added (on-disk size: 190247 KB)
+0302.097 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 3700 files added (on-disk size: 190247 KB)
+0302.099 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 3800 files added (on-disk size: 190247 KB)
+0302.100 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 3900 files added (on-disk size: 190247 KB)
+0302.101 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 4000 files added (on-disk size: 190247 KB)
+0302.104 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 4100 files added (on-disk size: 190247 KB)
+0302.105 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 4200 files added (on-disk size: 190247 KB)
+0302.106 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 4300 files added (on-disk size: 190247 KB)
+0302.108 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 4400 files added (on-disk size: 190247 KB)
+0302.109 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 4500 files added (on-disk size: 190247 KB)
+0302.110 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 4600 files added (on-disk size: 190247 KB)
+0302.112 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 4700 files added (on-disk size: 190247 KB)
+0302.113 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 4800 files added (on-disk size: 190247 KB)
+0302.114 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 4900 files added (on-disk size: 190247 KB)
+0302.115 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 5000 files added (on-disk size: 190247 KB)
+0302.120 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 5100 files added (on-disk size: 190247 KB)
+0302.125 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 5200 files added (on-disk size: 190247 KB)
+0302.130 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 5300 files added (on-disk size: 190247 KB)
+0302.135 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 5400 files added (on-disk size: 190247 KB)
+0302.140 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 5500 files added (on-disk size: 190247 KB)
+0302.142 (1) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (17.3 MB, 6020 files batched, 501 (501) added so far); re-opening (prior size: 190247 KB)
+0343.670 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 5600 files added (on-disk size: 208042.2 KB)
+0343.675 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 5700 files added (on-disk size: 208042.2 KB)
+0343.680 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 5800 files added (on-disk size: 208042.2 KB)
+0343.684 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 5900 files added (on-disk size: 208042.2 KB)
+0343.689 (1) Zip: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip.tmp: 6000 files added (on-disk size: 208042.2 KB)
+0343.691 (1) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (22.5 MB, 6020 files batched, 501 (1002) added so far); re-opening (prior size: 208042.2 KB)
+0441.630 (1) Created uploads zip (0) - 228243.2 KB in 139.8 s (1632.6 KB/s) (sha1: b94152acfeb94d3846629fd5cee4672478c8db8d, sha256: 10a4b0dbdee2ce87ebf136a383439cc7c46e296d6ebddc572f6fb77a8dd339a3)
+0441.633 (1) Beginning backup of other directories found in the content directory (index: 0)
+0441.634 (1) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0441.635 (1) Looking for candidates to backup in: /home/eqlutody/beta.dcode.com.ua/wp-content
+0441.636 (1) finding files: updraft: skipping: this is the updraft directory
+0441.638 (1) finding files: languages: adding to list (1)
+0441.639 (1) finding files: themes: skipping: this is the themes directory
+0441.640 (1) finding files: index.php: adding to list (2)
+0441.641 (1) finding files: plugins: skipping: this is the plugins directory
+0441.642 (1) finding files: uploads: skipping: this is the uploads directory
+0441.643 (1) finding files: upgrade: skipping: excluded by options
+0441.724 (1) Total entities for the zip file: 3 directories, 30 files (0 skipped as non-modified), 4.5 MB
+0442.035 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-others.zip.tmp: size is now: 1.10 MB
+0442.064 (1) Created others zip (0) - 1137.5 KB in 0.3 s (3304.9 KB/s) (sha1: 0dc070321b4e96d0cebe16688be23d38f6d14430, sha256: b04cf84d6dd3ff2a16e9a3b435aaf0b81b967f7354bc3b49ccade9d1a27f1c70)
+0442.072 (1) Saving backup status to database (elements: 8)
+0442.081 (1) Resuming creation of database dump (WordPress DB)
+0442.084 (1) Testing potential mysqldump binary: /usr/bin/mysqldump
+0442.145 (1) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `wpbk_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!40101 SET character_set_client = utf8 */;\nC (truncated - 1124 bytes total)
+0442.150 (1) Working binary mysqldump found: /usr/bin/mysqldump
+0442.159 (1) Table wpbk_options: Total expected rows (approximate): 1093
+0442.234 (1) Table wpbk_options: Total rows added: 1044 in 0.07 seconds
+0442.236 (1) Table wpbk_options: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_options.table.gz - 169.9 KB)
+0442.241 (1) Table wpbk_users: Total expected rows (approximate): 3
+0442.246 (1) Table wpbk_users: Total rows added: 3 in 0.00 seconds
+0442.248 (1) Table wpbk_users: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_users.table.gz - 0.7 KB)
+0442.254 (1) Table wpbk_usermeta: Total expected rows (approximate): 123
+0442.262 (1) Table wpbk_usermeta: Total rows added: 128 in 0.00 seconds
+0442.263 (1) Table wpbk_usermeta: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_usermeta.table.gz - 3 KB)
+0442.270 (1) Table wpbk_commentmeta: Total expected rows (approximate): 8
+0442.275 (1) Table wpbk_commentmeta: Total rows added: 8 in 0.00 seconds
+0442.276 (1) Table wpbk_commentmeta: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_commentmeta.table.gz - 0.5 KB)
+0442.282 (1) Table wpbk_comments: Total expected rows (approximate): 245
+0442.293 (1) Table wpbk_comments: Total rows added: 245 in 0.01 seconds
+0442.295 (1) Table wpbk_comments: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_comments.table.gz - 4.9 KB)
+0442.302 (1) Table wpbk_links: Total expected rows (approximate): 0
+0442.305 (1) Table wpbk_links: Total rows added: 0 in 0.00 seconds
+0442.306 (1) Table wpbk_links: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_links.table.gz - 0.4 KB)
+0442.311 (1) Table wpbk_postmeta: Total expected rows (approximate): 21850
+0442.557 (1) Table wpbk_postmeta: binary mysqldump finished (writes: 36) in 0.24 seconds
+0442.561 (1) Table wpbk_postmeta: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_postmeta.table.gz - 339.8 KB)
+0442.565 (1) Table wpbk_posts: Total expected rows (approximate): 2341
+0442.760 (1) Table wpbk_posts: Total rows added: 2341 in 0.19 seconds
+0442.763 (1) Table wpbk_posts: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_posts.table.gz - 377.6 KB)
+0442.768 (1) Table wpbk_term_relationships: Total expected rows (approximate): 1696
+0442.779 (1) Table wpbk_term_relationships: Total rows added: 1696 in 0.01 seconds
+0442.781 (1) Table wpbk_term_relationships: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_term_relationships.table.gz - 4.8 KB)
+0442.786 (1) Table wpbk_term_taxonomy: Total expected rows (approximate): 353
+0442.793 (1) Table wpbk_term_taxonomy: Total rows added: 353 in 0.01 seconds
+0442.795 (1) Table wpbk_term_taxonomy: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_term_taxonomy.table.gz - 2.6 KB)
+0442.803 (1) Table wpbk_termmeta: Total expected rows (approximate): 546
+0442.812 (1) Table wpbk_termmeta: Total rows added: 546 in 0.01 seconds
+0442.813 (1) Table wpbk_termmeta: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_termmeta.table.gz - 4 KB)
+0442.819 (1) Table wpbk_terms: Total expected rows (approximate): 353
+0442.827 (1) Table wpbk_terms: Total rows added: 353 in 0.01 seconds
+0442.829 (1) Table wpbk_terms: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_terms.table.gz - 4.5 KB)
+0442.835 (1) Table wpbk_wc_category_lookup: Total expected rows (approximate): 14
+0442.841 (1) Table wpbk_wc_category_lookup: Total rows added: 15 in 0.00 seconds
+0442.842 (1) Table wpbk_wc_category_lookup: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_wc_category_lookup.table.gz - 0.4 KB)
+0442.849 (1) Table wpbk_wc_product_meta_lookup: Total expected rows (approximate): 624
+0442.862 (1) Table wpbk_wc_product_meta_lookup: Total rows added: 624 in 0.01 seconds
+0442.863 (1) Table wpbk_wc_product_meta_lookup: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_wc_product_meta_lookup.table.gz - 3.6 KB)
+0442.872 (1) Table wpbk_wc_tax_rate_classes: Total expected rows (approximate): 2
+0442.876 (1) Table wpbk_wc_tax_rate_classes: Total rows added: 2 in 0.00 seconds
+0442.878 (1) Table wpbk_wc_tax_rate_classes: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_wc_tax_rate_classes.table.gz - 0.4 KB)
+0442.885 (1) Table wpbk_woocommerce_order_itemmeta: Total expected rows (approximate): 88
+0442.890 (1) Table wpbk_woocommerce_order_itemmeta: Total rows added: 88 in 0.00 seconds
+0442.892 (1) Table wpbk_woocommerce_order_itemmeta: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_woocommerce_order_itemmeta.table.gz - 1 KB)
+0442.901 (1) Table wpbk_woocommerce_payment_tokenmeta: Total expected rows (approximate): 0
+0442.906 (1) Table wpbk_woocommerce_payment_tokenmeta: Total rows added: 0 in 0.00 seconds
+0442.908 (1) Table wpbk_woocommerce_payment_tokenmeta: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_woocommerce_payment_tokenmeta.table.gz - 0.4 KB)
+0442.911 (1) Skipping table (lacks our prefix (wpbk_)): wc_ukr_shipping_np_areas
+0442.913 (1) Skipping table (lacks our prefix (wpbk_)): wc_ukr_shipping_np_cities
+0442.914 (1) Skipping table (lacks our prefix (wpbk_)): wc_ukr_shipping_np_warehouses
+0442.919 (1) Table wpbk_duplicator_packages: Total expected rows (approximate): 2
+0442.925 (1) Table wpbk_duplicator_packages: Total rows added: 2 in 0.00 seconds
+0442.927 (1) Table wpbk_duplicator_packages: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_duplicator_packages.table.gz - 2.9 KB)
+0442.935 (1) Table wpbk_litespeed_img_optm: Total expected rows (approximate): 0
+0442.939 (1) Table wpbk_litespeed_img_optm: Total rows added: 0 in 0.00 seconds
+0442.942 (1) Table wpbk_litespeed_img_optm: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_litespeed_img_optm.table.gz - 0.5 KB)
+0442.948 (1) Table wpbk_litespeed_optimizer: Total expected rows (approximate): 52
+0442.957 (1) Table wpbk_litespeed_optimizer: Total rows added: 52 in 0.01 seconds
+0442.959 (1) Table wpbk_litespeed_optimizer: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_litespeed_optimizer.table.gz - 4.1 KB)
+0442.963 (1) Table wpbk_revslider_css: Total expected rows (approximate): 110
+0442.973 (1) Table wpbk_revslider_css: Total rows added: 110 in 0.01 seconds
+0442.974 (1) Table wpbk_revslider_css: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_revslider_css.table.gz - 5 KB)
+0442.980 (1) Table wpbk_revslider_css_bkp: Total expected rows (approximate): 110
+0442.988 (1) Table wpbk_revslider_css_bkp: Total rows added: 110 in 0.01 seconds
+0442.989 (1) Table wpbk_revslider_css_bkp: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_revslider_css_bkp.table.gz - 5 KB)
+0442.995 (1) Table wpbk_revslider_layer_animations: Total expected rows (approximate): 0
+0442.999 (1) Table wpbk_revslider_layer_animations: Total rows added: 0 in 0.00 seconds
+0443.000 (1) Table wpbk_revslider_layer_animations: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_revslider_layer_animations.table.gz - 0.3 KB)
+0443.007 (1) Table wpbk_revslider_layer_animations_bkp: Total expected rows (approximate): 0
+0443.011 (1) Table wpbk_revslider_layer_animations_bkp: Total rows added: 0 in 0.00 seconds
+0443.013 (1) Table wpbk_revslider_layer_animations_bkp: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_revslider_layer_animations_bkp.table.gz - 0.3 KB)
+0443.019 (1) Table wpbk_revslider_navigations: Total expected rows (approximate): 0
+0443.023 (1) Table wpbk_revslider_navigations: Total rows added: 0 in 0.00 seconds
+0443.025 (1) Table wpbk_revslider_navigations: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_revslider_navigations.table.gz - 0.3 KB)
+0443.031 (1) Table wpbk_revslider_navigations_bkp: Total expected rows (approximate): 0
+0443.034 (1) Table wpbk_revslider_navigations_bkp: Total rows added: 0 in 0.00 seconds
+0443.035 (1) Table wpbk_revslider_navigations_bkp: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_revslider_navigations_bkp.table.gz - 0.3 KB)
+0443.040 (1) Table wpbk_revslider_sliders: Total expected rows (approximate): 16
+0443.052 (1) Table wpbk_revslider_sliders: Total rows added: 16 in 0.01 seconds
+0443.054 (1) Table wpbk_revslider_sliders: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_revslider_sliders.table.gz - 8.9 KB)
+0443.060 (1) Table wpbk_revslider_sliders_bkp: Total expected rows (approximate): 14
+0443.068 (1) Table wpbk_revslider_sliders_bkp: Total rows added: 14 in 0.01 seconds
+0443.070 (1) Table wpbk_revslider_sliders_bkp: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_revslider_sliders_bkp.table.gz - 5.1 KB)
+0443.077 (1) Table wpbk_revslider_slides: Total expected rows (approximate): 38
+0443.130 (1) Table wpbk_revslider_slides: Total rows added: 38 in 0.05 seconds
+0443.132 (1) Table wpbk_revslider_slides: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_revslider_slides.table.gz - 120.3 KB)
+0443.137 (1) Table wpbk_revslider_slides_bkp: Total expected rows (approximate): 35
+0443.205 (1) Table wpbk_revslider_slides_bkp: Total rows added: 35 in 0.07 seconds
+0443.207 (1) Table wpbk_revslider_slides_bkp: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_revslider_slides_bkp.table.gz - 113.1 KB)
+0443.212 (1) Table wpbk_revslider_static_slides: Total expected rows (approximate): 6
+0443.216 (1) Table wpbk_revslider_static_slides: Total rows added: 6 in 0.00 seconds
+0443.218 (1) Table wpbk_revslider_static_slides: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_revslider_static_slides.table.gz - 0.6 KB)
+0443.224 (1) Table wpbk_revslider_static_slides_bkp: Total expected rows (approximate): 5
+0443.229 (1) Table wpbk_revslider_static_slides_bkp: Total rows added: 5 in 0.00 seconds
+0443.231 (1) Table wpbk_revslider_static_slides_bkp: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_revslider_static_slides_bkp.table.gz - 0.4 KB)
+0443.237 (1) Table wpbk_uposhta_invoices: Total expected rows (approximate): 0
+0443.242 (1) Table wpbk_uposhta_invoices: Total rows added: 0 in 0.00 seconds
+0443.243 (1) Table wpbk_uposhta_invoices: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_uposhta_invoices.table.gz - 0.3 KB)
+0443.249 (1) Table wpbk_wc_admin_note_actions: Total expected rows (approximate): 8
+0443.254 (1) Table wpbk_wc_admin_note_actions: Total rows added: 9 in 0.00 seconds
+0443.255 (1) Table wpbk_wc_admin_note_actions: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_wc_admin_note_actions.table.gz - 0.8 KB)
+0443.260 (1) Table wpbk_wc_admin_notes: Total expected rows (approximate): 8
+0443.265 (1) Table wpbk_wc_admin_notes: Total rows added: 8 in 0.00 seconds
+0443.266 (1) Table wpbk_wc_admin_notes: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_wc_admin_notes.table.gz - 1.4 KB)
+0443.271 (1) Table wpbk_wc_customer_lookup: Total expected rows (approximate): 8
+0443.275 (1) Table wpbk_wc_customer_lookup: Total rows added: 8 in 0.00 seconds
+0443.276 (1) Table wpbk_wc_customer_lookup: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_wc_customer_lookup.table.gz - 1 KB)
+0443.282 (1) Table wpbk_wc_download_log: Total expected rows (approximate): 0
+0443.286 (1) Table wpbk_wc_download_log: Total rows added: 0 in 0.00 seconds
+0443.287 (1) Table wpbk_wc_download_log: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_wc_download_log.table.gz - 0.4 KB)
+0443.291 (1) Table wpbk_wc_order_coupon_lookup: Total expected rows (approximate): 0
+0443.294 (1) Table wpbk_wc_order_coupon_lookup: Total rows added: 0 in 0.00 seconds
+0443.295 (1) Table wpbk_wc_order_coupon_lookup: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_wc_order_coupon_lookup.table.gz - 0.4 KB)
+0443.300 (1) Table wpbk_wc_order_product_lookup: Total expected rows (approximate): 5
+0443.303 (1) Table wpbk_wc_order_product_lookup: Total rows added: 8 in 0.00 seconds
+0443.304 (1) Table wpbk_wc_order_product_lookup: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_wc_order_product_lookup.table.gz - 0.7 KB)
+0443.309 (1) Table wpbk_wc_order_stats: Total expected rows (approximate): 11
+0443.313 (1) Table wpbk_wc_order_stats: Total rows added: 14 in 0.00 seconds
+0443.314 (1) Table wpbk_wc_order_stats: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_wc_order_stats.table.gz - 0.8 KB)
+0443.319 (1) Table wpbk_wc_order_tax_lookup: Total expected rows (approximate): 0
+0443.322 (1) Table wpbk_wc_order_tax_lookup: Total rows added: 0 in 0.00 seconds
+0443.323 (1) Table wpbk_wc_order_tax_lookup: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_wc_order_tax_lookup.table.gz - 0.4 KB)
+0443.328 (1) Table wpbk_wc_webhooks: Total expected rows (approximate): 0
+0443.331 (1) Table wpbk_wc_webhooks: Total rows added: 0 in 0.00 seconds
+0443.332 (1) Table wpbk_wc_webhooks: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_wc_webhooks.table.gz - 0.5 KB)
+0443.337 (1) Table wpbk_woocommerce_api_keys: Total expected rows (approximate): 0
+0443.340 (1) Table wpbk_woocommerce_api_keys: Total rows added: 0 in 0.00 seconds
+0443.341 (1) Table wpbk_woocommerce_api_keys: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_woocommerce_api_keys.table.gz - 0.4 KB)
+0443.345 (1) Table wpbk_woocommerce_attribute_taxonomies: Total expected rows (approximate): 5
+0443.350 (1) Table wpbk_woocommerce_attribute_taxonomies: Total rows added: 5 in 0.00 seconds
+0443.351 (1) Table wpbk_woocommerce_attribute_taxonomies: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_woocommerce_attribute_taxonomies.table.gz - 0.6 KB)
+0443.356 (1) Table wpbk_woocommerce_downloadable_product_permissions: Total expected rows (approximate): 0
+0443.360 (1) Table wpbk_woocommerce_downloadable_product_permissions: Total rows added: 0 in 0.00 seconds
+0443.362 (1) Table wpbk_woocommerce_downloadable_product_permissions: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_woocommerce_downloadable_product_permissions.table.gz - 0.5 KB)
+0443.366 (1) Table wpbk_woocommerce_log: Total expected rows (approximate): 0
+0443.369 (1) Table wpbk_woocommerce_log: Total rows added: 0 in 0.00 seconds
+0443.371 (1) Table wpbk_woocommerce_log: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_woocommerce_log.table.gz - 0.4 KB)
+0443.375 (1) Table wpbk_woocommerce_order_items: Total expected rows (approximate): 8
+0443.382 (1) Table wpbk_woocommerce_order_items: Total rows added: 8 in 0.01 seconds
+0443.383 (1) Table wpbk_woocommerce_order_items: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_woocommerce_order_items.table.gz - 0.6 KB)
+0443.387 (1) Table wpbk_woocommerce_payment_tokens: Total expected rows (approximate): 0
+0443.390 (1) Table wpbk_woocommerce_payment_tokens: Total rows added: 0 in 0.00 seconds
+0443.391 (1) Table wpbk_woocommerce_payment_tokens: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_woocommerce_payment_tokens.table.gz - 0.4 KB)
+0443.395 (1) Table wpbk_woocommerce_sessions: Total expected rows (approximate): 3
+0443.399 (1) Table wpbk_woocommerce_sessions: Total rows added: 3 in 0.00 seconds
+0443.400 (1) Table wpbk_woocommerce_sessions: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_woocommerce_sessions.table.gz - 2 KB)
+0443.404 (1) Table wpbk_woocommerce_shipping_zone_locations: Total expected rows (approximate): 1
+0443.407 (1) Table wpbk_woocommerce_shipping_zone_locations: Total rows added: 1 in 0.00 seconds
+0443.408 (1) Table wpbk_woocommerce_shipping_zone_locations: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_woocommerce_shipping_zone_locations.table.gz - 0.4 KB)
+0443.414 (1) Table wpbk_woocommerce_shipping_zone_methods: Total expected rows (approximate): 2
+0443.418 (1) Table wpbk_woocommerce_shipping_zone_methods: Total rows added: 2 in 0.00 seconds
+0443.420 (1) Table wpbk_woocommerce_shipping_zone_methods: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_woocommerce_shipping_zone_methods.table.gz - 0.4 KB)
+0443.424 (1) Table wpbk_woocommerce_shipping_zones: Total expected rows (approximate): 1
+0443.428 (1) Table wpbk_woocommerce_shipping_zones: Total rows added: 1 in 0.00 seconds
+0443.429 (1) Table wpbk_woocommerce_shipping_zones: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_woocommerce_shipping_zones.table.gz - 0.4 KB)
+0443.433 (1) Table wpbk_woocommerce_shipping_zowpbk_locations: Total expected rows (approximate): 0
+0443.436 (1) Table wpbk_woocommerce_shipping_zowpbk_locations: Total rows added: 0 in 0.00 seconds
+0443.437 (1) Table wpbk_woocommerce_shipping_zowpbk_locations: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_woocommerce_shipping_zowpbk_locations.table.gz - 0.4 KB)
+0443.442 (1) Table wpbk_woocommerce_shipping_zowpbk_methods: Total expected rows (approximate): 0
+0443.445 (1) Table wpbk_woocommerce_shipping_zowpbk_methods: Total rows added: 0 in 0.00 seconds
+0443.446 (1) Table wpbk_woocommerce_shipping_zowpbk_methods: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_woocommerce_shipping_zowpbk_methods.table.gz - 0.4 KB)
+0443.450 (1) Table wpbk_woocommerce_tax_rate_locations: Total expected rows (approximate): 0
+0443.453 (1) Table wpbk_woocommerce_tax_rate_locations: Total rows added: 0 in 0.00 seconds
+0443.455 (1) Table wpbk_woocommerce_tax_rate_locations: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_woocommerce_tax_rate_locations.table.gz - 0.4 KB)
+0443.459 (1) Table wpbk_woocommerce_tax_rates: Total expected rows (approximate): 0
+0443.462 (1) Table wpbk_woocommerce_tax_rates: Total rows added: 0 in 0.00 seconds
+0443.463 (1) Table wpbk_woocommerce_tax_rates: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_woocommerce_tax_rates.table.gz - 0.4 KB)
+0443.467 (1) Table wpbk_yith_wcwl: Total expected rows (approximate): 13
+0443.471 (1) Table wpbk_yith_wcwl: Total rows added: 13 in 0.00 seconds
+0443.472 (1) Table wpbk_yith_wcwl: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_yith_wcwl.table.gz - 0.6 KB)
+0443.476 (1) Table wpbk_yith_wcwl_lists: Total expected rows (approximate): 2
+0443.479 (1) Table wpbk_yith_wcwl_lists: Total rows added: 2 in 0.00 seconds
+0443.480 (1) Table wpbk_yith_wcwl_lists: finishing file (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_yith_wcwl_lists.table.gz - 0.5 KB)
+0443.484 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_options.table.gz (1/61): adding to final database dump
+0443.529 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_users.table.gz (2/61): adding to final database dump
+0443.531 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_usermeta.table.gz (3/61): adding to final database dump
+0443.533 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_commentmeta.table.gz (4/61): adding to final database dump
+0443.534 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_comments.table.gz (5/61): adding to final database dump
+0443.537 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_links.table.gz (6/61): adding to final database dump
+0443.539 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_postmeta.table.gz (7/61): adding to final database dump
+0443.655 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_posts.table.gz (8/61): adding to final database dump
+0443.762 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_term_relationships.table.gz (9/61): adding to final database dump
+0443.766 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_term_taxonomy.table.gz (10/61): adding to final database dump
+0443.768 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_termmeta.table.gz (11/61): adding to final database dump
+0443.771 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_terms.table.gz (12/61): adding to final database dump
+0443.773 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_wc_category_lookup.table.gz (13/61): adding to final database dump
+0443.774 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_wc_product_meta_lookup.table.gz (14/61): adding to final database dump
+0443.777 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_wc_tax_rate_classes.table.gz (15/61): adding to final database dump
+0443.777 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_woocommerce_order_itemmeta.table.gz (16/61): adding to final database dump
+0443.778 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_woocommerce_payment_tokenmeta.table.gz (17/61): adding to final database dump
+0443.780 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_duplicator_packages.table.gz (18/61): adding to final database dump
+0443.782 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_litespeed_img_optm.table.gz (19/61): adding to final database dump
+0443.783 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_litespeed_optimizer.table.gz (20/61): adding to final database dump
+0443.786 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_revslider_css.table.gz (21/61): adding to final database dump
+0443.788 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_revslider_css_bkp.table.gz (22/61): adding to final database dump
+0443.791 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_revslider_layer_animations.table.gz (23/61): adding to final database dump
+0443.793 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_revslider_layer_animations_bkp.table.gz (24/61): adding to final database dump
+0443.794 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_revslider_navigations.table.gz (25/61): adding to final database dump
+0443.795 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_revslider_navigations_bkp.table.gz (26/61): adding to final database dump
+0443.796 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_revslider_sliders.table.gz (27/61): adding to final database dump
+0443.802 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_revslider_sliders_bkp.table.gz (28/61): adding to final database dump
+0443.808 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_revslider_slides.table.gz (29/61): adding to final database dump
+0443.858 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_revslider_slides_bkp.table.gz (30/61): adding to final database dump
+0443.911 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_revslider_static_slides.table.gz (31/61): adding to final database dump
+0443.912 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_revslider_static_slides_bkp.table.gz (32/61): adding to final database dump
+0443.913 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_uposhta_invoices.table.gz (33/61): adding to final database dump
+0443.914 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_wc_admin_note_actions.table.gz (34/61): adding to final database dump
+0443.915 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_wc_admin_notes.table.gz (35/61): adding to final database dump
+0443.916 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_wc_customer_lookup.table.gz (36/61): adding to final database dump
+0443.918 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_wc_download_log.table.gz (37/61): adding to final database dump
+0443.919 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_wc_order_coupon_lookup.table.gz (38/61): adding to final database dump
+0443.920 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_wc_order_product_lookup.table.gz (39/61): adding to final database dump
+0443.921 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_wc_order_stats.table.gz (40/61): adding to final database dump
+0443.922 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_wc_order_tax_lookup.table.gz (41/61): adding to final database dump
+0443.923 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_wc_webhooks.table.gz (42/61): adding to final database dump
+0443.924 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_woocommerce_api_keys.table.gz (43/61): adding to final database dump
+0443.925 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_woocommerce_attribute_taxonomies.table.gz (44/61): adding to final database dump
+0443.926 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_woocommerce_downloadable_product_permissions.table.gz (45/61): adding to final database dump
+0443.927 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_woocommerce_log.table.gz (46/61): adding to final database dump
+0443.928 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_woocommerce_order_items.table.gz (47/61): adding to final database dump
+0443.929 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_woocommerce_payment_tokens.table.gz (48/61): adding to final database dump
+0443.930 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_woocommerce_sessions.table.gz (49/61): adding to final database dump
+0443.931 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_woocommerce_shipping_zone_locations.table.gz (50/61): adding to final database dump
+0443.932 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_woocommerce_shipping_zone_methods.table.gz (51/61): adding to final database dump
+0443.933 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_woocommerce_shipping_zones.table.gz (52/61): adding to final database dump
+0443.934 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_woocommerce_shipping_zowpbk_locations.table.gz (53/61): adding to final database dump
+0443.935 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_woocommerce_shipping_zowpbk_methods.table.gz (54/61): adding to final database dump
+0443.936 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_woocommerce_tax_rate_locations.table.gz (55/61): adding to final database dump
+0443.937 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_woocommerce_tax_rates.table.gz (56/61): adding to final database dump
+0443.938 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_yith_wcwl.table.gz (57/61): adding to final database dump
+0443.939 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db-table-wpbk_yith_wcwl_lists.table.gz (58/61): adding to final database dump
+0443.944 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db.gz: finished writing out complete database file (1176 KB)
+0443.977 (1) Total database tables backed up: 58 (backup_2019-12-15-0202_Dress_Code_163e6bc61494-db.gz, size: 1212002, sha1: d33415e7188fffc826b884547c8daabae7bdadbe, sha256: c7c41c1b0afc24bda0a22b779fc82dabe4df5289ac619a0c53fa01c02665f857)
+0443.986 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0443.988 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0443.989 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0443.990 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-others.zip: others: This file has not yet been successfully uploaded: will queue
+0443.991 (1) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db.gz: db: This file has not yet been successfully uploaded: will queue
+0443.992 (1) Saving backup history. Total backup size: 304.7 MB
+0443.996 (1) Requesting upload of the files that have not yet been successfully uploaded (5)
+0444.000 (1) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0444.003 (1) Beginning dispatch of backup to remote (googledrive) (instance identifier s-8d5720959ac7641308cf4290523165b2)
+0444.808 (1) Google Drive: creating path: /UpdraftPlus
+0446.073 (1) Google Drive: quota usage: used=806.1 MB, total=15360 MB, available=14553.9 MB
+0446.075 (1) Google Drive: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip: Attempting to upload to Google Drive (into folder id: 1xSMPh6G8SAAsfjX8FEiU_rF5zx9Ejwnf)
+0446.758 (1) Googledrive chunked upload: 2.2 % uploaded (1048576)
+0447.078 (1) Googledrive chunked upload: 4.4 % uploaded (2097152)
+0447.375 (1) Googledrive chunked upload: 6.5 % uploaded (3145728)
+0447.689 (1) Googledrive chunked upload: 8.7 % uploaded (4194304)
+0507.697 (1) Google Drive: Upload error: Operation timed out after 60000 milliseconds with 0 bytes received (line: 117, file: /home/eqlutody/beta.dcode.com.ua/wp-content/plugins/updraftplus/includes/Google/IO/Curl.php)
+0507.698 (1) An error condition has occurred for the first time during this job
+0508.030 (1) Google Drive: quota usage: used=806.1 MB, total=15360 MB, available=14553.9 MB
+0508.031 (1) Google Drive: backup_2019-12-15-0202_Dress_Code_163e6bc61494-themes.zip: Attempting to upload to Google Drive (into folder id: 1xSMPh6G8SAAsfjX8FEiU_rF5zx9Ejwnf)
+0508.710 (1) Googledrive chunked upload: 3 % uploaded (1048576)
+0509.017 (1) Googledrive chunked upload: 5.9 % uploaded (2097152)
+0509.315 (1) Googledrive chunked upload: 8.9 % uploaded (3145728)
+0509.608 (1) Googledrive chunked upload: 11.9 % uploaded (4194304)
+0509.902 (1) Googledrive chunked upload: 14.8 % uploaded (5242880)
+0510.218 (1) Googledrive chunked upload: 17.8 % uploaded (6291456)
+0510.521 (1) Googledrive chunked upload: 20.8 % uploaded (7340032)
+0510.807 (1) Googledrive chunked upload: 23.7 % uploaded (8388608)
+0511.118 (1) Googledrive chunked upload: 26.7 % uploaded (9437184)
+0511.407 (1) Googledrive chunked upload: 29.7 % uploaded (10485760)
+0511.702 (1) Googledrive chunked upload: 32.6 % uploaded (11534336)
+0512.058 (1) Googledrive chunked upload: 35.6 % uploaded (12582912)
+0512.351 (1) Googledrive chunked upload: 38.6 % uploaded (13631488)
+0512.710 (1) Googledrive chunked upload: 41.5 % uploaded (14680064)
+0512.991 (1) Googledrive chunked upload: 44.5 % uploaded (15728640)
+0513.282 (1) Googledrive chunked upload: 47.5 % uploaded (16777216)
+0513.588 (1) Googledrive chunked upload: 50.4 % uploaded (17825792)
+0513.907 (1) Googledrive chunked upload: 53.4 % uploaded (18874368)
+0514.227 (1) Googledrive chunked upload: 56.4 % uploaded (19922944)
+0514.543 (1) Googledrive chunked upload: 59.3 % uploaded (20971520)
+0514.848 (1) Googledrive chunked upload: 62.3 % uploaded (22020096)
+0515.144 (1) Googledrive chunked upload: 65.3 % uploaded (23068672)
+0515.436 (1) Googledrive chunked upload: 68.3 % uploaded (24117248)
+0515.745 (1) Googledrive chunked upload: 71.2 % uploaded (25165824)
+0516.034 (1) Googledrive chunked upload: 74.2 % uploaded (26214400)
+0516.318 (1) Googledrive chunked upload: 77.2 % uploaded (27262976)
+0516.612 (1) Googledrive chunked upload: 80.1 % uploaded (28311552)
+0516.905 (1) Googledrive chunked upload: 83.1 % uploaded (29360128)
+0517.202 (1) Googledrive chunked upload: 86.1 % uploaded (30408704)
+0517.509 (1) Googledrive chunked upload: 89 % uploaded (31457280)
+0517.893 (1) Googledrive chunked upload: 92 % uploaded (32505856)
+0518.186 (1) Googledrive chunked upload: 95 % uploaded (33554432)
+0518.484 (1) Googledrive chunked upload: 97.9 % uploaded (34603008)
+0520.696 (1) Googledrive chunked upload: 100 % uploaded (34603008)
+0520.700 (1) Google Drive: OK: Archive backup_2019-12-15-0202_Dress_Code_163e6bc61494-themes.zip uploaded in 12.67 seconds
+0520.701 (1) Recording as successfully uploaded: backup_2019-12-15-0202_Dress_Code_163e6bc61494-themes.zip
+0520.724 (1) Deleting local file: backup_2019-12-15-0202_Dress_Code_163e6bc61494-themes.zip: OK
+0521.067 (1) Google Drive: quota usage: used=839.8 MB, total=15360 MB, available=14520.2 MB
+0521.069 (1) Google Drive: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip: Attempting to upload to Google Drive (into folder id: 1xSMPh6G8SAAsfjX8FEiU_rF5zx9Ejwnf)
+0521.766 (1) Googledrive chunked upload: 0.4 % uploaded (1048576)
+0522.087 (1) Googledrive chunked upload: 0.9 % uploaded (2097152)
+0522.400 (1) Googledrive chunked upload: 1.3 % uploaded (3145728)
+0522.717 (1) Googledrive chunked upload: 1.8 % uploaded (4194304)
+0523.012 (1) Googledrive chunked upload: 2.2 % uploaded (5242880)
+0523.331 (1) Googledrive chunked upload: 2.7 % uploaded (6291456)
+0523.634 (1) Googledrive chunked upload: 3.1 % uploaded (7340032)
+0523.911 (1) Googledrive chunked upload: 3.6 % uploaded (8388608)
+0524.200 (1) Googledrive chunked upload: 4 % uploaded (9437184)
+0524.516 (1) Googledrive chunked upload: 4.5 % uploaded (10485760)
+0584.521 (1) Google Drive: Upload error: Operation timed out after 60000 milliseconds with 0 bytes received (line: 117, file: /home/eqlutody/beta.dcode.com.ua/wp-content/plugins/updraftplus/includes/Google/IO/Curl.php)
+0584.957 (1) Google Drive: quota usage: used=839.8 MB, total=15360 MB, available=14520.2 MB
+0584.959 (1) Google Drive: backup_2019-12-15-0202_Dress_Code_163e6bc61494-others.zip: Attempting to upload to Google Drive (into folder id: 1xSMPh6G8SAAsfjX8FEiU_rF5zx9Ejwnf)
+0585.657 (1) The time we have been running (284.1) is approaching the resumption interval (300) - increasing resumption interval to 315
+0585.659 (1) The scheduled resumption is within 45 seconds - will reschedule
+0585.661 (1) Rescheduling resumption 2: moving to 360 seconds from now (1576376287)
+0585.664 (1) To decrease the likelihood of overlaps, increasing resumption interval to: 315 + 45 = 360
+0585.665 (1) Googledrive chunked upload: 90 % uploaded (1048576)
+0587.874 (1) Googledrive chunked upload: 100 % uploaded (1048576)
+0587.878 (1) Google Drive: OK: Archive backup_2019-12-15-0202_Dress_Code_163e6bc61494-others.zip uploaded in 2.92 seconds
+0587.879 (1) Recording as successfully uploaded: backup_2019-12-15-0202_Dress_Code_163e6bc61494-others.zip
+0587.882 (1) Deleting local file: backup_2019-12-15-0202_Dress_Code_163e6bc61494-others.zip: OK
+0588.435 (1) Google Drive: quota usage: used=840.9 MB, total=15360 MB, available=14519.1 MB
+0588.437 (1) Google Drive: backup_2019-12-15-0202_Dress_Code_163e6bc61494-db.gz: Attempting to upload to Google Drive (into folder id: 1xSMPh6G8SAAsfjX8FEiU_rF5zx9Ejwnf)
+0589.099 (1) Googledrive chunked upload: 86.5 % uploaded (1048576)
+0591.308 (1) Googledrive chunked upload: 100 % uploaded (1048576)
+0591.312 (1) Google Drive: OK: Archive backup_2019-12-15-0202_Dress_Code_163e6bc61494-db.gz uploaded in 2.87 seconds
+0591.313 (1) Recording as successfully uploaded: backup_2019-12-15-0202_Dress_Code_163e6bc61494-db.gz
+0591.315 (1) Deleting local file: backup_2019-12-15-0202_Dress_Code_163e6bc61494-db.gz: OK
+0591.318 (1) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0591.319 (1) Number of backup sets in history: 1; groups (db): 1
+0591.320 (1) Examining (for databases) backup set with group_id=0, nonce=163e6bc61494, datestamp=1576375341 (Dec 15 2019 02:02:21)
+0591.321 (1) This backup set is the backup set just made, so will not be deleted.
+0591.321 (1) Number of backup sets in history: 1; groups (files): 1
+0591.322 (1) Examining (for files) backup set with nonce=163e6bc61494, datestamp=1576375341 (Dec 15 2019 02:02:21)
+0591.322 (1) This backup set is the backup set just made, so will not be deleted.
+0591.323 (1) This backup set is the backup set just made, so will not be deleted.
+0591.323 (1) This backup set is the backup set just made, so will not be deleted.
+0591.323 (1) This backup set is the backup set just made, so will not be deleted.
+0591.323 (1) This backup set remains non-empty (f=1/d=1); will retain in history
+0591.324 (1) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0591.328 (1) Resume backup (163e6bc61494, 1): finish run
+0591.330 (1) There were errors in the uploads, so the 'resume' event is remaining scheduled
+0591.332 (1) The backup has not finished; a resumption is scheduled
+1009.631 (2) Opened log file at time: Sun, 15 Dec 2019 02:19:11 +0000 on http://beta.dcode.com.ua
+1009.634 (2) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.21 WP: 5.3.1 PHP: 7.3.12 (litespeed, Linux skm272.hostsila.org 3.10.0-962.3.2.lve1.5.26.7.el7.x86_64 #1 SMP Wed Oct 2 07:53:12 EDT 2019 x86_64) MySQL: 10.3.20-MariaDB-cll-lve WPLANG: uk Server: LiteSpeed safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 68.6M | 70.5M) multisite: N openssl: OpenSSL 1.0.2k  26 Jan 2017 mcrypt: Y LANG:  ZipArchive::addFile: Y
+1009.717 (2) Free space on disk containing Updraft's temporary directory: 920878 MB
+1009.721 (2) Backup run: resumption=2, nonce=163e6bc61494, file_nonce=163e6bc61494 begun at=1576375341 (1010s ago), job type=backup, previous check-in=289.7s
+1009.724 (2) Scheduling a resumption (3) after 360 seconds (1576376711) in case this run gets aborted
+1009.738 (2) Checking if we have a zip executable available
+1009.740 (2) Zip engine: found/will use a binary zip: /usr/bin/zip
+1009.741 (2) Creation of backups of directories: already finished
+1009.742 (2) Saving backup status to database (elements: 8)
+1009.749 (2) Database dump (WordPress DB): Creation was completed already
+1009.753 (2) backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+1009.754 (2) backup_2019-12-15-0202_Dress_Code_163e6bc61494-themes.zip: themes: This file has already been successfully uploaded
+1009.755 (2) backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+1009.755 (2) backup_2019-12-15-0202_Dress_Code_163e6bc61494-others.zip: others: This file has already been successfully uploaded
+1009.756 (2) backup_2019-12-15-0202_Dress_Code_163e6bc61494-db.gz: db: This file has already been successfully uploaded
+1009.757 (2) Saving backup history. Total backup size: Unknown
+1009.761 (2) Requesting upload of the files that have not yet been successfully uploaded (2)
+1009.764 (2) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+1009.766 (2) Beginning dispatch of backup to remote (googledrive) (instance identifier s-8d5720959ac7641308cf4290523165b2)
+1010.876 (2) Google Drive: quota usage: used=842 MB, total=15360 MB, available=14518 MB
+1010.878 (2) Google Drive: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip: Attempting to upload to Google Drive (into folder id: 1xSMPh6G8SAAsfjX8FEiU_rF5zx9Ejwnf)
+1010.990 (2) Google Drive: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip: upload already began; attempting to resume from byte 4456447
+1011.302 (2) Googledrive chunked upload: 11.5 % uploaded (5505024)
+1011.607 (2) Googledrive chunked upload: 13.6 % uploaded (6553600)
+1011.898 (2) Googledrive chunked upload: 15.8 % uploaded (7602176)
+1012.202 (2) Googledrive chunked upload: 18 % uploaded (8650752)
+1012.507 (2) Googledrive chunked upload: 20.2 % uploaded (9699328)
+1012.812 (2) Googledrive chunked upload: 22.4 % uploaded (10747904)
+1013.129 (2) Googledrive chunked upload: 24.6 % uploaded (11796480)
+1013.541 (2) Googledrive chunked upload: 26.7 % uploaded (12845056)
+1013.829 (2) Googledrive chunked upload: 28.9 % uploaded (13893632)
+1014.117 (2) Googledrive chunked upload: 31.1 % uploaded (14942208)
+1014.416 (2) Googledrive chunked upload: 33.3 % uploaded (15990784)
+1014.705 (2) Googledrive chunked upload: 35.5 % uploaded (17039360)
+1014.999 (2) Googledrive chunked upload: 37.6 % uploaded (18087936)
+1015.290 (2) Googledrive chunked upload: 39.8 % uploaded (19136512)
+1015.581 (2) Googledrive chunked upload: 42 % uploaded (20185088)
+1015.877 (2) Googledrive chunked upload: 44.2 % uploaded (21233664)
+1016.187 (2) Googledrive chunked upload: 46.4 % uploaded (22282240)
+1016.494 (2) Googledrive chunked upload: 48.6 % uploaded (23330816)
+1016.788 (2) Googledrive chunked upload: 50.7 % uploaded (24379392)
+1017.084 (2) Googledrive chunked upload: 52.9 % uploaded (25427968)
+1017.397 (2) Googledrive chunked upload: 55.1 % uploaded (26476544)
+1017.698 (2) Googledrive chunked upload: 57.3 % uploaded (27525120)
+1018.037 (2) Googledrive chunked upload: 59.5 % uploaded (28573696)
+1018.370 (2) Googledrive chunked upload: 61.7 % uploaded (29622272)
+1018.806 (2) Googledrive chunked upload: 63.8 % uploaded (30670848)
+1019.129 (2) Googledrive chunked upload: 66 % uploaded (31719424)
+1019.538 (2) Googledrive chunked upload: 68.2 % uploaded (32768000)
+1019.831 (2) Googledrive chunked upload: 70.4 % uploaded (33816576)
+1020.121 (2) Googledrive chunked upload: 72.6 % uploaded (34865152)
+1020.422 (2) Googledrive chunked upload: 74.8 % uploaded (35913728)
+1020.726 (2) Googledrive chunked upload: 76.9 % uploaded (36962304)
+1021.055 (2) Googledrive chunked upload: 79.1 % uploaded (38010880)
+1021.373 (2) Googledrive chunked upload: 81.3 % uploaded (39059456)
+1021.683 (2) Googledrive chunked upload: 83.5 % uploaded (40108032)
+1022.018 (2) Googledrive chunked upload: 85.7 % uploaded (41156608)
+1022.360 (2) Googledrive chunked upload: 87.8 % uploaded (42205184)
+1022.663 (2) Googledrive chunked upload: 90 % uploaded (43253760)
+1022.945 (2) Googledrive chunked upload: 92.2 % uploaded (44302336)
+1023.349 (2) Googledrive chunked upload: 94.4 % uploaded (45350912)
+1023.648 (2) Googledrive chunked upload: 96.6 % uploaded (46399488)
+1023.965 (2) Googledrive chunked upload: 98.8 % uploaded (47448064)
+1026.176 (2) Googledrive chunked upload: 100 % uploaded (47448064)
+1026.180 (2) Google Drive: OK: Archive backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip uploaded in 15.3 seconds
+1026.181 (2) Recording as successfully uploaded: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip
+1026.200 (2) Deleting local file: backup_2019-12-15-0202_Dress_Code_163e6bc61494-plugins.zip: OK
+1026.534 (2) Google Drive: quota usage: used=887.9 MB, total=15360 MB, available=14472.1 MB
+1026.536 (2) Google Drive: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip: Attempting to upload to Google Drive (into folder id: 1xSMPh6G8SAAsfjX8FEiU_rF5zx9Ejwnf)
+1026.659 (2) Google Drive: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip: upload already began; attempting to resume from byte 11272191
+1026.958 (2) Googledrive chunked upload: 5.3 % uploaded (12320768)
+1027.269 (2) Googledrive chunked upload: 5.7 % uploaded (13369344)
+1027.585 (2) Googledrive chunked upload: 6.2 % uploaded (14417920)
+1027.892 (2) Googledrive chunked upload: 6.6 % uploaded (15466496)
+1028.189 (2) Googledrive chunked upload: 7.1 % uploaded (16515072)
+1028.481 (2) Googledrive chunked upload: 7.5 % uploaded (17563648)
+1028.781 (2) Googledrive chunked upload: 8 % uploaded (18612224)
+1029.083 (2) Googledrive chunked upload: 8.4 % uploaded (19660800)
+1029.376 (2) Googledrive chunked upload: 8.9 % uploaded (20709376)
+1029.661 (2) Googledrive chunked upload: 9.3 % uploaded (21757952)
+1029.942 (2) Googledrive chunked upload: 9.8 % uploaded (22806528)
+1030.232 (2) Googledrive chunked upload: 10.2 % uploaded (23855104)
+1030.534 (2) Googledrive chunked upload: 10.7 % uploaded (24903680)
+1030.821 (2) Googledrive chunked upload: 11.1 % uploaded (25952256)
+1031.125 (2) Googledrive chunked upload: 11.6 % uploaded (27000832)
+1031.429 (2) Googledrive chunked upload: 12 % uploaded (28049408)
+1031.736 (2) Googledrive chunked upload: 12.4 % uploaded (29097984)
+1032.157 (2) Googledrive chunked upload: 12.9 % uploaded (30146560)
+1032.466 (2) Googledrive chunked upload: 13.3 % uploaded (31195136)
+1032.762 (2) Googledrive chunked upload: 13.8 % uploaded (32243712)
+1033.069 (2) Googledrive chunked upload: 14.2 % uploaded (33292288)
+1033.351 (2) Googledrive chunked upload: 14.7 % uploaded (34340864)
+1033.803 (2) Googledrive chunked upload: 15.1 % uploaded (35389440)
+1034.116 (2) Googledrive chunked upload: 15.6 % uploaded (36438016)
+1034.411 (2) Googledrive chunked upload: 16 % uploaded (37486592)
+1034.717 (2) Googledrive chunked upload: 16.5 % uploaded (38535168)
+1035.017 (2) Googledrive chunked upload: 16.9 % uploaded (39583744)
+1035.306 (2) Googledrive chunked upload: 17.4 % uploaded (40632320)
+1035.608 (2) Googledrive chunked upload: 17.8 % uploaded (41680896)
+1035.916 (2) Googledrive chunked upload: 18.3 % uploaded (42729472)
+1036.200 (2) Googledrive chunked upload: 18.7 % uploaded (43778048)
+1036.524 (2) Googledrive chunked upload: 19.2 % uploaded (44826624)
+1036.859 (2) Googledrive chunked upload: 19.6 % uploaded (45875200)
+1037.160 (2) Googledrive chunked upload: 20.1 % uploaded (46923776)
+1037.466 (2) Googledrive chunked upload: 20.5 % uploaded (47972352)
+1037.794 (2) Googledrive chunked upload: 21 % uploaded (49020928)
+1038.080 (2) Googledrive chunked upload: 21.4 % uploaded (50069504)
+1038.392 (2) Googledrive chunked upload: 21.9 % uploaded (51118080)
+1038.701 (2) Googledrive chunked upload: 22.3 % uploaded (52166656)
+1038.986 (2) Googledrive chunked upload: 22.8 % uploaded (53215232)
+1039.311 (2) Googledrive chunked upload: 23.2 % uploaded (54263808)
+1039.609 (2) Googledrive chunked upload: 23.7 % uploaded (55312384)
+1039.902 (2) Googledrive chunked upload: 24.1 % uploaded (56360960)
+1040.205 (2) Googledrive chunked upload: 24.6 % uploaded (57409536)
+1040.507 (2) Googledrive chunked upload: 25 % uploaded (58458112)
+1040.781 (2) Googledrive chunked upload: 25.5 % uploaded (59506688)
+1041.075 (2) Googledrive chunked upload: 25.9 % uploaded (60555264)
+1041.379 (2) Googledrive chunked upload: 26.4 % uploaded (61603840)
+1041.679 (2) Googledrive chunked upload: 26.8 % uploaded (62652416)
+1042.000 (2) Googledrive chunked upload: 27.3 % uploaded (63700992)
+1042.320 (2) Googledrive chunked upload: 27.7 % uploaded (64749568)
+1042.632 (2) Googledrive chunked upload: 28.2 % uploaded (65798144)
+1042.966 (2) Googledrive chunked upload: 28.6 % uploaded (66846720)
+1043.272 (2) Googledrive chunked upload: 29 % uploaded (67895296)
+1043.565 (2) Googledrive chunked upload: 29.5 % uploaded (68943872)
+1043.870 (2) Googledrive chunked upload: 29.9 % uploaded (69992448)
+1044.246 (2) Googledrive chunked upload: 30.4 % uploaded (71041024)
+1044.540 (2) Googledrive chunked upload: 30.8 % uploaded (72089600)
+1044.823 (2) Googledrive chunked upload: 31.3 % uploaded (73138176)
+1045.111 (2) Googledrive chunked upload: 31.7 % uploaded (74186752)
+1045.394 (2) Googledrive chunked upload: 32.2 % uploaded (75235328)
+1045.688 (2) Googledrive chunked upload: 32.6 % uploaded (76283904)
+1046.005 (2) Googledrive chunked upload: 33.1 % uploaded (77332480)
+1046.332 (2) Googledrive chunked upload: 33.5 % uploaded (78381056)
+1046.648 (2) Googledrive chunked upload: 34 % uploaded (79429632)
+1046.938 (2) Googledrive chunked upload: 34.4 % uploaded (80478208)
+1047.236 (2) Googledrive chunked upload: 34.9 % uploaded (81526784)
+1047.541 (2) Googledrive chunked upload: 35.3 % uploaded (82575360)
+1047.821 (2) Googledrive chunked upload: 35.8 % uploaded (83623936)
+1048.124 (2) Googledrive chunked upload: 36.2 % uploaded (84672512)
+1048.427 (2) Googledrive chunked upload: 36.7 % uploaded (85721088)
+1048.781 (2) Googledrive chunked upload: 37.1 % uploaded (86769664)
+1049.092 (2) Googledrive chunked upload: 37.6 % uploaded (87818240)
+1049.394 (2) Googledrive chunked upload: 38 % uploaded (88866816)
+1049.687 (2) Googledrive chunked upload: 38.5 % uploaded (89915392)
+1049.979 (2) Googledrive chunked upload: 38.9 % uploaded (90963968)
+1050.282 (2) Googledrive chunked upload: 39.4 % uploaded (92012544)
+1050.580 (2) Googledrive chunked upload: 39.8 % uploaded (93061120)
+1050.885 (2) Googledrive chunked upload: 40.3 % uploaded (94109696)
+1051.187 (2) Googledrive chunked upload: 40.7 % uploaded (95158272)
+1051.479 (2) Googledrive chunked upload: 41.2 % uploaded (96206848)
+1051.775 (2) Googledrive chunked upload: 41.6 % uploaded (97255424)
+1052.077 (2) Googledrive chunked upload: 42.1 % uploaded (98304000)
+1052.391 (2) Googledrive chunked upload: 42.5 % uploaded (99352576)
+1052.717 (2) Googledrive chunked upload: 43 % uploaded (100401152)
+1053.007 (2) Googledrive chunked upload: 43.4 % uploaded (101449728)
+1053.288 (2) Googledrive chunked upload: 43.9 % uploaded (102498304)
+1053.573 (2) Googledrive chunked upload: 44.3 % uploaded (103546880)
+1053.866 (2) Googledrive chunked upload: 44.8 % uploaded (104595456)
+1054.161 (2) Googledrive chunked upload: 45.2 % uploaded (105644032)
+1054.446 (2) Googledrive chunked upload: 45.6 % uploaded (106692608)
+1054.727 (2) Googledrive chunked upload: 46.1 % uploaded (107741184)
+1055.149 (2) Googledrive chunked upload: 46.5 % uploaded (108789760)
+1055.461 (2) Googledrive chunked upload: 47 % uploaded (109838336)
+1055.826 (2) Googledrive chunked upload: 47.4 % uploaded (110886912)
+1056.123 (2) Googledrive chunked upload: 47.9 % uploaded (111935488)
+1056.436 (2) Googledrive chunked upload: 48.3 % uploaded (112984064)
+1056.794 (2) Googledrive chunked upload: 48.8 % uploaded (114032640)
+1057.078 (2) Googledrive chunked upload: 49.2 % uploaded (115081216)
+1057.380 (2) Googledrive chunked upload: 49.7 % uploaded (116129792)
+1057.689 (2) Googledrive chunked upload: 50.1 % uploaded (117178368)
+1057.992 (2) Googledrive chunked upload: 50.6 % uploaded (118226944)
+1058.292 (2) Googledrive chunked upload: 51 % uploaded (119275520)
+1058.600 (2) Googledrive chunked upload: 51.5 % uploaded (120324096)
+1058.904 (2) Googledrive chunked upload: 51.9 % uploaded (121372672)
+1059.194 (2) Googledrive chunked upload: 52.4 % uploaded (122421248)
+1059.490 (2) Googledrive chunked upload: 52.8 % uploaded (123469824)
+1059.792 (2) Googledrive chunked upload: 53.3 % uploaded (124518400)
+1060.304 (2) Googledrive chunked upload: 53.7 % uploaded (125566976)
+1060.779 (2) Googledrive chunked upload: 54.2 % uploaded (126615552)
+1061.248 (2) Googledrive chunked upload: 54.6 % uploaded (127664128)
+1061.670 (2) Googledrive chunked upload: 55.1 % uploaded (128712704)
+1062.085 (2) Googledrive chunked upload: 55.5 % uploaded (129761280)
+1062.578 (2) Googledrive chunked upload: 56 % uploaded (130809856)
+1063.016 (2) Googledrive chunked upload: 56.4 % uploaded (131858432)
+1063.452 (2) Googledrive chunked upload: 56.9 % uploaded (132907008)
+1063.894 (2) Googledrive chunked upload: 57.3 % uploaded (133955584)
+1064.373 (2) Googledrive chunked upload: 57.8 % uploaded (135004160)
+1064.791 (2) Googledrive chunked upload: 58.2 % uploaded (136052736)
+1065.232 (2) Googledrive chunked upload: 58.7 % uploaded (137101312)
+1065.665 (2) Googledrive chunked upload: 59.1 % uploaded (138149888)
+1066.116 (2) Googledrive chunked upload: 59.6 % uploaded (139198464)
+1066.565 (2) Googledrive chunked upload: 60 % uploaded (140247040)
+1067.050 (2) Googledrive chunked upload: 60.5 % uploaded (141295616)
+1067.459 (2) Googledrive chunked upload: 60.9 % uploaded (142344192)
+1067.912 (2) Googledrive chunked upload: 61.4 % uploaded (143392768)
+1068.335 (2) Googledrive chunked upload: 61.8 % uploaded (144441344)
+1068.766 (2) Googledrive chunked upload: 62.2 % uploaded (145489920)
+1069.213 (2) Googledrive chunked upload: 62.7 % uploaded (146538496)
+1069.630 (2) Googledrive chunked upload: 63.1 % uploaded (147587072)
+1070.103 (2) Googledrive chunked upload: 63.6 % uploaded (148635648)
+1070.539 (2) Googledrive chunked upload: 64 % uploaded (149684224)
+1070.982 (2) Googledrive chunked upload: 64.5 % uploaded (150732800)
+1071.492 (2) Googledrive chunked upload: 64.9 % uploaded (151781376)
+1071.946 (2) Googledrive chunked upload: 65.4 % uploaded (152829952)
+1072.367 (2) Googledrive chunked upload: 65.8 % uploaded (153878528)
+1072.810 (2) Googledrive chunked upload: 66.3 % uploaded (154927104)
+1073.234 (2) Googledrive chunked upload: 66.7 % uploaded (155975680)
+1073.719 (2) Googledrive chunked upload: 67.2 % uploaded (157024256)
+1074.138 (2) Googledrive chunked upload: 67.6 % uploaded (158072832)
+1074.556 (2) Googledrive chunked upload: 68.1 % uploaded (159121408)
+1075.003 (2) Googledrive chunked upload: 68.5 % uploaded (160169984)
+1075.428 (2) Googledrive chunked upload: 69 % uploaded (161218560)
+1075.870 (2) Googledrive chunked upload: 69.4 % uploaded (162267136)
+1076.285 (2) Googledrive chunked upload: 69.9 % uploaded (163315712)
+1076.721 (2) Googledrive chunked upload: 70.3 % uploaded (164364288)
+1077.183 (2) Googledrive chunked upload: 70.8 % uploaded (165412864)
+1077.607 (2) Googledrive chunked upload: 71.2 % uploaded (166461440)
+1078.029 (2) Googledrive chunked upload: 71.7 % uploaded (167510016)
+1078.515 (2) Googledrive chunked upload: 72.1 % uploaded (168558592)
+1078.922 (2) Googledrive chunked upload: 72.6 % uploaded (169607168)
+1079.345 (2) Googledrive chunked upload: 73 % uploaded (170655744)
+1079.786 (2) Googledrive chunked upload: 73.5 % uploaded (171704320)
+1080.205 (2) Googledrive chunked upload: 73.9 % uploaded (172752896)
+1080.652 (2) Googledrive chunked upload: 74.4 % uploaded (173801472)
+1081.093 (2) Googledrive chunked upload: 74.8 % uploaded (174850048)
+1081.542 (2) Googledrive chunked upload: 75.3 % uploaded (175898624)
+1081.999 (2) Googledrive chunked upload: 75.7 % uploaded (176947200)
+1082.446 (2) Googledrive chunked upload: 76.2 % uploaded (177995776)
+1082.864 (2) Googledrive chunked upload: 76.6 % uploaded (179044352)
+1083.309 (2) Googledrive chunked upload: 77.1 % uploaded (180092928)
+1083.744 (2) Googledrive chunked upload: 77.5 % uploaded (181141504)
+1084.182 (2) Googledrive chunked upload: 78 % uploaded (182190080)
+1084.614 (2) Googledrive chunked upload: 78.4 % uploaded (183238656)
+1085.057 (2) Googledrive chunked upload: 78.8 % uploaded (184287232)
+1085.466 (2) Googledrive chunked upload: 79.3 % uploaded (185335808)
+1085.946 (2) Googledrive chunked upload: 79.7 % uploaded (186384384)
+1086.427 (2) Googledrive chunked upload: 80.2 % uploaded (187432960)
+1086.864 (2) Googledrive chunked upload: 80.6 % uploaded (188481536)
+1087.305 (2) Googledrive chunked upload: 81.1 % uploaded (189530112)
+1087.735 (2) Googledrive chunked upload: 81.5 % uploaded (190578688)
+1088.153 (2) Googledrive chunked upload: 82 % uploaded (191627264)
+1088.578 (2) Googledrive chunked upload: 82.4 % uploaded (192675840)
+1089.001 (2) Googledrive chunked upload: 82.9 % uploaded (193724416)
+1089.418 (2) Googledrive chunked upload: 83.3 % uploaded (194772992)
+1089.978 (2) Googledrive chunked upload: 83.8 % uploaded (195821568)
+1090.431 (2) Googledrive chunked upload: 84.2 % uploaded (196870144)
+1090.870 (2) Googledrive chunked upload: 84.7 % uploaded (197918720)
+1091.299 (2) Googledrive chunked upload: 85.1 % uploaded (198967296)
+1091.730 (2) Googledrive chunked upload: 85.6 % uploaded (200015872)
+1092.150 (2) Googledrive chunked upload: 86 % uploaded (201064448)
+1092.589 (2) Googledrive chunked upload: 86.5 % uploaded (202113024)
+1093.032 (2) Googledrive chunked upload: 86.9 % uploaded (203161600)
+1093.488 (2) Googledrive chunked upload: 87.4 % uploaded (204210176)
+1093.917 (2) Googledrive chunked upload: 87.8 % uploaded (205258752)
+1094.327 (2) Googledrive chunked upload: 88.3 % uploaded (206307328)
+1094.767 (2) Googledrive chunked upload: 88.7 % uploaded (207355904)
+1095.179 (2) Googledrive chunked upload: 89.2 % uploaded (208404480)
+1095.624 (2) Googledrive chunked upload: 89.6 % uploaded (209453056)
+1096.139 (2) Googledrive chunked upload: 90.1 % uploaded (210501632)
+1096.569 (2) Googledrive chunked upload: 90.5 % uploaded (211550208)
+1096.986 (2) Googledrive chunked upload: 91 % uploaded (212598784)
+1097.419 (2) Googledrive chunked upload: 91.4 % uploaded (213647360)
+1097.867 (2) Googledrive chunked upload: 91.9 % uploaded (214695936)
+1098.276 (2) Googledrive chunked upload: 92.3 % uploaded (215744512)
+1098.734 (2) Googledrive chunked upload: 92.8 % uploaded (216793088)
+1099.160 (2) Googledrive chunked upload: 93.2 % uploaded (217841664)
+1099.570 (2) Googledrive chunked upload: 93.7 % uploaded (218890240)
+1100.018 (2) Googledrive chunked upload: 94.1 % uploaded (219938816)
+1100.470 (2) Googledrive chunked upload: 94.6 % uploaded (220987392)
+1100.915 (2) Googledrive chunked upload: 95 % uploaded (222035968)
+1101.470 (2) Googledrive chunked upload: 95.4 % uploaded (223084544)
+1101.871 (2) Googledrive chunked upload: 95.9 % uploaded (224133120)
+1102.244 (2) Googledrive chunked upload: 96.3 % uploaded (225181696)
+1102.614 (2) Googledrive chunked upload: 96.8 % uploaded (226230272)
+1102.979 (2) Googledrive chunked upload: 97.2 % uploaded (227278848)
+1103.357 (2) Googledrive chunked upload: 97.7 % uploaded (228327424)
+1103.750 (2) Googledrive chunked upload: 98.1 % uploaded (229376000)
+1104.151 (2) Googledrive chunked upload: 98.6 % uploaded (230424576)
+1104.536 (2) Googledrive chunked upload: 99 % uploaded (231473152)
+1104.917 (2) Googledrive chunked upload: 99.5 % uploaded (232521728)
+1105.331 (2) Googledrive chunked upload: 99.9 % uploaded (233570304)
+1107.542 (2) Googledrive chunked upload: 100 % uploaded (233570304)
+1107.545 (2) Google Drive: OK: Archive backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip uploaded in 81.01 seconds
+1107.546 (2) Recording as successfully uploaded: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip
+1107.638 (2) Deleting local file: backup_2019-12-15-0202_Dress_Code_163e6bc61494-uploads.zip: OK
+1107.642 (2) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+1107.644 (2) Number of backup sets in history: 1; groups (db): 1
+1107.644 (2) Examining (for databases) backup set with group_id=0, nonce=163e6bc61494, datestamp=1576375341 (Dec 15 2019 02:02:21)
+1107.645 (2) This backup set is the backup set just made, so will not be deleted.
+1107.645 (2) Number of backup sets in history: 1; groups (files): 1
+1107.646 (2) Examining (for files) backup set with nonce=163e6bc61494, datestamp=1576375341 (Dec 15 2019 02:02:21)
+1107.646 (2) This backup set is the backup set just made, so will not be deleted.
+1107.647 (2) This backup set is the backup set just made, so will not be deleted.
+1107.647 (2) This backup set is the backup set just made, so will not be deleted.
+1107.647 (2) This backup set is the backup set just made, so will not be deleted.
+1107.647 (2) This backup set remains non-empty (f=1/d=1); will retain in history
+1107.648 (2) Retain: saving new backup history (sets now: 1) and finishing retain operation
+1107.651 (2) Resume backup (163e6bc61494, 2): finish run
+1107.652 (2) There were no errors in the uploads, so the 'resume' event (3) is being unscheduled
+1107.656 (2) Fetching RSS news feed
+1107.789 (2) Fetched RSS news feed; result is a: SimplePie
+1107.822 (2) Sending email ('Files and database (Full backup)') report (attachments: 0, size: 0 KB) to: dev.d...
+1107.831 (2) PHP event: code E_NOTICE: Trying to get property 'name' of non-object (line 882, wp-content/plugins/woo-ukrposhta/includes/class-morkvaup-plugin-loader.php)
+1107.950 (2) The backup apparently succeeded and is now complete

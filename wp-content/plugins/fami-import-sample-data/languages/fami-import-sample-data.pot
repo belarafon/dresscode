@@ -1,0 +1,210 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Fami Import Sample Data\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-22 07:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.2; wp-5.1.1"
+
+#: includes/sample-data.php:908
+msgid "\tI understand the impact of uninstalling sample data."
+msgstr ""
+
+#: includes/sample-data.php:846 includes/sample-data.php:913
+msgid "Cancel"
+msgstr ""
+
+#: includes/sample-data.php:883 includes/sample-data.php:890
+msgid "Close"
+msgstr ""
+
+#: includes/sample-data.php:845 includes/sample-data.php:912
+msgid "Continue"
+msgstr ""
+
+#: includes/sample-data.php:856
+msgid "Download sample data package."
+msgstr ""
+
+#: includes/dashboard.php:123
+msgid "Export"
+msgstr ""
+
+#: includes/dashboard.php:114
+msgid "Export Sample Data"
+msgstr ""
+
+#: includes/sample-data.php:815
+msgid "Extend Settings"
+msgstr ""
+
+#: includes/sample-data.php:625
+#, php-format
+msgid "Failed to activate %s plugin"
+msgstr ""
+
+#: includes/sample-data.php:1128
+msgid "Failed to create directory to store database backup file."
+msgstr ""
+
+#: includes/sample-data.php:697
+#, php-format
+msgid "Failed to download the selected sample data package &#39;%s&#39;."
+msgstr ""
+
+#: includes/sample-data.php:329
+msgid "Failed to extract downloaded package to file system."
+msgstr ""
+
+#: includes/dashboard.php:107
+msgid "Failed to get available sample data packages."
+msgstr ""
+
+#: includes/sample-data.php:133 includes/sample-data.php:264
+msgid "Failed to get data for the selected sample data package."
+msgstr ""
+
+#. Name of the plugin
+msgid "Fami Import Sample Data"
+msgstr ""
+
+#. Author of the plugin
+msgid "Fami Themes"
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "https://famithemes.com"
+msgstr ""
+
+#: includes/sample-data.php:841
+msgid "I understand the impact of installing sample data."
+msgstr ""
+
+#: includes/sample-data.php:801 includes/sample-data.php:899
+msgid "Important Notice"
+msgstr ""
+
+#: includes/dashboard.php:92
+msgid "Install"
+msgstr ""
+
+#: includes/sample-data.php:864
+msgid "Install required plugins."
+msgstr ""
+
+#: includes/dashboard.php:34
+msgid "Install Sample Data"
+msgstr ""
+
+#: includes/sample-data.php:860
+msgid "Install sample data."
+msgstr ""
+
+#: includes/sample-data.php:803
+#, php-format
+msgid ""
+"Installing sample data will replace the content of current website with <a "
+"href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>"
+"%2$s</strong> demo</a>."
+msgstr ""
+
+#: includes/dashboard.php:59
+msgid "Intall Sample Data"
+msgstr ""
+
+#: includes/sample-data.php:394
+msgid "Invalid parameters."
+msgstr ""
+
+#: includes/sample-data.php:340
+msgid "Invalid sample data package."
+msgstr ""
+
+#: includes/sample-data.php:126 includes/sample-data.php:258
+msgid "Missing sample data package to install."
+msgstr ""
+
+#: includes/dashboard.php:118
+msgid "Name"
+msgstr ""
+
+#: includes/sample-data.php:566
+msgid "No plugin specified."
+msgstr ""
+
+#: includes/sample-data.php:120 includes/sample-data.php:252
+#: includes/sample-data.php:562
+msgid ""
+"Nonce verification failed. This might due to your working session has been "
+"expired. Please reload the page to renew your working session."
+msgstr ""
+
+#: includes/sample-data.php:240
+msgid "Not found any backup to restore."
+msgstr ""
+
+#: includes/sample-data.php:223 includes/sample-data.php:542
+#, php-format
+msgid "Restoring backup has encountered an error and cannot continue: %s"
+msgstr ""
+
+#: sample-settings.php:59 sample-settings.php:60 includes/dashboard.php:44
+#: includes/dashboard.php:45
+msgid "Sample Data"
+msgstr ""
+
+#: includes/sample-data.php:888
+msgid "Sample data was not successfully installed."
+msgstr ""
+
+#: includes/sample-data.php:877
+msgid "Sample data was successfully installed."
+msgstr ""
+
+#: includes/sample-data.php:819
+msgid "Select demo that you want to install."
+msgstr ""
+
+#: includes/sample-data.php:391
+msgid "The backup process error."
+msgstr ""
+
+#: includes/sample-data.php:852 includes/sample-data.php:918
+msgid "There are several stages involved in the process. Please be patient."
+msgstr ""
+
+#: includes/dashboard.php:89 includes/sample-data.php:922
+msgid "Uninstall"
+msgstr ""
+
+#: includes/dashboard.php:35
+msgid "Uninstall Sample Data"
+msgstr ""
+
+#: includes/sample-data.php:902
+msgid ""
+"Uninstalling sample data will restore the backed up original data before the "
+"current sample data was installed.."
+msgstr ""
+
+#: includes/sample-data.php:880
+msgid "Visit Site"
+msgstr ""
+
+#. Description of the plugin
+msgid "You can import or export data with a single click"
+msgstr ""
+
+#: includes/sample-data.php:804
+msgid "You can later uninstall sample data to restore the original data back."
+msgstr ""

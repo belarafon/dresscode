@@ -1,0 +1,10 @@
+2019-12-24T17:01:37+00:00 CRITICAL Uncaught Error: Call to a member function get_formatted_name() on bool in /home/eqlutody/beta.dcode.com.ua/wp-content/plugins/nexio-toolkit/includes/classes/mapper/includes/post-type.php:390
+Stack trace:
+#0 /home/eqlutody/beta.dcode.com.ua/wp-includes/class-wp-hook.php(288): Nexio_Mapper_Post_Type::search_products(Array)
+#1 /home/eqlutody/beta.dcode.com.ua/wp-includes/plugin.php(206): WP_Hook->apply_filters(Array, Array)
+#2 /home/eqlutody/beta.dcode.com.ua/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(1558): apply_filters('woocommerce_jso...', Array)
+#3 /home/eqlutody/beta.dcode.com.ua/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(1567): WC_AJAX::json_search_products('003', true)
+#4 /home/eqlutody/beta.dcode.com.ua/wp-includes/class-wp-hook.php(288): WC_AJAX::json_search_products_and_variations('')
+#5 /home/eqlutody/beta.dcode.com.ua/wp-includes/class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#6 /home/eqlutody/beta.dcode.com.ua/wp-includes/plugin.php(478): WP_Hook->do_action( у /home/eqlutody/beta.dcode.com.ua/wp-content/plugins/nexio-toolkit/includes/classes/mapper/includes/post-type.php доступно 390
+

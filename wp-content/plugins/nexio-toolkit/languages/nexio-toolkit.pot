@@ -1,0 +1,2142 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Nexio Toolkit\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-20 07:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.2; wp-5.2"
+
+#: includes/classes/mapper/includes/shortcode.php:99
+#, php-format
+msgid "%s Reviews"
+msgstr ""
+
+#: includes/core/config/framework.config.php:972
+#: includes/core/config/framework.config.php:1234
+#: includes/core/config/framework.config.php:1362
+#: includes/core/config/framework.config.php:1483
+msgid "(Screen resolution of device < 480px)"
+msgstr ""
+
+#: includes/core/config/framework.config.php:908
+#: includes/core/config/framework.config.php:1170
+#: includes/core/config/framework.config.php:1298
+#: includes/core/config/framework.config.php:1419
+msgid "(Screen resolution of device >= 1200px < 1500px )"
+msgstr ""
+
+#: includes/core/config/framework.config.php:892
+#: includes/core/config/framework.config.php:1154
+#: includes/core/config/framework.config.php:1282
+#: includes/core/config/framework.config.php:1403
+msgid "(Screen resolution of device >= 1500px )"
+msgstr ""
+
+#: includes/core/config/framework.config.php:956
+#: includes/core/config/framework.config.php:1218
+#: includes/core/config/framework.config.php:1346
+#: includes/core/config/framework.config.php:1467
+msgid "(Screen resolution of device >=480  add < 768px)"
+msgstr ""
+
+#: includes/core/config/framework.config.php:940
+#: includes/core/config/framework.config.php:1202
+#: includes/core/config/framework.config.php:1330
+#: includes/core/config/framework.config.php:1451
+msgid "(Screen resolution of device >=768px and < 992px )"
+msgstr ""
+
+#: includes/core/config/framework.config.php:924
+#: includes/core/config/framework.config.php:1186
+#: includes/core/config/framework.config.php:1314
+#: includes/core/config/framework.config.php:1435
+msgid "(Screen resolution of device >=992px and < 1200px )"
+msgstr ""
+
+#: includes/core/config/framework.config.php:84
+msgid "--- Choose Revolution Slider ---"
+msgstr ""
+
+#: includes/shortcodes/blog.php:131 includes/shortcodes/blog.php:202
+msgid "..."
+msgstr ""
+
+#: includes/widgets/widget-socials.php:8
+msgid "A widget that displays your socials_list"
+msgstr ""
+
+#: includes/classes/welcome.php:242
+msgid "Activate"
+msgstr ""
+
+#: includes/core/config/framework.config.php:465
+msgid ""
+"Add custom logo for mobile. If no mobile logo is selected, the default logo "
+"will be used or custom logo if placed in the page"
+msgstr ""
+
+#: includes/core/config/framework.config.php:210
+msgid "Add custom logo for your website."
+msgstr ""
+
+#: includes/core/config/metabox.config.php:394
+#: includes/core/config/metabox.config.php:421
+msgid "Add Images"
+msgstr ""
+
+#: includes/core/config/framework.config.php:209
+msgid "Add Logo"
+msgstr ""
+
+#: includes/core/config/framework.config.php:464
+msgid "Add Mobile Logo"
+msgstr ""
+
+#: includes/post-types.php:65 includes/post-types.php:167
+#: includes/classes/mapper/includes/post-type.php:20
+msgid "Add New"
+msgstr ""
+
+#: includes/post-types.php:30 includes/post-types.php:98
+#: includes/post-types.php:133
+msgid "Add new"
+msgstr ""
+
+#: includes/custom-taxonomies.php:19
+msgid "Add New Brand"
+msgstr ""
+
+#: includes/post-types.php:66
+msgid "Add new footer"
+msgstr ""
+
+#: includes/post-types.php:31
+msgid "Add new menu item"
+msgstr ""
+
+#: includes/post-types.php:99
+msgid "Add new NewsLetter"
+msgstr ""
+
+#: includes/classes/mapper/includes/post-type.php:21
+msgid "Add new pin mapper"
+msgstr ""
+
+#: includes/post-types.php:169
+msgid "Add New Project"
+msgstr ""
+
+#: includes/post-types.php:134
+msgid "Add new Size Guide"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1516
+msgid "Add New Social"
+msgstr ""
+
+#: includes/custom-taxonomies.php:24
+msgid "Add or remove brands"
+msgstr ""
+
+#: includes/classes/mapper/includes/shortcode.php:131
+msgid "Add To Cart"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:185
+msgid "Add your image mapping"
+msgstr ""
+
+#: includes/classes/mapper/includes/shortcode.php:143
+#: includes/classes/mapper/includes/shortcode.php:169
+#: includes/classes/mapper/includes/shortcode.php:191
+msgid "Add your title in backend"
+msgstr ""
+
+#: includes/fami-pf-composer.php:169
+msgid "Ajax"
+msgstr ""
+
+#: includes/shortcodes/fami-pf-shortcode.php:681
+#: includes/shortcodes/fami-pf-shortcode.php:728
+msgid "All"
+msgstr ""
+
+#: includes/custom-taxonomies.php:15
+msgid "All Brands"
+msgstr ""
+
+#: includes/fami-pf-composer.php:51
+msgid "All in one Product Filter for WooCommerce!"
+msgstr ""
+
+#: includes/core/config/framework.config.php:249
+msgid "All Pages"
+msgstr ""
+
+#: includes/core/config/framework.config.php:289
+msgid "Animation On Scroll"
+msgstr ""
+
+#: includes/classes/mapper/includes/post-type.php:202
+msgid "Are you sure you want to remove this pin?"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:349
+msgid "Area Text"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:416
+msgid "Background"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:123
+msgid "Background Banner"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:188
+msgid "Background body"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1584
+msgid "Backup Field"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1579
+msgid "Backup Options"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:136
+msgid "Banner Background Full Width"
+msgstr ""
+
+#: includes/core/config/framework.config.php:703
+msgid "Banner for Shop page, archive, search results page..."
+msgstr ""
+
+#: includes/core/config/framework.config.php:438
+msgid "Banner Full Width"
+msgstr ""
+
+#: includes/core/config/framework.config.php:445
+#: includes/core/config/framework.config.php:715
+#: includes/core/config/metabox.config.php:155
+msgid "Banner Height"
+msgstr ""
+
+#: includes/core/config/framework.config.php:431
+#: includes/core/config/framework.config.php:708
+msgid "Banner Image"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1001
+msgid "Banner in category page WooCommerce."
+msgstr ""
+
+#: includes/core/config/framework.config.php:421
+#: includes/core/config/metabox.config.php:110
+msgid "Banner Type"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1008
+msgid "Banner Url"
+msgstr ""
+
+#: includes/functions.php:307 includes/widgets/widget-socials.php:58
+#: includes/widgets/widget-socials.php:153
+msgid "Behance"
+msgstr ""
+
+#: includes/core/config/framework.config.php:566
+msgid "Blog Header Color"
+msgstr ""
+
+#: includes/core/config/framework.config.php:576
+msgid "Blog Header Position"
+msgstr ""
+
+#: includes/core/config/framework.config.php:556
+msgid "Blog Logo"
+msgstr ""
+
+#: includes/core/config/framework.config.php:547
+msgid "Blog Page"
+msgstr ""
+
+#: includes/core/config/framework.config.php:542
+msgid "Blog Settings"
+msgstr ""
+
+#: includes/core/config/framework.config.php:609
+msgid "Blog Sidebar"
+msgstr ""
+
+#: includes/core/config/framework.config.php:597
+msgid "Blog Sidebar Position"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:140
+msgid "Blur"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1569
+msgid "Body Font Size"
+msgstr ""
+
+#: includes/core/config/framework.config.php:229
+msgid "Body Text Color"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1558
+msgid "Body Typography"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:422
+msgid "Border Color"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:408
+msgid "Border Radius"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:402
+msgid "Border Width"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:459
+msgid "Bottom"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:175
+msgid "Boxed Body Settings"
+msgstr ""
+
+#: includes/custom-taxonomies.php:14
+msgid "Brands"
+msgstr ""
+
+#: includes/custom-taxonomies.php:30
+msgid "Brands list"
+msgstr ""
+
+#: includes/custom-taxonomies.php:31
+msgid "Brands list navigation"
+msgstr ""
+
+#: includes/classes/welcome.php:288
+msgid ""
+"Can't find the solution on documentation? We're here to help, even on "
+"weekend. Just click here to email us!"
+msgstr ""
+
+#: includes/fami-pf-composer.php:416
+#: includes/core/config/framework.config.php:990
+msgid "Categories"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1000
+msgid "Categories banner"
+msgstr ""
+
+#: includes/core/config/framework.config.php:731
+msgid "Categories Count"
+msgstr ""
+
+#: includes/core/config/framework.config.php:730
+msgid "Categories Icon"
+msgstr ""
+
+#: includes/core/config/framework.config.php:729
+msgid "Categories Image"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1062
+#: includes/core/config/metabox.config.php:241
+#: includes/core/config/metabox.config.php:291
+msgid "Center Slider"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:175
+#: includes/classes/mapper/templates/admin/form.php:196
+msgid "Change Image"
+msgstr ""
+
+#: includes/fami-pf-composer.php:422
+msgid "Choose category"
+msgstr ""
+
+#: includes/custom-taxonomies.php:25
+msgid "Choose from the most used"
+msgstr ""
+
+#: includes/core/config/framework.config.php:826
+msgid "Choose Pagination"
+msgstr ""
+
+#: includes/core/config/framework.config.php:827
+msgid "Choose pagination type for shop page."
+msgstr ""
+
+#: includes/core/config/metabox.config.php:282
+msgid "Choose Product Style"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1054
+msgid "Choose Single Product Style"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1053
+msgid "Choose Single Style"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:281
+msgid "Choose Style"
+msgstr ""
+
+#: includes/fami-pf-composer.php:441
+msgid "Class"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1131
+msgid "Cross Sell"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1153
+#: includes/core/config/framework.config.php:1169
+msgid "Cross sell items per row on Desktop"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1185
+msgid "Cross sell items per row on landscape tablet"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1217
+#: includes/core/config/framework.config.php:1233
+msgid "Cross sell items per row on Mobile"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1201
+msgid "Cross sell items per row on portrait tablet"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1144
+#: includes/core/config/framework.config.php:1148
+msgid "Cross sell title"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:347
+msgid "Custom Footer Options"
+msgstr ""
+
+#: includes/core/config/framework.config.php:309
+msgid "Custom Js"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:52
+msgid "Custom Logo"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:17
+#: includes/core/config/metabox.config.php:248
+msgid "Custom Options"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:443
+msgid "Custom Page Side Options"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:434
+msgid "Custom popup size"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:79
+msgid "Dark"
+msgstr ""
+
+#: includes/classes/welcome.php:255
+msgid "Deactivate"
+msgstr ""
+
+#: includes/fami-pf-composer.php:9 includes/core/config/framework.config.php:60
+#: includes/core/config/framework.config.php:788
+#: includes/core/config/framework.config.php:821
+#: includes/core/config/framework.config.php:864
+#: includes/core/config/framework.config.php:874
+#: includes/core/config/framework.config.php:1056
+#: includes/core/config/metabox.config.php:235
+#: includes/core/config/metabox.config.php:285
+#: includes/classes/mapper/templates/admin/form.php:325
+msgid "Default"
+msgstr ""
+
+#: includes/core/config/framework.config.php:369
+#: includes/core/config/framework.config.php:1553
+#: includes/core/config/metabox.config.php:43
+#: includes/core/config/metabox.config.php:112
+msgid "Disable"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:208
+msgid "Disable Footer"
+msgstr ""
+
+#: includes/classes/welcome.php:271
+msgid "Documentation"
+msgstr ""
+
+#: includes/core/config/framework.config.php:251
+msgid "Don't Load Gmap JS"
+msgstr ""
+
+#: includes/core/config/framework.config.php:875
+msgid "Drawer"
+msgstr ""
+
+#: includes/core/config/framework.config.php:789
+msgid "Drawer Sidebar Filter"
+msgstr ""
+
+#: includes/functions.php:317 includes/widgets/widget-socials.php:54
+#: includes/widgets/widget-socials.php:146
+msgid "Dribbble"
+msgstr ""
+
+#: includes/core/config/framework.config.php:865
+msgid "Dropdown"
+msgstr ""
+
+#: includes/custom-taxonomies.php:20
+msgid "Edit Brand"
+msgstr ""
+
+#: includes/post-types.php:67
+msgid "Edit footer"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:395
+#: includes/core/config/metabox.config.php:422
+msgid "Edit Images"
+msgstr ""
+
+#: includes/post-types.php:32
+msgid "Edit menu item"
+msgstr ""
+
+#: includes/post-types.php:100
+msgid "Edit NewsLetter"
+msgstr ""
+
+#: includes/classes/mapper/includes/post-type.php:22
+msgid "Edit pin mapper"
+msgstr ""
+
+#: includes/post-types.php:170
+msgid "Edit Project"
+msgstr ""
+
+#: includes/post-types.php:135
+msgid "Edit Size Guide"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1552
+msgid "Enable"
+msgstr ""
+
+#: includes/core/config/framework.config.php:995
+msgid "Enable Bestseller Products"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:181
+msgid "Enable Boxed Body"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:143
+msgid "Enable Breadcrumb"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1140
+msgid "Enable Cross Sell"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:202
+msgid "Enable Custom Footer"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:34
+msgid "Enable Custom Header"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1124
+msgid "Enable Extend Single Products"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1550
+msgid "Enable Google Font"
+msgstr ""
+
+#: includes/core/config/framework.config.php:457
+msgid "Enable Header Mobile"
+msgstr ""
+
+#: includes/core/config/framework.config.php:327
+msgid "Enable Newsletter"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:103
+msgid "Enable Page Custom Banner"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1084
+msgid "Enable Product Sharing"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1261
+msgid "Enable Related Products"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1389
+msgid "Enable Up Sell"
+msgstr ""
+
+#: includes/core/config/framework.config.php:284
+msgid "Enables lazy load to reduce page requests."
+msgstr ""
+
+#: includes/core/config/framework.config.php:769
+msgid ""
+"Enabling \"Instant Products Search\" will display search results instantly "
+"as soon as you type"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:23
+msgid "Enter Title Here"
+msgstr ""
+
+#: includes/core/config/framework.config.php:237
+#, php-format
+msgid ""
+"Enter your Google Map API key. <a href=\"%s\" target=\"_blank\">How to get?"
+"</a>"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1119
+msgid "Extend Single Products"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:401
+#: includes/core/config/metabox.config.php:474
+msgid "Extra Class"
+msgstr ""
+
+#: includes/functions.php:222 includes/functions.php:282
+#: includes/widgets/widget-socials.php:42
+#: includes/widgets/widget-socials.php:127
+#: includes/core/config/framework.config.php:1523
+msgid "Facebook"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1090
+msgid "Facebook Sharing"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:94
+msgid "Fade In"
+msgstr ""
+
+#: includes/fami-pf-composer.php:45
+msgid "Fami - WooCommerce Product Filter"
+msgstr ""
+
+#. Author of the plugin
+msgid "Famithemes"
+msgstr ""
+
+#: includes/shortcodes/fami-pf-shortcode.php:650
+msgid "Filter"
+msgstr ""
+
+#: includes/fami-pf-composer.php:70
+msgid "Filter Preset"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:376
+msgid "Font Size"
+msgstr ""
+
+#: includes/post-types.php:74
+msgid "Footer Builder"
+msgstr ""
+
+#: includes/core/config/framework.config.php:522
+#: includes/core/config/metabox.config.php:196
+msgid "Footer Settings"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:353
+msgid "FOOTER STYLE"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:358
+msgid "Footer Style"
+msgstr ""
+
+#: includes/post-types.php:63 includes/post-types.php:64
+msgid "Footers"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1079
+#: includes/core/config/metabox.config.php:308
+msgid "For \"Big Images\" style only. Default: transparent"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:392
+msgid "Gallery"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:420
+msgid "Gallery 360"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1059
+#: includes/core/config/metabox.config.php:238
+#: includes/core/config/metabox.config.php:288
+msgid "Gallery Detail"
+msgstr ""
+
+#: includes/core/config/framework.config.php:198
+#: includes/classes/mapper/templates/admin/form.php:221
+msgid "General"
+msgstr ""
+
+#: includes/core/config/framework.config.php:362
+msgid "General Header Settings"
+msgstr ""
+
+#: includes/core/config/framework.config.php:551
+#: includes/core/config/framework.config.php:663
+#: includes/classes/mapper/templates/admin/form.php:35
+#: includes/classes/mapper/templates/admin/form.php:40
+msgid "General Settings"
+msgstr ""
+
+#: includes/core/config/framework.config.php:236
+msgid "Google Map API Key"
+msgstr ""
+
+#: includes/functions.php:228 includes/functions.php:292
+#: includes/widgets/widget-socials.php:46
+#: includes/widgets/widget-socials.php:133
+msgid "Google Plus"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1111
+msgid "Google Plus Sharing"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:141
+msgid "Gray"
+msgstr ""
+
+#: includes/core/config/framework.config.php:423
+#: includes/core/config/framework.config.php:699
+#: includes/core/config/metabox.config.php:113
+msgid "Has Background"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:89
+msgid "Header Background"
+msgstr ""
+
+#: includes/core/config/framework.config.php:405
+#: includes/core/config/metabox.config.php:78
+msgid "Header Color"
+msgstr ""
+
+#: includes/core/config/framework.config.php:377
+#: includes/core/config/metabox.config.php:58
+msgid "Header Layout"
+msgstr ""
+
+#: includes/core/config/framework.config.php:452
+msgid "Header Mobile"
+msgstr ""
+
+#: includes/core/config/framework.config.php:397
+#: includes/core/config/framework.config.php:679
+#: includes/core/config/metabox.config.php:69
+msgid "Header No Transparent"
+msgstr ""
+
+#: includes/core/config/framework.config.php:357
+#: includes/core/config/metabox.config.php:24
+#: includes/core/config/metabox.config.php:29
+msgid "Header Settings"
+msgstr ""
+
+#: includes/core/config/framework.config.php:384
+msgid "Header Social"
+msgstr ""
+
+#: includes/core/config/framework.config.php:407
+#: includes/core/config/framework.config.php:562
+#: includes/core/config/framework.config.php:689
+#: includes/core/config/metabox.config.php:80
+msgid "Header Text Dark"
+msgstr ""
+
+#: includes/core/config/framework.config.php:408
+#: includes/core/config/framework.config.php:563
+#: includes/core/config/framework.config.php:690
+#: includes/core/config/metabox.config.php:81
+msgid "Header Text Light"
+msgstr ""
+
+#: includes/core/config/framework.config.php:398
+#: includes/core/config/framework.config.php:680
+#: includes/core/config/metabox.config.php:70
+msgid "Header Transparent"
+msgstr ""
+
+#: includes/core/config/framework.config.php:395
+#: includes/core/config/metabox.config.php:67
+msgid "Header Type"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:64
+#: includes/classes/mapper/templates/admin/form.php:396
+#: includes/classes/mapper/templates/admin/form.php:445
+msgid "Height"
+msgstr ""
+
+#: includes/classes/welcome.php:272
+msgid ""
+"Here is our user guide for nexio, including basic setup steps, as well as "
+"nexio features and elements for your reference."
+msgstr ""
+
+#: includes/core/config/framework.config.php:503
+#: includes/core/config/framework.config.php:513
+msgid "Hide"
+msgstr ""
+
+#. URI of the plugin
+msgid "http://famithemes.com"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://www.famithemes.com"
+msgstr ""
+
+#: includes/widgets/widget-socials.php:110
+msgid "https://facebook.com"
+msgstr ""
+
+#: includes/widgets/widget-socials.php:110
+msgid "https://google-plus.com"
+msgstr ""
+
+#: includes/widgets/widget-socials.php:110
+msgid "https://twitter.com"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:222
+msgid "Icon Settings"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:168
+msgid ""
+"If enabled, the \"Header Banner\" is still displayed on the mobile. This "
+"option only works when the mobile header is enabled in Theme Options"
+msgstr ""
+
+#: includes/core/config/framework.config.php:291
+msgid ""
+"If enabled, will active the animation of elements when scrolling. You also "
+"need to select the animation when scrolling the mouse for each element when "
+"editing the article"
+msgstr ""
+
+#: includes/taxonomy-images.php:46 includes/taxonomy-images.php:59
+#: includes/taxonomy-images.php:83
+#: includes/classes/mapper/includes/post-type.php:108
+#: includes/classes/mapper/templates/admin/form.php:240
+#: includes/classes/mapper/templates/admin/form.php:356
+msgid "Image"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1071
+#: includes/core/config/metabox.config.php:300
+msgid "Image Background Color"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:47
+msgid "Image Effect"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:136
+msgid "Image effect"
+msgstr ""
+
+#: includes/core/config/framework.config.php:823
+msgid "Infinity"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:301
+msgid "Input a title for the popup here..."
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:337
+msgid "Input some content for the popup here..."
+msgstr ""
+
+#: includes/widgets/widget-socials.php:66
+#: includes/widgets/widget-socials.php:167
+msgid "Instagram"
+msgstr ""
+
+#: includes/classes/welcome.php:212
+msgid "Install"
+msgstr ""
+
+#: includes/core/config/framework.config.php:767
+msgid "Instant Products Search"
+msgstr ""
+
+#: includes/core/config/framework.config.php:891
+#: includes/core/config/framework.config.php:907
+msgid "Items per row on Desktop( For grid mode )"
+msgstr ""
+
+#: includes/core/config/framework.config.php:923
+msgid "Items per row on landscape tablet( For grid mode )"
+msgstr ""
+
+#: includes/core/config/framework.config.php:955
+#: includes/core/config/framework.config.php:971
+msgid "Items per row on Mobile( For grid mode )"
+msgstr ""
+
+#: includes/core/config/framework.config.php:939
+msgid "Items per row on portrait tablet( For grid mode )"
+msgstr ""
+
+#: includes/core/config/framework.config.php:282
+msgid "Lazy Load Images"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:457
+msgid "Left"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:78
+msgid "Light"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:254
+msgid "Link"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:316
+msgid "Link To"
+msgstr ""
+
+#: includes/widgets/widget-socials.php:78
+#: includes/widgets/widget-socials.php:188
+msgid "Linkedin"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:335
+msgid "List Boxed Content"
+msgstr ""
+
+#: includes/core/config/framework.config.php:247
+msgid "Load GMap JS On"
+msgstr ""
+
+#: includes/core/config/framework.config.php:272
+msgid "Load Google Map JS on selected pages"
+msgstr ""
+
+#: includes/core/config/framework.config.php:822
+msgid "Load More"
+msgstr ""
+
+#: includes/core/config/framework.config.php:208
+msgid "Logo"
+msgstr ""
+
+#: includes/classes/mailchimpv3/mailchimp-settings.php:26
+msgid "MailChimp"
+msgstr ""
+
+#: includes/classes/mailchimpv3/mailchimp-settings.php:26
+msgid "MailChimp Settings"
+msgstr ""
+
+#: includes/core/config/framework.config.php:222
+msgid "Main Color"
+msgstr ""
+
+#: includes/core/config/framework.config.php:203
+msgid "Main Settings"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:147
+msgid "Mask color"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:142
+msgid "Mask Overlay"
+msgstr ""
+
+#: includes/post-types.php:28
+msgid "Mega Builder"
+msgstr ""
+
+#: includes/post-types.php:29
+msgid "Mega menu item"
+msgstr ""
+
+#: includes/post-types.php:42
+msgid "Mega Menus."
+msgstr ""
+
+#: includes/post-types.php:39
+msgid "Menu Builder"
+msgstr ""
+
+#: includes/core/config/framework.config.php:867
+msgid "Mini Cart Style"
+msgstr ""
+
+#: includes/core/config/framework.config.php:463
+msgid "Mobile Logo"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1064
+#: includes/core/config/metabox.config.php:243
+#: includes/core/config/metabox.config.php:293
+msgid "Modern"
+msgstr ""
+
+#: includes/widgets/widget-products.php:60
+msgid "More items"
+msgstr ""
+
+#: includes/classes/mapper/includes/post-type.php:107
+msgid "Name"
+msgstr ""
+
+#: includes/custom-taxonomies.php:18
+msgid "New Brand Name"
+msgstr ""
+
+#: includes/post-types.php:68
+msgid "New footer"
+msgstr ""
+
+#: includes/post-types.php:33
+msgid "New menu item"
+msgstr ""
+
+#: includes/post-types.php:101
+msgid "New NewsLetter"
+msgstr ""
+
+#: includes/classes/mapper/includes/post-type.php:23
+msgid "New Pin Mapper"
+msgstr ""
+
+#: includes/post-types.php:171
+msgid "New Project"
+msgstr ""
+
+#: includes/post-types.php:136
+msgid "New Size Guide"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:326
+msgid "New Tab"
+msgstr ""
+
+#: includes/post-types.php:96
+msgid "NewsLetter"
+msgstr ""
+
+#: includes/post-types.php:107
+msgid "NewsLetter Builder"
+msgstr ""
+
+#: includes/post-types.php:97
+msgid "NewsLetter item"
+msgstr ""
+
+#: includes/core/config/framework.config.php:321
+msgid "Newsletter Popup"
+msgstr ""
+
+#: includes/fami-pf-composer.php:48
+msgid "Nexio Elements"
+msgstr ""
+
+#. Name of the plugin
+msgid "Nexio Toolkit"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"nexio toolkit for nexio theme. Currently supports the following theme "
+"functionality: shortcodes, CPT."
+msgstr ""
+
+#: includes/widgets/widget-socials.php:10
+msgid "Nexio: Socials"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1138
+#: includes/core/config/framework.config.php:1259
+#: includes/core/config/framework.config.php:1387
+msgid "No"
+msgstr ""
+
+#: includes/core/config/framework.config.php:424
+#: includes/core/config/framework.config.php:700
+#: includes/core/config/metabox.config.php:114
+msgid "No Background "
+msgstr ""
+
+#: includes/custom-taxonomies.php:29
+msgid "No brands"
+msgstr ""
+
+#: includes/classes/mapper/includes/post-type.php:136
+msgid "No image"
+msgstr ""
+
+#: includes/post-types.php:36
+msgid "No menu items found"
+msgstr ""
+
+#: includes/post-types.php:37
+msgid "No menu items found in trash"
+msgstr ""
+
+#: includes/post-types.php:104
+msgid "No NewsLetter found"
+msgstr ""
+
+#: includes/post-types.php:105
+msgid "No NewsLetter found in trash"
+msgstr ""
+
+#: includes/widgets/widget-products.php:65 includes/shortcodes/products.php:143
+msgid "No Product"
+msgstr ""
+
+#: includes/post-types.php:174
+msgid "No Project found"
+msgstr ""
+
+#: includes/post-types.php:175
+msgid "No Project found in Trash"
+msgstr ""
+
+#: includes/post-types.php:139
+msgid "No Size Guide found"
+msgstr ""
+
+#: includes/post-types.php:140
+msgid "No Size Guide found in trash"
+msgstr ""
+
+#: includes/post-types.php:71
+msgid "No template items found"
+msgstr ""
+
+#: includes/post-types.php:72
+msgid "No template items found in trash"
+msgstr ""
+
+#: includes/core/config/framework.config.php:572
+msgid "No Transparent"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:139
+msgid "None"
+msgstr ""
+
+#: includes/custom-taxonomies.php:28
+msgid "Not Found"
+msgstr ""
+
+#: includes/classes/mapper/includes/post-type.php:109
+msgid "Number of Pins"
+msgstr ""
+
+#: includes/core/config/framework.config.php:483
+#: includes/core/config/framework.config.php:493
+msgid "Off"
+msgstr ""
+
+#: includes/core/config/framework.config.php:790
+msgid "Off Canvas Sidebar Filter"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:316
+msgid "Offer Boxed"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:323
+msgid "Offer Boxed Configure"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:329
+msgid "Offer Boxed Title"
+msgstr ""
+
+#: includes/core/config/framework.config.php:482
+#: includes/core/config/framework.config.php:492
+msgid "On"
+msgstr ""
+
+#: includes/core/config/framework.config.php:348
+msgid "On Mobile"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:262
+msgid "On or Off Size guide"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1041
+msgid "On or Off Sticky Info Product Single."
+msgstr ""
+
+#: includes/core/config/framework.config.php:416
+#: includes/core/config/metabox.config.php:97
+msgid "Page Banner Settings"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:466
+msgid "Page Sidebar"
+msgstr ""
+
+#: includes/fami-pf-composer.php:151
+msgid "Pagination"
+msgstr ""
+
+#: includes/custom-taxonomies.php:16
+msgid "Parent Brand"
+msgstr ""
+
+#: includes/custom-taxonomies.php:17
+msgid "Parent Brand:"
+msgstr ""
+
+#: includes/post-types.php:38
+msgid "Parent menu item:"
+msgstr ""
+
+#: includes/post-types.php:106
+msgid "Parent NewsLetter:"
+msgstr ""
+
+#: includes/post-types.php:176
+msgid "Parent Project"
+msgstr ""
+
+#: includes/post-types.php:141
+msgid "Parent Size Guide:"
+msgstr ""
+
+#: includes/post-types.php:73
+msgid "Parent template item:"
+msgstr ""
+
+#: includes/classes/welcome.php:40 includes/classes/welcome.php:64
+msgid "Permission denied"
+msgstr ""
+
+#: includes/functions.php:278
+msgid "Personal Socials Networks"
+msgstr ""
+
+#: includes/classes/mapper/includes/post-type.php:18
+#: includes/classes/mapper/includes/post-type.php:25
+msgid "Pin Mapper"
+msgstr ""
+
+#: includes/classes/mapper/includes/post-type.php:19
+msgid "Pin Mappers"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:212
+msgid "Pin Settings"
+msgstr ""
+
+#: includes/functions.php:234 includes/functions.php:312
+#: includes/widgets/widget-socials.php:70
+#: includes/widgets/widget-socials.php:174
+msgid "Pinterest"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1104
+msgid "Pinterest Sharing"
+msgstr ""
+
+#: includes/classes/mapper/includes/post-type.php:203
+msgid "Please input a title for this pin"
+msgstr ""
+
+#: includes/custom-taxonomies.php:26
+msgid "Popular Brands"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:124
+msgid "Popup border color"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:108
+msgid "Popup border radius"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:116
+msgid "Popup border width"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:84
+msgid "Popup box shadow"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:223
+msgid "Popup Settings"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:91
+msgid "Popup show fffect"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:52
+msgid "Popup size"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:298
+msgid "Popup title"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:453
+msgid "Position"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:380
+msgid "Post Format Settings"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:373
+msgid "Post Meta Data"
+msgstr ""
+
+#: includes/core/config/framework.config.php:754
+msgid "Product categories displayed on the shop page"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:255
+msgid "Product Configure"
+msgstr ""
+
+#: includes/fami-pf-composer.php:472
+msgid "Product Filter - Activate"
+msgstr ""
+
+#: includes/fami-pf-composer.php:485
+msgid "Product Filter - Ajax"
+msgstr ""
+
+#: includes/fami-pf-composer.php:506
+msgid "Product Filter - Pagination"
+msgstr ""
+
+#: includes/fami-pf-composer.php:497
+msgid "Product Filter - Select Preset"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1032
+msgid "Product Mobile Layout"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:409
+msgid "Product Options"
+msgstr ""
+
+#: includes/core/config/framework.config.php:833
+msgid "Product Shop Layout"
+msgstr ""
+
+#: includes/core/config/framework.config.php:845
+msgid "Product Star Rating"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:428
+msgid "Product Video"
+msgstr ""
+
+#: includes/core/config/framework.config.php:851
+msgid "Products Attribute Display On Loop"
+msgstr ""
+
+#: includes/fami-pf-composer.php:425
+msgid "Products Options"
+msgstr ""
+
+#: includes/fami-pf-composer.php:405
+msgid "Products Per Page"
+msgstr ""
+
+#: includes/core/config/framework.config.php:813
+msgid "Products perpage"
+msgstr ""
+
+#: includes/post-types.php:168 includes/post-types.php:177
+msgid "Projects"
+msgstr ""
+
+#: includes/core/config/framework.config.php:877
+msgid "Quickview Style"
+msgstr ""
+
+#: includes/classes/welcome.php:274
+msgid "Read Documentation"
+msgstr ""
+
+#: includes/shortcodes/blog.php:134 includes/shortcodes/blog.php:207
+msgid "Read more"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1329
+msgid "Related product items per row on portrait tablet"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1281
+#: includes/core/config/framework.config.php:1297
+msgid "Related products items per row on Desktop"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1313
+msgid "Related products items per row on landscape tablet"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1345
+#: includes/core/config/framework.config.php:1361
+msgid "Related products items per row on Mobile"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1265
+#: includes/core/config/framework.config.php:1269
+msgid "Related products title"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:396
+#: includes/core/config/metabox.config.php:423
+msgid "Remove Images"
+msgstr ""
+
+#: includes/classes/welcome.php:290
+msgid "Request Support"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:115
+#: includes/core/config/metabox.config.php:130
+msgid "Revolution"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:456
+msgid "Right"
+msgstr ""
+
+#: includes/widgets/widget-socials.php:82
+msgid "RSS"
+msgstr ""
+
+#: includes/widgets/widget-socials.php:195
+msgid "Rss"
+msgstr ""
+
+#: includes/custom-taxonomies.php:27
+msgid "Search Brands"
+msgstr ""
+
+#: includes/post-types.php:35
+msgid "Search menu items"
+msgstr ""
+
+#: includes/post-types.php:103
+msgid "Search NewsLetter"
+msgstr ""
+
+#: includes/post-types.php:173
+msgid "Search Project"
+msgstr ""
+
+#: includes/post-types.php:138
+msgid "Search Size Guide"
+msgstr ""
+
+#: includes/post-types.php:70
+msgid "Search template footer"
+msgstr ""
+
+#: includes/classes/welcome.php:282
+msgid "See Video"
+msgstr ""
+
+#: includes/taxonomy-images.php:130
+#: includes/classes/mapper/includes/post-type.php:199
+msgid "Select"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:359
+msgid "Select a Footer Style"
+msgstr ""
+
+#: includes/core/config/framework.config.php:378
+#: includes/core/config/metabox.config.php:59
+msgid "Select a header layout"
+msgstr ""
+
+#: includes/core/config/framework.config.php:834
+msgid "Select a Product layout in shop page"
+msgstr ""
+
+#: includes/core/config/framework.config.php:739
+#: includes/core/config/framework.config.php:753
+msgid "Select Categories"
+msgstr ""
+
+#: includes/core/config/framework.config.php:528
+#: includes/core/config/metabox.config.php:215
+msgid "Select Footer Builder"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:1150
+msgid "Select icon"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:307
+#: includes/classes/mapper/templates/admin/form.php:362
+msgid "Select image"
+msgstr ""
+
+#: includes/taxonomy-images.php:128 includes/taxonomy-images.php:129
+msgid "Select Images"
+msgstr ""
+
+#: includes/core/config/framework.config.php:775
+msgid "Select layout for Shop Page."
+msgstr ""
+
+#: includes/core/config/framework.config.php:333
+msgid "Select Newsletter Popup"
+msgstr ""
+
+#: includes/classes/mapper/includes/shortcode.php:133
+msgid "Select Options"
+msgstr ""
+
+#: includes/classes/mapper/includes/post-type.php:200
+msgid "Select or upload an image"
+msgstr ""
+
+#: includes/core/config/framework.config.php:259
+msgid "Select Pages To Load GMap JS"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:261
+msgid "Select product"
+msgstr ""
+
+#: includes/core/config/framework.config.php:598
+msgid "Select sidebar position on Blog."
+msgstr ""
+
+#: includes/core/config/metabox.config.php:455
+msgid "Select sidebar position on Page."
+msgstr ""
+
+#: includes/core/config/framework.config.php:1021
+msgid "Select sidebar position on single product page."
+msgstr ""
+
+#: includes/core/config/metabox.config.php:268
+msgid "Select Size Guide Builder"
+msgstr ""
+
+#: includes/fami-pf-composer.php:423
+msgid "Select the categories you want to display"
+msgstr ""
+
+#: includes/core/config/framework.config.php:250
+msgid "Selected Pages"
+msgstr ""
+
+#: includes/custom-taxonomies.php:23
+msgid "Separate brands with commas"
+msgstr ""
+
+#: includes/functions.php:212
+msgid "Share"
+msgstr ""
+
+#: includes/shortcodes/fami-pf-shortcode.php:728
+msgid "Shop"
+msgstr ""
+
+#: includes/core/config/framework.config.php:697
+msgid "Shop Banner Type"
+msgstr ""
+
+#: includes/core/config/framework.config.php:727
+msgid "Shop Categories Style"
+msgstr ""
+
+#: includes/core/config/framework.config.php:687
+msgid "Shop Header Color"
+msgstr ""
+
+#: includes/core/config/framework.config.php:677
+msgid "Shop Header Type"
+msgstr ""
+
+#: includes/core/config/framework.config.php:672
+msgid "Shop Logo"
+msgstr ""
+
+#: includes/core/config/framework.config.php:760
+msgid "Shop Mobile Layout"
+msgstr ""
+
+#: includes/core/config/framework.config.php:774
+msgid "Shop Page Layout"
+msgstr ""
+
+#: includes/core/config/framework.config.php:667
+msgid "Shop Settings"
+msgstr ""
+
+#: includes/core/config/framework.config.php:802
+msgid "Shop Sidebar"
+msgstr ""
+
+#: includes/core/config/framework.config.php:721
+msgid "Shop Top Categories"
+msgstr ""
+
+#: includes/classes/mapper/includes/post-type.php:110
+msgid "Shortcode"
+msgstr ""
+
+#: includes/fami-pf-composer.php:431
+msgid "Shortcode ID"
+msgstr ""
+
+#: includes/core/config/framework.config.php:502
+#: includes/core/config/framework.config.php:512
+msgid "Show"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:281
+msgid "Show description"
+msgstr ""
+
+#: includes/fami-pf-composer.php:57
+msgid "Show Filter"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:166
+msgid "Show Header Banner On Mobile"
+msgstr ""
+
+#: includes/core/config/framework.config.php:509
+msgid "Show Languges and Currency"
+msgstr ""
+
+#: includes/core/config/framework.config.php:479
+msgid "Show Mini Cart Icon"
+msgstr ""
+
+#: includes/core/config/framework.config.php:489
+msgid "Show Products Search Icon"
+msgstr ""
+
+#: includes/core/config/framework.config.php:887
+msgid "Show Products Size"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:290
+msgid "Show rate"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:272
+msgid "Show thumbnail"
+msgstr ""
+
+#: includes/core/config/framework.config.php:499
+msgid "Show Wish List Icon"
+msgstr ""
+
+#: includes/core/config/framework.config.php:480
+msgid "Show/Hide header mini cart icon on mobile"
+msgstr ""
+
+#: includes/core/config/framework.config.php:490
+msgid "Show/Hide header product search icon on mobile"
+msgstr ""
+
+#: includes/core/config/framework.config.php:510
+msgid "Show/Hide Languges and Currency on siding menu mobile"
+msgstr ""
+
+#: includes/core/config/framework.config.php:500
+msgid "Show/Hide wish list icon on siding menu mobile"
+msgstr ""
+
+#: includes/core/config/framework.config.php:786
+msgid "Sidebar Filter Shop Page"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:454
+msgid "Single Post Sidebar Position"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1015
+msgid "Single Product"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1046
+msgid "Single Product Sidebar"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1020
+msgid "Single Product Sidebar Position"
+msgstr ""
+
+#: includes/post-types.php:131
+msgid "Size Guide"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:261
+msgid "Size guide"
+msgstr ""
+
+#: includes/post-types.php:142
+msgid "Size Guide Builder"
+msgstr ""
+
+#: includes/post-types.php:132
+msgid "Size Guide item"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:98
+msgid "Slide From Bottom"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:95
+msgid "Slide From Left"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:96
+msgid "Slide From Right"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:97
+msgid "Slide From Top"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1061
+#: includes/core/config/metabox.config.php:240
+#: includes/core/config/metabox.config.php:290
+msgid "Slider large"
+msgstr ""
+
+#: includes/core/config/framework.config.php:296
+msgid "Smooth Scroll"
+msgstr ""
+
+#: includes/widgets/widget-socials.php:110
+msgid "Social"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1534
+msgid "Social Icon"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1528
+msgid "Social Link"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1505
+#: includes/core/config/framework.config.php:1517
+msgid "Social Settings"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1522
+msgid "Social Title"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1515
+msgid "Socials"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1510
+msgid "Socials Networks"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1058
+#: includes/core/config/metabox.config.php:237
+#: includes/core/config/metabox.config.php:287
+msgid "Sticky Detail"
+msgstr ""
+
+#: includes/core/config/framework.config.php:367
+#: includes/core/config/framework.config.php:370
+#: includes/core/config/metabox.config.php:41
+#: includes/core/config/metabox.config.php:44
+msgid "Sticky Header"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1039
+msgid "Sticky Info Product Single"
+msgstr ""
+
+#: includes/core/config/framework.config.php:581
+msgid "Style"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:46
+msgid "Style Settings"
+msgstr ""
+
+#: includes/classes/welcome.php:33 includes/classes/welcome.php:287
+msgid "Support"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:322
+msgid "Target"
+msgstr ""
+
+#: includes/custom-taxonomies.php:12
+msgctxt "Taxonomy General Name"
+msgid "Brands"
+msgstr ""
+
+#: includes/custom-taxonomies.php:13
+msgctxt "Taxonomy Singular Name"
+msgid "Brand"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:247
+#: includes/classes/mapper/templates/admin/form.php:372
+msgid "Text"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:382
+msgid "Text Color"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:335
+msgid "Text Content"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:183
+msgid "The default is off. If you want to use separate boxed body, turn it on."
+msgstr ""
+
+#: includes/core/config/metabox.config.php:105
+msgid ""
+"The default is off. If you want to use separate custom page banner, turn it "
+"on."
+msgstr ""
+
+#: includes/core/config/metabox.config.php:36
+msgid ""
+"The default is off. If you want to use separate custom page header, turn it "
+"on."
+msgstr ""
+
+#: includes/core/config/framework.config.php:163
+msgid "Theme Options"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:150
+msgid "This option has no effect on front page and blog page"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1057
+#: includes/core/config/metabox.config.php:236
+#: includes/core/config/metabox.config.php:286
+msgid "Thumbnail Vertical"
+msgstr ""
+
+#: includes/classes/mapper/includes/post-type.php:111
+msgid "Time"
+msgstr ""
+
+#: includes/widgets/widget-socials.php:115
+msgid "Title:"
+msgstr ""
+
+#: includes/post-types.php:77
+msgid "To Build Template Footer."
+msgstr ""
+
+#: includes/post-types.php:110
+msgid "To Build Template NewsLetter."
+msgstr ""
+
+#: includes/post-types.php:145
+msgid "To Build Template Size Guide."
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:75
+msgid "Tooltip style"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:458
+msgid "Top"
+msgstr ""
+
+#: includes/core/config/framework.config.php:573
+msgid "Transparent"
+msgstr ""
+
+#: includes/widgets/widget-socials.php:62
+#: includes/widgets/widget-socials.php:160
+msgid "Tumblr"
+msgstr ""
+
+#: includes/core/config/framework.config.php:843
+msgid "Turn Off"
+msgstr ""
+
+#: includes/core/config/framework.config.php:842
+msgid "Turn On"
+msgstr ""
+
+#: includes/core/config/framework.config.php:298
+msgid "Turn on if you want to smooth out when scrolling"
+msgstr ""
+
+#: includes/functions.php:216 includes/functions.php:287
+#: includes/widgets/widget-socials.php:38
+#: includes/widgets/widget-socials.php:121
+msgid "Twitter"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1097
+msgid "Twitter Sharing"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1544
+msgid "Typography Options"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1063
+#: includes/core/config/metabox.config.php:242
+#: includes/core/config/metabox.config.php:292
+msgid "Unique"
+msgstr ""
+
+#: includes/core/config/framework.config.php:217
+#: includes/core/config/framework.config.php:473
+msgid "Unit PX"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1402
+#: includes/core/config/framework.config.php:1418
+msgid "Up sells items per row on Desktop"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1434
+msgid "Up sells items per row on landscape tablet"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1466
+#: includes/core/config/framework.config.php:1482
+msgid "Up sells items per row on Mobile"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1450
+msgid "Up sells items per row on portrait tablet"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1380
+msgid "Up sells Products"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1397
+msgid "Up sells products title"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1393
+msgid "Up sells title"
+msgstr ""
+
+#: includes/classes/welcome.php:228
+msgid "Update"
+msgstr ""
+
+#: includes/custom-taxonomies.php:21
+msgid "Update Brand"
+msgstr ""
+
+#: includes/core/config/framework.config.php:432
+#: includes/core/config/framework.config.php:709
+msgid "Upload"
+msgstr ""
+
+#: includes/core/config/metabox.config.php:386
+msgid "Upload Video or Audio Url"
+msgstr ""
+
+#: includes/core/config/framework.config.php:762
+#: includes/core/config/framework.config.php:1034
+msgid ""
+"Use the dedicated mobile interface on a real device instead of responsive. "
+"Note, this option is not available for desktop browsing and uses resize the "
+"screen."
+msgstr ""
+
+#: includes/core/config/metabox.config.php:284
+#, php-format
+msgid "Use Theme Options Style: %s"
+msgstr ""
+
+#: includes/functions.php:308
+msgid "User Behance URL"
+msgstr ""
+
+#: includes/functions.php:318
+msgid "User Dribbble URL"
+msgstr ""
+
+#: includes/functions.php:283
+msgid "User Facebook URL"
+msgstr ""
+
+#: includes/functions.php:293
+msgid "User Google Plus URL"
+msgstr ""
+
+#: includes/functions.php:313
+msgid "User Pinterest URL"
+msgstr ""
+
+#: includes/functions.php:288
+msgid "User Twitter URL"
+msgstr ""
+
+#: includes/functions.php:303
+msgid "User Vimeo URL"
+msgstr ""
+
+#: includes/functions.php:298
+msgid "User Youtube URL"
+msgstr ""
+
+#: includes/classes/welcome.php:279
+msgid "Video Tutorials"
+msgstr ""
+
+#: includes/classes/welcome.php:280
+msgid ""
+"Video tutorials is the great way to show you how to setup nexio theme, make "
+"sure that the feature works as it's designed."
+msgstr ""
+
+#: includes/custom-taxonomies.php:22
+msgid "View Brand"
+msgstr ""
+
+#: includes/post-types.php:69
+msgid "View footer"
+msgstr ""
+
+#: includes/classes/mapper/includes/post-type.php:24
+msgid "View mapper"
+msgstr ""
+
+#: includes/post-types.php:34
+msgid "View menu item"
+msgstr ""
+
+#: includes/post-types.php:102
+msgid "View NewsLetter"
+msgstr ""
+
+#: includes/post-types.php:172
+msgid "View Project"
+msgstr ""
+
+#: includes/post-types.php:137
+msgid "View Size Guide"
+msgstr ""
+
+#: includes/functions.php:302 includes/widgets/widget-socials.php:74
+#: includes/widgets/widget-socials.php:181
+msgid "Vimeo"
+msgstr ""
+
+#: includes/classes/welcome.php:30
+msgid "Welcome"
+msgstr ""
+
+#: includes/classes/mapper/templates/admin/form.php:55
+#: includes/classes/mapper/templates/admin/form.php:390
+#: includes/classes/mapper/templates/admin/form.php:437
+msgid "Width"
+msgstr ""
+
+#: includes/core/config/framework.config.php:216
+#: includes/core/config/framework.config.php:472
+msgid "Width Logo"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1060
+#: includes/core/config/metabox.config.php:239
+#: includes/core/config/metabox.config.php:289
+msgid "With Background"
+msgstr ""
+
+#: includes/core/config/framework.config.php:658
+#: includes/classes/mapper/templates/admin/form.php:233
+msgid "WooCommerce"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1137
+#: includes/core/config/framework.config.php:1258
+#: includes/core/config/framework.config.php:1386
+msgid "Yes"
+msgstr ""
+
+#: includes/core/config/framework.config.php:1396
+msgid "You may also like..."
+msgstr ""
+
+#: includes/core/config/framework.config.php:1147
+msgid "You may be interested in..."
+msgstr ""
+
+#: includes/classes/mapper/includes/post-type.php:201
+msgid "Your changes on this page are not saved!"
+msgstr ""
+
+#: includes/functions.php:297 includes/widgets/widget-socials.php:50
+#: includes/widgets/widget-socials.php:139
+msgid "Youtube"
+msgstr ""

@@ -1,0 +1,21 @@
+.ziss-popup-wrap .ziss-popup-inner .ziss-popup-body .ziss-popup-body-left {
+    float: right;
+}
+
+.ziss-popup-wrap .ziss-popup-inner .ziss-popup-body .ziss-popup-body-right {
+    text-align: right;
+}
+
+.ziss-popup-wrap .ziss-popup-inner .ziss-popup-body .ziss-product-thumb-wrap {
+    float: right;
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.ziss-popup-wrap .ziss-popup-inner .ziss-popup-body .ziss-product-title {
+    text-align: right;
+}
+
+.ziss-popup-wrap .ziss-popup-inner .ziss-popup-body .ziss-add-to-cart-wrap {
+    text-align: right;
+}

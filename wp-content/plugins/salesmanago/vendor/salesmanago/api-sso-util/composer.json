@@ -1,0 +1,25 @@
+{
+    "name": "salesmanago/api-sso-util",
+    "description": "core api code",
+    "authors": [
+        {
+            "name": "SALESmanago",
+            "email": "dev@salesmanago.pl"
+        }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "ext-json": "*",
+        "guzzlehttp/promises": "^1.0",
+        "guzzlehttp/psr7": "^1.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "SALESmanago\\": ["src/"],
+            "Lib\\GuzzleHttp\\": ["lib/guzzle"]
+        },
+        "files": [
+            "lib/guzzle/functions_include.php"
+        ]
+    }
+}

@@ -1,0 +1,150 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-07-27 14:21+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: init.php:60
+msgid ""
+"Responsive JS_Composer is enabled but not effective. It requires Visual "
+"Composer in order to work."
+msgstr ""
+
+#: includes/shortcodes.php:36 includes/shortcodes/vc_column.php:59
+#: includes/shortcodes/vc_column_inner.php:59
+#: includes/shortcodes/vc_custom_heading.php:91
+msgid "Extend Responsive Options"
+msgstr ""
+
+#: includes/shortcodes.php:40 includes/shortcodes/vc_column.php:63
+#: includes/shortcodes/vc_column_inner.php:63
+#: includes/shortcodes/vc_custom_heading.php:95
+msgid "Screen Device"
+msgstr ""
+
+#: includes/shortcodes.php:43 includes/shortcodes/vc_column.php:66
+#: includes/shortcodes/vc_column_inner.php:66
+#: includes/shortcodes/vc_custom_heading.php:98
+msgid "1366px"
+msgstr ""
+
+#: includes/shortcodes.php:44 includes/shortcodes/vc_column.php:67
+#: includes/shortcodes/vc_column_inner.php:67
+#: includes/shortcodes/vc_custom_heading.php:99
+msgid "1280px"
+msgstr ""
+
+#: includes/shortcodes.php:45 includes/shortcodes/vc_column.php:68
+#: includes/shortcodes/vc_column_inner.php:68
+#: includes/shortcodes/vc_custom_heading.php:100
+msgid "991px"
+msgstr ""
+
+#: includes/shortcodes.php:46 includes/shortcodes/vc_column.php:69
+#: includes/shortcodes/vc_column_inner.php:69
+#: includes/shortcodes/vc_custom_heading.php:101
+msgid "767px "
+msgstr ""
+
+#: includes/shortcodes.php:47 includes/shortcodes/vc_column.php:70
+#: includes/shortcodes/vc_column_inner.php:70
+#: includes/shortcodes/vc_custom_heading.php:102
+msgid "480px "
+msgstr ""
+
+#: includes/shortcodes.php:48 includes/shortcodes/vc_column.php:71
+#: includes/shortcodes/vc_column_inner.php:71
+#: includes/shortcodes/vc_custom_heading.php:103
+msgid "320px "
+msgstr ""
+
+#: includes/shortcodes.php:49 includes/shortcodes/vc_column.php:72
+#: includes/shortcodes/vc_column.php:94
+#: includes/shortcodes/vc_column_inner.php:72
+#: includes/shortcodes/vc_column_inner.php:94
+#: includes/shortcodes/vc_custom_heading.php:104
+msgid "Custom "
+msgstr ""
+
+#: includes/shortcodes.php:56 includes/shortcodes/vc_column.php:79
+#: includes/shortcodes/vc_column_inner.php:79
+#: includes/shortcodes/vc_custom_heading.php:111
+msgid "Screen Custom"
+msgstr ""
+
+#: includes/shortcodes.php:58 includes/shortcodes/vc_column.php:81
+#: includes/shortcodes/vc_column.php:90
+#: includes/shortcodes/vc_column_inner.php:81
+#: includes/shortcodes/vc_column_inner.php:90
+#: includes/shortcodes/vc_custom_heading.php:113
+msgid "px"
+msgstr ""
+
+#: includes/shortcodes.php:63
+msgid "Css"
+msgstr ""
+
+#: includes/shortcodes.php:67
+msgid "Design Options"
+msgstr ""
+
+#: includes/shortcodes.php:71 includes/shortcodes/vc_column.php:112
+#: includes/shortcodes/vc_column_inner.php:112
+#: includes/shortcodes/vc_custom_heading.php:137
+msgid "Hidden ID"
+msgstr ""
+
+#: includes/shortcodes/vc_column.php:86
+#: includes/shortcodes/vc_column_inner.php:86
+msgid "Unit"
+msgstr ""
+
+#: includes/shortcodes/vc_column.php:89
+#: includes/shortcodes/vc_column_inner.php:89
+msgid "%"
+msgstr ""
+
+#: includes/shortcodes/vc_column.php:98
+#: includes/shortcodes/vc_column_inner.php:98
+msgid "Unit Custom"
+msgstr ""
+
+#: includes/shortcodes/vc_column.php:104
+#: includes/shortcodes/vc_column_inner.php:104
+msgid "Value"
+msgstr ""
+
+#: includes/shortcodes/vc_column.php:108
+#: includes/shortcodes/vc_column_inner.php:108
+#: includes/shortcodes/vc_custom_heading.php:133
+msgid "Responsive Options"
+msgstr ""
+
+#: includes/shortcodes/vc_custom_heading.php:125
+msgid "Select text alignment."
+msgstr ""
+
+#: includes/shortcodes/vc_custom_heading.php:126
+msgid "Enter font size."
+msgstr ""
+
+#: includes/shortcodes/vc_custom_heading.php:127
+msgid "Enter line height."
+msgstr ""
+
+#: includes/shortcodes/vc_custom_heading.php:128
+msgid "Select heading color."
+msgstr ""

@@ -1,0 +1,37 @@
+.imginwpbtn {
+    position: absolute;
+    top: 0;
+    left: 6px;
+    width: 25px;
+    height: 25px;
+}
+.card .wpbtn {
+    height: auto;
+    padding-left: 36px;
+    position: relative;
+}
+.uposhta_settings_container{
+    display: flex;
+}
+.uposhta_settings_container .first-collumn{
+    flex-basis: 70%;
+    margin-right: 12px;
+}
+.mt16{
+    margin-top: 16px;
+}
+.first-collumn input[type="text"]{
+    width: 100% !important;
+    margin-top: 1px !important;
+}
+p.submit{
+    display: none !important;
+}
+@media screen and (max-width: 782px){
+    .uposhta_settings_container{
+    display: block;
+    }
+    .card{
+            max-width: 100%;
+    }
+}

@@ -1,0 +1,6 @@
+**/node_modules
+**/bower_components
+**/cache
+wp-config.php
+.idea/
+**/uploads
