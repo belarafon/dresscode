@@ -64,3 +64,16 @@ ul.products li.product-category a {
 .comment-text .comment-edit-link {
     right: 95px;
 }
+
+.breadcrumbs .breadcrumb li:nth-child(2) {
+    display: none;
+}
+
+@media(min-width: 768px) {
+    body.single-product .single-left {
+        width: 40%;
+    }
+    body.single-product .detail-content {
+        width: 60%;
+    }
+}

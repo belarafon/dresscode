@@ -6,6 +6,7 @@ add_action('wp_enqueue_scripts', function () {
     $version = $theme->get('Version');
 
     wp_enqueue_style("child-style", $uri . "/public/css/styles.css", ['nexio-main-style'], $version);
+    wp_enqueue_script("child-scripts", $uri . "/public/js/scripts.js", ['nexio-frontend'], $version);
 });
 
 if (get_bloginfo('language') == "uk") {
@@ -13,6 +14,7 @@ if (get_bloginfo('language') == "uk") {
     {
         $text = array(
             'Filter' => 'Фільтр',
+            'Home' => 'Головна',
             'Add to compare' => 'Додати до порівняння',
             'Share' => 'Поширити',
             'Read more' => 'Читати далі'
