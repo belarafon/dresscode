@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese');
 
+@media (min-width: 1281px) {
+    .container,
+    .container-width {
+        width: 1680px;
+    }
+}
+
 .header .sticky-wrapper {
     position: relative;
     z-index: 99;
@@ -69,10 +76,24 @@ ul.products li.product-category a {
     display: none;
 }
 
-@media(min-width: 768px) {
+.brand-product {
+    margin-bottom: -40px;
+}
+
+.summary .woocommerce-product-details__short-description {
+    clear: both;
+}
+
+.detail-content .summary .price {
+    float: left;
+    clear: both;
+}
+
+@media (min-width: 768px) {
     body.single-product .single-left {
         width: 40%;
     }
+
     body.single-product .detail-content {
         width: 60%;
     }
