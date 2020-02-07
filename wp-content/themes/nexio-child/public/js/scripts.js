@@ -9,7 +9,6 @@
 
         if (_value !== '') {
           $('[data-value="' + _value + '"]').attr('title', _name);
-          console.log($('[data-value="' + _value + '"]'))
         }
       });
     });
