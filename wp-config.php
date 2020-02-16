@@ -23,10 +23,10 @@
 define( 'DB_NAME', 'eqlutody_wp35' );
 
 /** MySQL database username */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'eqlutody_wp35' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'root' );
+define( 'DB_PASSWORD', '1S4@p01vu!' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
@@ -83,8 +83,8 @@ define( 'WP_POST_REVISIONS', 3 );
 
 define('WP_DEBUG', false);
 
-define( 'WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . '/' );
-define( 'WP_HOME', 'http://' . $_SERVER['SERVER_NAME'] . '/' );
+define( 'WP_SITEURL', 'https://' . $_SERVER['SERVER_NAME'] . '/' );
+define( 'WP_HOME', 'https://' . $_SERVER['SERVER_NAME'] . '/' );
 
 /* That's all, stop editing! Happy publishing. */
 
