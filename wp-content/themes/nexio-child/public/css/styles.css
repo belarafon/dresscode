@@ -162,3 +162,18 @@ ul.products li.product-category a {
 .header-control-right .menu-social:before {
     display: none;
 }
+
+/*Filter none remove*/
+.prdctfltr_filter label.prdctfltr_ft_none {
+    display: none!important;
+}
+
+a.backtotop {
+    bottom: 80px;
+}
+@media (max-width: 991px) {
+    a.backtotop {
+        right: 15px;
+        bottom: 30px;
+    }
+}
