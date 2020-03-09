@@ -2,4 +2,5 @@
 **/bower_components
 **/cache
 **/uploads/wc-logs
+**/uploads/
 .idea/
