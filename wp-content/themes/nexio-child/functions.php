@@ -5,7 +5,7 @@ add_action('wp_enqueue_scripts', function () {
     $theme = wp_get_theme();
     $version = $theme->get('Version');
 
-    wp_enqueue_style("child-style", $uri . "/public/css/styles.css", ['nexio-main-style'], $version);
+    wp_enqueue_style("child-style", $uri . "/public/css/styles.css", ['nexio-main-style', 'bootstrap'], '1.1.1.1');
     wp_enqueue_script("child-scripts", $uri . "/public/js/scripts.js", ['nexio-frontend'], $version);
 });
 

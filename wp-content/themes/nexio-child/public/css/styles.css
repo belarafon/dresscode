@@ -54,7 +54,17 @@
 /*==========================================================================
  // Rewrite sofia font
 ========================================================================== */
+body {
+    -webkit-hyphens: manual;
+    -moz-hyphens: manual;
+    -ms-hyphens: manual;
+    hyphens: manual;
+}
 
+a:focus, a:hover {
+    color: #00aeff;
+    text-decoration: none;
+}
 
 @media (min-width: 1281px) {
     .container,
@@ -169,11 +179,32 @@ ul.products li.product-category a {
 }
 
 a.backtotop {
-    bottom: 80px;
+    bottom: 110px;
 }
 @media (max-width: 991px) {
     a.backtotop {
         right: 15px;
-        bottom: 30px;
+        bottom: 80px;
+    }
+}
+
+#popup-size-guide .modal-dialog {
+    margin: 0 auto;
+}
+
+.modal {
+    top: 50%;
+    height: 100vh;
+    max-height: calc(100vh - 60px);
+}
+
+.summary .entry-title {
+    font-weight: bold;
+    font-family: 'sofia_bold';
+}
+
+@media (max-width: 767px) {
+    .products .product-item {
+        width: 50%;
     }
 }
