@@ -13,19 +13,23 @@ add_action('nexio_after_blog_content', 'nexio_paging_nav', 10);
  */
 if (!function_exists('nexio_paging_nav')) {
     function nexio_paging_nav()
-    {
-        global $wp_query;
-        $max = $wp_query->max_num_pages;
-        // Don't print empty markup if there's only one page.
-        if ($max >= 2) {
-            echo get_the_posts_pagination(array(
-                    'screen_reader_text' => '&nbsp;',
-                    'before_page_number' => '',
-                    'prev_text' => '<i class="fa fa-angle-left"></i>',
-                    'next_text' => '<i class="fa fa-angle-right"></i>',
-                )
-            );
-        }
+    {?>
+        <div class="post-link">
+            <?php
+            if( $prev_post = get_previous_post() ):
+                echo'<div class="single-post-nav previous-post-link"><span class="flaticon-left-arrow"></span><span class="nav-subtitle">' . esc_html__( 'Previous Post', 'nexio' ) . '</span><br>';
+                previous_post_link( '%link',"<span>%title</span>", TRUE );
+                echo'</div>';
+            endif;
+
+            if( $next_post = get_next_post() ):
+                echo'<div class="single-post-nav next-post-link"><span class="nav-subtitle">' . esc_html__( 'Next Post', 'nexio' ) . '</span><span class="flaticon-right-arrow"></span><br>';
+                next_post_link( '%link',"<span>%title</span>", TRUE );
+                echo'</div>';
+            endif;
+            ?>
+        </div>
+    <?php 
     }
 }
 if (!function_exists('nexio_post_thumbnail')) {

@@ -677,13 +677,21 @@ if ( ! function_exists( 'nexio_group_flash' ) ) {
 		global $product;
 		$product_label_new_sale = nexio_get_option( 'product_label_new_sale', 'off' ); 
 		if ($product_label_new_sale == 'on'){
-		?>
-	        <div class="flas ssdh">
+		?> 
+	        <div class="flash">
 				<?php
 				woocommerce_show_product_loop_sale_flash();
 				nexio_show_product_loop_new_flash();
+				if ( ! $product->is_in_stock() ) {
+		            ?>
+		            <span class="outofstock"><?php esc_html_e( 'Sold out', 'zonex' ); ?></span>
+		            <?php
+		        }
 				?>
 	        </div>
+	        <?php
+	        
+	        ?>
 		<?php 
 		}
 	}

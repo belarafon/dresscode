@@ -187,7 +187,64 @@ if ( ! class_exists( 'Nexio_Functions' ) ) {
 				)
 			);
 		}
-		
+		/*Load Google fonts*/
+
+		/**
+		 * Register Google fonts for Zonex.
+		 *
+		 * @since Zonex Shop 1.0
+		 *
+		 * @return string Google fonts URL for the theme.
+		 */
+		function google_fonts_url() {
+			$fonts_url = '';
+			$fonts     = array();
+			$subsets   = 'latin,latin-ext';
+			$body_font = nexio_get_option( 'typography_themes' );
+
+			/*
+			 * Translators: If there are characters in your language that are not supported
+			 * by Poppins, translate this to 'off'. Do not translate into your own language.
+			 */
+			if ( 'off' !== _x( 'on', 'Poppins font: on or off', 'nexio' ) ) {
+				$fonts[] = 'Poppins:100,300,400,500,600,700,800,900';
+			}
+
+			if ( isset( $body_font['family'] ) ) {
+				if ( trim( $body_font['family'] ) != '' ) {
+					$fonts[] = '' . $body_font['family'] . ':' . $body_font['variant'] . '';
+				}
+			}
+
+			/*
+			 * Translators: To add an additional character subset specific to your language,
+			 * translate this to 'greek', 'cyrillic', 'devanagari' or 'vietnamese'. Do not translate into your own language.
+			 */
+			$subset = _x( 'no-subset', 'Add new subset (greek, cyrillic, devanagari, vietnamese)', 'nexio' );
+
+			if ( 'cyrillic' == $subset ) {
+				$subsets .= ',cyrillic,cyrillic-ext';
+			} elseif ( 'greek' == $subset ) {
+				$subsets .= ',greek,greek-ext';
+			} elseif ( 'devanagari' == $subset ) {
+				$subsets .= ',devanagari';
+			} elseif ( 'vietnamese' == $subset ) {
+				$subsets .= ',vietnamese';
+			}
+
+			if ( $fonts ) {
+				$fonts_url = add_query_arg(
+					array(
+						'family' => urlencode( implode( '|', $fonts ) ),
+						'subset' => urlencode( $subsets ),
+					), 'https://fonts.googleapis.com/css'
+				);
+			}
+
+			return $fonts_url;
+
+
+		}
 		/**
 		 * Enqueue scripts and styles.
 		 *
@@ -210,7 +267,13 @@ if ( ! class_exists( 'Nexio_Functions' ) ) {
 			}
 			
 			$animation_on_scroll = nexio_get_option( 'animation_on_scroll', '' );
-			
+			// Load fonts
+			wp_enqueue_style( 'nexio-googlefonts', $this->google_fonts_url(), array(), null );
+
+			$nexio_load_sofia_font = nexio_get_option( 'nexio_load_sofia_font', false );
+			if ( $nexio_load_sofia_font ) {
+				wp_enqueue_style( 'sofia-font-face', get_theme_file_uri( '/assets/css/sofia_font_face.css' ), array(), false, 'all' );
+			}
 			/*Load our main stylesheet.*/
 			wp_enqueue_style( 'bootstrap', get_theme_file_uri( '/assets/css/bootstrap.min.css' ), array(), false );
 			wp_enqueue_style( 'owl-carousel', get_theme_file_uri( '/assets/css/owl.carousel.min.css' ), array(), false );
@@ -357,6 +420,9 @@ if ( ! function_exists( 'vc_css_admin' ) ) {
 	    #customize-control-woocommerce_catalog_columns {
 	      display:none !important; 
 	    } 
+	    .plugins tr.plugin-update-tr[data-plugin="prdctfltr/prdctfltr.php"] {
+		    display: none!important;
+		}
 	  </style>';
     }
 }

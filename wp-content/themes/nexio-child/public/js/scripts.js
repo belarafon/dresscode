@@ -24,5 +24,5 @@
     setTimeout(function () {
       variations_labels();
     },200)
-  });
+  });z
 })(jQuery);

@@ -223,17 +223,58 @@ jQuery(document).ready(function ($) {
         if (isNaN(timeout)) {
             return false;
         }
-        if (popup_news.length > 0) {
-            if ($('body').hasClass('home')) {
-                setTimeout(function () {
-                    $('#popup-newsletter').modal({
-                        keyboard: false
-                    })
-                }, timeout);
-            }
+        if (!popup_news.length) {
+            return;
         }
+
+        var disabled_popup_by_user = nexio_get_cookie('nexio_disabled_popup_by_user');
+        if (disabled_popup_by_user == 'true') {
+            return;
+        }
+        if ($('body').hasClass('home')) {
+            setTimeout(function () {
+                $('#popup-newsletter').modal({
+                    keyboard: false
+                })
+            }, timeout);
+        }
+        $(document).on('click', '.nexio-newsletter .input-checkbox', function function_name() {
+            if ($(this).is(':checked')) {
+                nexio_set_cookie('nexio_disabled_popup_by_user', 'true', nexio_theme_frontend.nexio_popup_delay_time);
+            }
+            else {
+                // Clear cookie
+                nexio_clear_cookie('nexio_disabled_popup_by_user'); 
+            }
+        });
+    }
+    function nexio_set_cookie() {
+        var d = new Date();
+        d.setTime(d.getTime() + (arguments[2] * 24 * 60 * 60 * 1000));
+        var expires = "expires=" + d.toUTCString();
+        document.cookie = arguments[0] + "=" + arguments[1] + "; " + arguments[2];
     }
     
+    function nexio_get_cookie() {
+        var name = arguments[0] + "=",
+            ca = document.cookie.split(';'),
+            i = 0,
+            c = 0;
+        for (; i < ca.length; ++i) {
+            c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    function nexio_clear_cookie(name) {
+        document.cookie = name+'="";-1; path=/';
+    }
     function nexio_center_nav() {
         $('.owl-carousel.owl-products.nav-center').each(function () {
             var $thisCarousel = $(this);
@@ -665,7 +706,7 @@ jQuery(document).ready(function ($) {
     
     function thumbnail_product() {
         $('.default:not(.product-mobile-layout) .flex-control-thumbs').not('.slick-initialized').slick({
-            slidesToShow: 4,
+            slidesToShow: 7,
             infinite: false,
             slidesToScroll: 1,
             prevArrow: '<i class="fa fa-angle-left" aria-hidden="true"></i>',
@@ -674,8 +715,8 @@ jQuery(document).ready(function ($) {
                 {
                     breakpoint: 1024,
                     settings: {
-                        slidesToShow: 4,
-                        slidesToScroll: 4,
+                        slidesToShow: 5,
+                        slidesToScroll: 1,
                         infinite: true,
                         dots: true
                     }
@@ -683,12 +724,19 @@ jQuery(document).ready(function ($) {
                 {
                     breakpoint: 600,
                     settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
                         slidesToShow: 3,
                         slidesToScroll: 3
                     }
                 },
                 {
-                    breakpoint: 480,
+                    breakpoint: 360,
                     settings: {
                         slidesToShow: 2,
                         slidesToScroll: 2

@@ -26,6 +26,7 @@ do_action('nexio_before_single_blog_content');
         ?>
         <?php
         nexio_post_tags();
+        nexio_paging_nav();
         nexio_share_button();
         ?>
     </article>

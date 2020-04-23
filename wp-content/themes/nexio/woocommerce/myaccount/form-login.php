@@ -178,7 +178,7 @@ $trap_id           = uniqid( 'trap_' );
         <li role="presentation">
             <a href="#<?php echo esc_attr( $register_id ); ?>" id="<?php echo esc_attr( $register_tab_id ); ?>"
                role="tab" data-toggle="tab" aria-controls="<?php echo esc_attr( $register_id ); ?>">
-				<?php echo esc_html__( 'Do not have an account ? Creat now', 'nexio' ); ?>
+				<?php echo esc_html__( 'Do not have an account ? Create now', 'nexio' ); ?>
             </a>
         </li>
     </ul>

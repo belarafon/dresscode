@@ -26,7 +26,7 @@ if ( ! class_exists( 'Nexio_PluginLoad' ) ) {
 					'slug'               => 'nexio-toolkit',
 					'source'             => $theme_plugins_uri . 'nexio-toolkit.zip',
 					'required'           => true,
-					'version'            => '1.0.8',
+					'version'            => '1.0.9',
 					'force_activation'   => false,
 					'force_deactivation' => false,
 					'external_url'       => '',

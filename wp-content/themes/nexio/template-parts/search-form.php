@@ -25,7 +25,7 @@ if ( $post_type != 'product' ) {
             <div class="search-input">
                 <span class="reset-instant-search-wrap"></span>
                 <input type="search" class="search-field"
-                       placeholder="<?php echo esc_attr( $product_search_place_holder ); ?>" value="" name="s">
+                       placeholder="<?php echo esc_html__( 'Search...', 'nexio' ); ?>" value="" name="s">
 				<?php if ( $post_type != '' ) { ?>
                     <input type="hidden" name="post_type" value="<?php echo esc_attr( $post_type ); ?>">
 				<?php } ?>

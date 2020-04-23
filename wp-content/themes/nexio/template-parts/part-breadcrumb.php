@@ -17,8 +17,8 @@ if ( ! is_front_page()) {
 	$show_breadcrumb_trail = true;
     if ( class_exists( 'WooCommerce' ) ) {
         if ( is_woocommerce() ) {
-            $show_breadcrumb_trail = true;
-            $show_breadcrumb_wc    = false;
+            $show_breadcrumb_trail = false;
+            $show_breadcrumb_wc    = true;
             if ( is_product() ) {
                 $enable_single_product_mobile = nexio_get_option( 'enable_single_product_mobile', true );
                 if ( $enable_single_product_mobile && nexio_is_mobile() ) {

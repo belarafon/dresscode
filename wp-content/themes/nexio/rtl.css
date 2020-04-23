@@ -4124,6 +4124,7 @@ div#yith-wcwl-popup-message {
 	}
 	.unique-wrap .content-product-inner .detail-content {
 		left: 0;
+		right: auto;
 		padding-left: 120px;
 	}
 	.single-product .unique-wrap .product-toolbar {

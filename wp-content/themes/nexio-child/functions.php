@@ -5,7 +5,7 @@ add_action('wp_enqueue_scripts', function () {
     $theme = wp_get_theme();
     $version = $theme->get('Version');
 
-    wp_enqueue_style("child-style", $uri . "/public/css/styles.css", ['nexio-main-style', 'bootstrap'], '1.1.1.1');
+    wp_enqueue_style("child-style", $uri . "/public/css/child-styles.css", ['nexio-main-style', 'bootstrap'], $version);
     wp_enqueue_script("child-scripts", $uri . "/public/js/scripts.js", ['nexio-frontend'], $version);
 });
 
@@ -48,3 +48,22 @@ if (get_bloginfo('language') == "uk") {
     add_filter('gettext', 'ra_change_translate_text_multiple', 20);
 }
 
+// Remove billing address info
+add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
+add_filter( 'woocommerce_billing_fields' , 'custom_override_billing_fields' );
+
+function custom_override_checkout_fields( $fields ) {
+    unset($fields['billing']['billing_postcode']);
+    unset($fields['billing']['billing_state']);
+    unset($fields['billing']['billing_country']);
+    unset($fields['billing']['billing_address_1']);
+    return $fields;
+}
+
+function custom_override_billing_fields( $fields ) {
+    unset($fields['billing_postcode']);
+    unset($fields['billing_state']);
+    unset($fields['billing_country']);
+    unset($fields['billing_address_1']);
+    return $fields;
+}

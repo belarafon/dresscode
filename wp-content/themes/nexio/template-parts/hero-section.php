@@ -85,19 +85,40 @@ if ( $enable_custom_banner ) {
                     <div class="container">
 						<?php if ( ! is_front_page() ) { ?>
                             <h2 class="title-page page-title">
-								<?php if ( is_home() ) :
-									if ( is_front_page() ):
-										echo esc_html__( 'Latest Posts', 'nexio' );
-									else:
-										single_post_title();
-									endif;
-                                elseif ( is_page() ):
-									single_post_title();
-                                elseif ( is_search() ):
-									echo printf( esc_html__( 'Search Results for: %s', 'nexio' ), '<span>' . get_search_query() . '</span>' );
-								else:
-									the_archive_title();
-								endif; ?>
+								<?php
+                                if ( class_exists( 'WooCommerce' ) ) {
+                                    if ( is_woocommerce() ) {
+                                        echo woocommerce_page_title( false );
+                                    } else {
+                                        if ( is_home() ) :
+                                            if ( is_front_page() ):
+                                                esc_html_e( 'Latest Posts', 'nexio' );
+                                            else:
+                                                single_post_title();
+                                            endif;
+                                        elseif ( is_page() ):
+                                            single_post_title();
+                                        elseif ( is_search() ):
+                                            echo sprintf( __( 'Search Results for: %s', 'nexio' ), '<span>' . get_search_query() . '</span>' );
+                                        else:
+                                            the_archive_title();
+                                        endif;
+                                    }
+                                } else {
+                                    if ( is_home() ) :
+                                        if ( is_front_page() ):
+                                            esc_html_e( 'Latest Posts', 'nexio' );
+                                        else:
+                                            single_post_title();
+                                        endif;
+                                    elseif ( is_page() ):
+                                        single_post_title();
+                                    elseif ( is_search() ):
+                                        echo sprintf( __( 'Search Results for: %s', 'nexio' ), '<span>' . get_search_query() . '</span>' );
+                                    else:
+                                        the_archive_title();
+                                    endif;
+                                } ?>
                             </h2>
 						<?php } ?>
 						<?php if ( ! is_front_page() && $nexio_page_banner_breadcrumb ) {
@@ -225,29 +246,14 @@ if ( $enable_custom_banner ) {
 				<?php if ( class_exists( 'WooCommerce' ) ) { ?>
 					<?php if ( ( ! is_shop() && ! is_product_category() && ! is_product_tag() && ( ! isset( $queried_obj->taxonomy ) || ( isset( $queried_obj->taxonomy ) && $queried_obj->taxonomy != 'product_brand' ) ) ) || ! $list_categories || ! $enable_categories || $style_categories != 'cate-image' ): ?>
                         <h2 class="title-page page-title">
-							<?php
-							if ( class_exists( 'WooCommerce' ) ) {
-								if ( is_woocommerce() ) {
-									echo woocommerce_page_title( false );
-								} else {
-									if ( is_home() ) :
-										if ( is_front_page() ):
-											echo esc_html__( 'Latest Posts', 'nexio' );
-										else:
-											single_post_title();
-										endif;
-                                    elseif ( is_page() ):
-										single_post_title();
-                                    elseif ( is_search() ):
-										echo sprintf( __( 'Search Results for: %s', 'nexio' ), '<span>' . get_search_query() . '</span>' );
-									else:
-										the_archive_title();
-									endif;
-								}
+						<?php
+						if ( class_exists( 'WooCommerce' ) ) {
+							if ( is_woocommerce() ) {
+								echo woocommerce_page_title( false );
 							} else {
 								if ( is_home() ) :
 									if ( is_front_page() ):
-										echo esc_html__( 'Latest Posts', 'nexio' );
+										esc_html_e( 'Latest Posts', 'nexio' );
 									else:
 										single_post_title();
 									endif;
@@ -258,25 +264,40 @@ if ( $enable_custom_banner ) {
 								else:
 									the_archive_title();
 								endif;
-							} ?>
-                        </h2>
+							}
+						} else {
+							if ( is_home() ) :
+								if ( is_front_page() ):
+									esc_html_e( 'Latest Posts', 'nexio' );
+								else:
+									single_post_title();
+								endif;
+                            elseif ( is_page() ):
+								single_post_title();
+                            elseif ( is_search() ):
+								echo sprintf( __( 'Search Results for: %s', 'nexio' ), '<span>' . get_search_query() . '</span>' );
+							else:
+								the_archive_title();
+							endif;
+						} ?>
+                    </h2>
 						<?php get_template_part( 'template-parts/part', 'breadcrumb' ); ?>
 					<?php endif; ?>
 				<?php } else { ?>
                     <h2 class="title-page page-title">
-						<?php if ( is_home() ) :
-							if ( is_front_page() ):
-								echo esc_html__( 'Latest Posts', 'nexio' );
-							else:
-								single_post_title();
-							endif;
+                        <?php if ( is_home() ) :
+                            if ( is_front_page() ):
+                                echo esc_html__( 'Latest Posts', 'nexio' );
+                            else:
+                                single_post_title();
+                            endif;
                         elseif ( is_page() ):
-							single_post_title();
+                            single_post_title();
                         elseif ( is_search() ):
-							echo sprintf( __( 'Search Results for: %s', 'nexio' ), '<span>' . get_search_query() . '</span>' );
-						else:
-							the_archive_title();
-						endif; ?>
+                            echo sprintf( __( 'Search Results for: %s', 'nexio' ), '<span>' . get_search_query() . '</span>' );
+                        else:
+                            the_archive_title();
+                        endif;?>
                     </h2>
 				<?php } ?>
             </div>

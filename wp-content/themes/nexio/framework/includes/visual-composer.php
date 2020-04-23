@@ -10,7 +10,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 			add_filter( 'vc_iconpicker-type-nexiocustomfonts', array( &$this, 'iconpicker_type_nexio_customfonts' ) );
 			$this->map_shortcode();
 		}
-
+		
 		/**
 		 * Define  Constants.
 		 */
@@ -20,7 +20,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 			$this->define( 'NEXIO_PRODUCT_STYLE_PREVIEW', get_theme_file_uri( '/woocommerce/product-styles/' ) );
 			$this->define( 'NEXIO_PRODUCT_DEAL_PREVIEW', get_theme_file_uri( '/woocommerce/product-deal/' ) );
 		}
-
+		
 		/**
 		 * Define constant if not already set.
 		 *
@@ -32,7 +32,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 				define( $name, $value );
 			}
 		}
-
+		
 		function params() {
 			if ( function_exists( 'nexio_toolkit_vc_param' ) ) {
 				nexio_toolkit_vc_param( 'taxonomy', array( $this, 'taxonomy_field' ) );
@@ -41,7 +41,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 				nexio_toolkit_vc_param( 'number', array( $this, 'number_field' ) );
 			}
 		}
-
+		
 		/**
 		 * load param autocomplete render
 		 * */
@@ -70,9 +70,9 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 				$this,
 				'pinmapIdAutocompleteRender'
 			), 10, 1 );
-
+			
 		}
-
+		
 		/*
          * taxonomy_field
          * */
@@ -110,19 +110,19 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 				            . implode( $terms_fields )
 				            . '</select>';
 			}
-
+			
 			return $output;
 		}
-
+		
 		public function uniqid_field( $settings, $value ) {
 			if ( ! $value ) {
 				$value = uniqid( hash( 'crc32', $settings['param_name'] ) . '-' );
 			}
 			$output = '<input type="text" class="wpb_vc_param_value textfield" name="' . $settings['param_name'] . '" value="' . esc_attr( $value ) . '" />';
-
+			
 			return $output;
 		}
-
+		
 		public function number_field( $settings, $value ) {
 			$dependency = '';
 			$param_name = isset( $settings['param_name'] ) ? $settings['param_name'] : '';
@@ -135,10 +135,10 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 				$value = $settings['std'];
 			}
 			$output = '<input type="number" min="' . esc_attr( $min ) . '" max="' . esc_attr( $max ) . '" class="wpb_vc_param_value textfield ' . $param_name . ' ' . $type . ' ' . $class . '" name="' . $param_name . '" value="' . esc_attr( $value ) . '" ' . $dependency . ' style="max-width:100px; margin-right: 10px;" />' . $suffix;
-
+			
 			return $output;
 		}
-
+		
 		public function select_preview_field( $settings, $value ) {
 			ob_start();
 			// Get menus list
@@ -167,19 +167,19 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
                     <div class="image-preview">
 						<?php if ( isset( $options[ $value ] ) && $options[ $value ] && ( isset( $options[ $value ]['img'] ) ) ): ?>
                             <img style="margin-top: 10px; max-width: 100%;height: auto;"
-                                 src="<?php echo esc_url( $options[ $value ]['img'] ); ?>">
+                                    src="<?php echo esc_url( $options[ $value ]['img'] ); ?>">
 						<?php else: ?>
                             <img style="margin-top: 10px; max-width: 100%;height: auto;"
-                                 src="<?php echo esc_url( $options[ $default ]['img'] ); ?>">
+                                    src="<?php echo esc_url( $options[ $default ]['img'] ); ?>">
 						<?php endif; ?>
                     </div>
                 </div>
 				<?php
 			}
-
+			
 			return ob_get_clean();
 		}
-
+		
 		/**
 		 * Suggester for autocomplete by id/name/title/sku
 		 *
@@ -208,10 +208,10 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 					$results[]     = $data;
 				}
 			}
-
+			
 			return $results;
 		}
-
+		
 		/**
 		 * Find product by id
 		 *
@@ -244,16 +244,16 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 					$data               = array();
 					$data['value']      = $product_id;
 					$data['label']      = $product_id_display . $product_title_display . $product_sku_display;
-
+					
 					return ! empty( $data ) ? $data : false;
 				}
-
+				
 				return false;
 			}
-
+			
 			return false;
 		}
-
+		
 		/**
 		 * Suggester for autocomplete by id/name/title
 		 *
@@ -281,10 +281,10 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 					$results[]     = $data;
 				}
 			}
-
+			
 			return $results;
 		}
-
+		
 		/**
 		 * Find product by id
 		 *
@@ -304,7 +304,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 				if ( is_object( $post_type_object ) ) {
 					$post_type_title = $post_type_object->get_title();
 					$post_type_id    = $post_type_object->get_id();
-
+					
 					$post_type_title_display = '';
 					if ( ! empty( $post_type_title ) ) {
 						$post_type_title_display = ' - ' . esc_html__( 'Title', 'nexio' ) . ': ' . $post_type_title;
@@ -313,99 +313,99 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 					$data                 = array();
 					$data['value']        = $post_type_id;
 					$data['label']        = $post_type_id_display . $post_type_title_display;
-
+					
 					return ! empty( $data ) ? $data : false;
 				}
-
+				
 				return false;
 			}
-
+			
 			return false;
 		}
-
+		
 		public function vc_fonts( $fonts_list ) {
 			/* Gotham */
 			$Gotham              = new stdClass();
 			$Gotham->font_family = "Gotham";
 			$Gotham->font_styles = "100,300,400,600,700";
 			$Gotham->font_types  = "300 Light:300:light,400 Normal:400:normal";
-
+			
 			$fonts = array( $Gotham );
-
+			
 			return array_merge( $fonts_list, $fonts );
 		}
-
+		
 		/* Custom Font icon*/
 		function iconpicker_type_nexio_customfonts( $icons ) {
 			$icons['Flaticon'] = array(
-				array('flaticon-magnifying-glass'=>'Flaticon magnifying glass'),
-				array('flaticon-profile'=>'Flaticon profile'),
-				array('flaticon-bag'=>'Flaticon bag'),
-				array('flaticon-right-arrow'=>'Flaticon right arrow'),
-				array('flaticon-left-arrow'=>'Flaticon left arrow'),
-				array('flaticon-right-arrow-1'=>'Flaticon right arrow 1'),
-				array('flaticon-left-arrow-1'=>'Flaticon left arrow 1'),
-				array('flaticon-mail'=>'Flaticon mail'),
-				array('flaticon-flame'=>'Flaticon flame'),
-				array('flaticon-clock'=>'Flaticon clock'),
-				array('flaticon-comment'=>'Flaticon comment'),
-				array('flaticon-chat'=>'Flaticon chat'),
-				array('flaticon-heart'=>'Flaticon heart'),
-				array('flaticon-valentines-heart'=>'Flaticon valentines heart'),
-				array('flaticon-filter'=>'Flaticon filter'),
-				array('flaticon-loading'=>'Flaticon loading'),
-				array('flaticon-checked'=>'Flaticon checked'),
-				array('flaticon-tick'=>'Flaticon tick'),
-				array('flaticon-close'=>'Flaticon close'),
-				array('flaticon-circular-check-button'=>'Flaticon circular check button'),
-				array('flaticon-check'=>'Flaticon check'),
-				array('flaticon-play-button'=>'Flaticon play button'),
-				array('flaticon-360-degrees'=>'Flaticon 360 degrees'),
-				array('flaticon-login'=>'Flaticon login'),
-				array('flaticon-menu'=>'Flaticon menu'),
-				array('flaticon-menu-1'=>'Flaticon menu 1'),
-				array('flaticon-placeholder'=>'Flaticon placeholder'),
-				array('flaticon-metre'=>'Flaticon metre'),
-				array('flaticon-share'=>'Flaticon share'),
-				array('flaticon-shuffle'=>'Flaticon shuffle'),
-				array('flaticon-running'=>'Flaticon running'),
-				array('flaticon-recycle'=>'Flaticon recycle'),
-				array('flaticon-instagram'=>'Flaticon instagram'),
-				array('flaticon-delivery-truck'=>'Flaticon delivery truck'),
-				array('flaticon-closed-lock'=>'Flaticon closed lock'),
-				array('flaticon-support'=>'Flaticon support'),
-				array('flaticon-diamond'=>'Flaticon diamond'),
-				array('flaticon-high-heels'=>'Flaticon high heels'),
-				array('flaticon-shirt'=>'Flaticon shirt'),
-				array('flaticon-dress'=>'Flaticon dress'),
-				array('flaticon-shirt-1'=>'Flaticon shirt 1'),
-				array('flaticon-glasses'=>'Flaticon glasses'),
-				array('flaticon-shopping-bag'=>'Flaticon shopping bag'),
-				array('flaticon-trousers'=>'Flaticon trousers'),
-				array('flaticon-user'=>'Flaticon user'),
-				array('flaticon-magnifying-glass-1'=>'Flaticon magnifying glass 1'),
-				array('flaticon-shopping-bag-1'=>'Flaticon shopping bag 1'),
-				array('flaticon-envelope'=>'Flaticon envelope'),
-				array('flaticon-instagram-1'=>'Flaticon instagram 1'),
-				array('flaticon-rocket-ship'=>'Flaticon rocket ship'),
-				array('flaticon-refresh'=>'Flaticon refresh'),
-				array('flaticon-return'=>'Flaticon return'),
-				array('flaticon-padlock'=>'Flaticon padlock'),
+				array( 'flaticon-magnifying-glass' => 'Flaticon magnifying glass' ),
+				array( 'flaticon-profile' => 'Flaticon profile' ),
+				array( 'flaticon-bag' => 'Flaticon bag' ),
+				array( 'flaticon-right-arrow' => 'Flaticon right arrow' ),
+				array( 'flaticon-left-arrow' => 'Flaticon left arrow' ),
+				array( 'flaticon-right-arrow-1' => 'Flaticon right arrow 1' ),
+				array( 'flaticon-left-arrow-1' => 'Flaticon left arrow 1' ),
+				array( 'flaticon-mail' => 'Flaticon mail' ),
+				array( 'flaticon-flame' => 'Flaticon flame' ),
+				array( 'flaticon-clock' => 'Flaticon clock' ),
+				array( 'flaticon-comment' => 'Flaticon comment' ),
+				array( 'flaticon-chat' => 'Flaticon chat' ),
+				array( 'flaticon-heart' => 'Flaticon heart' ),
+				array( 'flaticon-valentines-heart' => 'Flaticon valentines heart' ),
+				array( 'flaticon-filter' => 'Flaticon filter' ),
+				array( 'flaticon-loading' => 'Flaticon loading' ),
+				array( 'flaticon-checked' => 'Flaticon checked' ),
+				array( 'flaticon-tick' => 'Flaticon tick' ),
+				array( 'flaticon-close' => 'Flaticon close' ),
+				array( 'flaticon-circular-check-button' => 'Flaticon circular check button' ),
+				array( 'flaticon-check' => 'Flaticon check' ),
+				array( 'flaticon-play-button' => 'Flaticon play button' ),
+				array( 'flaticon-360-degrees' => 'Flaticon 360 degrees' ),
+				array( 'flaticon-login' => 'Flaticon login' ),
+				array( 'flaticon-menu' => 'Flaticon menu' ),
+				array( 'flaticon-menu-1' => 'Flaticon menu 1' ),
+				array( 'flaticon-placeholder' => 'Flaticon placeholder' ),
+				array( 'flaticon-metre' => 'Flaticon metre' ),
+				array( 'flaticon-share' => 'Flaticon share' ),
+				array( 'flaticon-shuffle' => 'Flaticon shuffle' ),
+				array( 'flaticon-running' => 'Flaticon running' ),
+				array( 'flaticon-recycle' => 'Flaticon recycle' ),
+				array( 'flaticon-instagram' => 'Flaticon instagram' ),
+				array( 'flaticon-delivery-truck' => 'Flaticon delivery truck' ),
+				array( 'flaticon-closed-lock' => 'Flaticon closed lock' ),
+				array( 'flaticon-support' => 'Flaticon support' ),
+				array( 'flaticon-diamond' => 'Flaticon diamond' ),
+				array( 'flaticon-high-heels' => 'Flaticon high heels' ),
+				array( 'flaticon-shirt' => 'Flaticon shirt' ),
+				array( 'flaticon-dress' => 'Flaticon dress' ),
+				array( 'flaticon-shirt-1' => 'Flaticon shirt 1' ),
+				array( 'flaticon-glasses' => 'Flaticon glasses' ),
+				array( 'flaticon-shopping-bag' => 'Flaticon shopping bag' ),
+				array( 'flaticon-trousers' => 'Flaticon trousers' ),
+				array( 'flaticon-user' => 'Flaticon user' ),
+				array( 'flaticon-magnifying-glass-1' => 'Flaticon magnifying glass 1' ),
+				array( 'flaticon-shopping-bag-1' => 'Flaticon shopping bag 1' ),
+				array( 'flaticon-envelope' => 'Flaticon envelope' ),
+				array( 'flaticon-instagram-1' => 'Flaticon instagram 1' ),
+				array( 'flaticon-rocket-ship' => 'Flaticon rocket ship' ),
+				array( 'flaticon-refresh' => 'Flaticon refresh' ),
+				array( 'flaticon-return' => 'Flaticon return' ),
+				array( 'flaticon-padlock' => 'Flaticon padlock' ),
 			);
-
+			
 			return $icons;
 		}
-
+		
 		public function animation_on_scroll() {
-		    return array(
-			    esc_html__( 'None', 'nexio' )      => '',
-			    esc_html__( 'Smooth Up', 'nexio' ) => 'nexio-wow fadeInUp',
-			    esc_html__( 'Smooth Down', 'nexio' ) => 'nexio-wow fadeInDown',
-			    esc_html__( 'Smooth Left', 'nexio' ) => 'nexio-wow fadeInLeft',
-			    esc_html__( 'Smooth Right', 'nexio' ) => 'nexio-wow fadeInRight',
-		    );
-        }
-
+			return array(
+				esc_html__( 'None', 'nexio' )         => '',
+				esc_html__( 'Smooth Up', 'nexio' )    => 'nexio-wow fadeInUp',
+				esc_html__( 'Smooth Down', 'nexio' )  => 'nexio-wow fadeInDown',
+				esc_html__( 'Smooth Left', 'nexio' )  => 'nexio-wow fadeInLeft',
+				esc_html__( 'Smooth Right', 'nexio' ) => 'nexio-wow fadeInRight',
+			);
+		}
+		
 		public function map_shortcode() {
 			/* Map New Banner */
 			vc_map(
@@ -429,7 +429,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 									'alt' => 'Style 02', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'banner/style-02.jpg',
 								),
-                                'style-03' => array(
+								'style-03' => array(
 									'alt' => 'Style 03', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'banner/style-03.jpg',
 								),
@@ -437,7 +437,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 									'alt' => 'Style 04', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'banner/style-04.jpg',
 								),
-                                'style-05' => array(
+								'style-05' => array(
 									'alt' => 'Style 05', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'banner/style-05.jpg',
 								),
@@ -445,7 +445,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 									'alt' => 'Style 06', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'banner/style-06.jpg',
 								),
-                                'style-07' => array(
+								'style-07' => array(
 									'alt' => 'Style 07', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'banner/style-07.jpg',
 								),
@@ -469,7 +469,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 									'alt' => 'Style 12', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'banner/style-12.jpg',
 								),
-                                'style-13' => array(
+								'style-13' => array(
 									'alt' => 'Style 13', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'banner/style-13.jpg',
 								),
@@ -481,19 +481,19 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 									'alt' => 'Style 15', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'banner/style-15.jpg',
 								),
-                                'style-16' => array(
+								'style-16' => array(
 									'alt' => 'Style 16', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'banner/style-16.jpg',
 								),
-                                'style-17' => array(
+								'style-17' => array(
 									'alt' => 'Style 17', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'banner/style-17.jpg',
 								),
-                                'style-18' => array(
+								'style-18' => array(
 									'alt' => 'Style 18', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'banner/style-18.jpg',
 								),
-                                'style-19' => array(
+								'style-19' => array(
 									'alt' => 'Style 19', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'banner/style-19.jpg',
 								),
@@ -505,11 +505,11 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 									'alt' => 'Style 21', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'banner/style-21.jpg',
 								),
-                                'style-22' => array(
+								'style-22' => array(
 									'alt' => 'Style 22', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'banner/style-22.jpg',
 								),
-                                'style-23' => array(
+								'style-23' => array(
 									'alt' => 'Style 23', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'banner/style-23.jpg',
 								),
@@ -517,7 +517,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 									'alt' => 'Style 24', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'banner/style-24.jpg',
 								),
-                                'style-25' => array(
+								'style-25' => array(
 									'alt' => 'Style 25', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'banner/style-25.jpg',
 								),
@@ -529,11 +529,11 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 									'alt' => 'Style 27', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'banner/style-27.jpg',
 								),
-                                'style-28' => array(
+								'style-28' => array(
 									'alt' => 'Style 28', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'banner/style-28.jpg',
 								),
-                                'style-29' => array(
+								'style-29' => array(
 									'alt' => 'Style 29', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'banner/style-29.jpg',
 								),
@@ -545,11 +545,11 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 									'alt' => 'Style 31', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'banner/style-31.jpg',
 								),
-                                'style-32' => array(
+								'style-32' => array(
 									'alt' => 'Style 32', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'banner/style-32.jpg',
 								),
-                                'style-33' => array(
+								'style-33' => array(
 									'alt' => 'Style 33', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'banner/style-33.jpg',
 								),
@@ -565,15 +565,15 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 									'alt' => 'Style 36', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'banner/style-36.jpg',
 								),
-                                'style-37' => array(
+								'style-37' => array(
 									'alt' => 'Style 37', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'banner/style-37.jpg',
 								),
-                                'style-38' => array(
+								'style-38' => array(
 									'alt' => 'Style 38', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'banner/style-38.jpg',
 								),
-                                'style-39' => array(
+								'style-39' => array(
 									'alt' => 'Style 39', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'banner/style-39.jpg',
 								),
@@ -595,7 +595,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							"heading"     => esc_html__( "Image Text", "nexio" ),
 							"param_name"  => "image_text",
 							"admin_label" => false,
-                            'dependency'  => array(
+							'dependency'  => array(
 								'element' => 'style',
 								'value'   => array(
 									'style-14'
@@ -611,23 +611,23 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 								'element' => 'style',
 								'value'   => array(
 									'style-02',
-                                    'style-09',
-                                    'style-17',
-                                    'style-18',
-                                    'style-20',
-                                    'style-23',
-                                    'style-24',
-                                    'style-25',
-                                    'style-26',
-                                    'style-27',
-                                    'style-29',
-                                    'style-31',
-                                    'style-33',
-                                    'style-34',
-                                    'style-35',
-                                    'style-37',
-                                    'style-40',
-                                    'style-41',
+									'style-09',
+									'style-17',
+									'style-18',
+									'style-20',
+									'style-23',
+									'style-24',
+									'style-25',
+									'style-26',
+									'style-27',
+									'style-29',
+									'style-31',
+									'style-33',
+									'style-34',
+									'style-35',
+									'style-37',
+									'style-40',
+									'style-41',
 								),
 							),
 						),
@@ -636,8 +636,8 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'heading'     => esc_html__( 'Big Title', 'nexio' ),
 							'param_name'  => 'bigtitle',
 							'description' => esc_html__( 'The big title of shortcode', 'nexio' ),
-                            "admin_label" => true,
-                            'dependency'  => array(
+							"admin_label" => true,
+							'dependency'  => array(
 								'element' => 'style',
 								'value'   => array(
 									'style-01',
@@ -663,12 +663,12 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 									'style-22',
 									'style-23',
 									'style-24',
-                                    'style-24',
+									'style-24',
 									'style-25',
 									'style-26',
 									'style-27',
 									'style-28',
-                                    'style-29',
+									'style-29',
 									'style-30',
 									'style-31',
 									'style-32',
@@ -684,32 +684,32 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							),
 						),
 						array(
-							'type'        => 'textfield',
-							'heading'     => esc_html__( 'Font size Big Title', 'nexio' ),
-							'default'     => '50px',
-							'param_name'  => 'font_big',
-                            'dependency'  => array(
-                                'element' => 'style',
-                                'value'   => array(
-                                    'style-40',
-                                ),
-                            ),
+							'type'       => 'textfield',
+							'heading'    => esc_html__( 'Font size Big Title', 'nexio' ),
+							'default'    => '50px',
+							'param_name' => 'font_big',
+							'dependency' => array(
+								'element' => 'style',
+								'value'   => array(
+									'style-40',
+								),
+							),
 						),
 						array(
 							'type'       => 'textfield',
 							'heading'    => esc_html__( 'Description', 'nexio' ),
 							'param_name' => 'desc',
-                            'dependency'  => array(
-                                'element' => 'style',
-                                'value'   => array(
-                                    'style-06',
-                                    'style-11',
-                                    'style-24',
-                                    'style-28',
-                                    'style-38',
-                                    'style-41',
-                                ),
-                            ),
+							'dependency' => array(
+								'element' => 'style',
+								'value'   => array(
+									'style-06',
+									'style-11',
+									'style-24',
+									'style-28',
+									'style-38',
+									'style-41',
+								),
+							),
 						),
 						array(
 							'type'        => 'vc_link',
@@ -742,12 +742,12 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 									'style-22',
 									'style-23',
 									'style-24',
-                                    'style-24',
+									'style-24',
 									'style-25',
 									'style-26',
 									'style-27',
 									'style-28',
-                                    'style-29',
+									'style-29',
 									'style-30',
 									'style-31',
 									'style-32',
@@ -768,14 +768,14 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'value'      => '',
 							'dependency' => array(
 								'element' => 'style',
-								'value'   => array( 'style-29','style-30','style-31','style-32' ),
+								'value'   => array( 'style-29', 'style-30', 'style-31', 'style-32' ),
 							),
 						),
 						array(
 							'type'        => 'dropdown',
 							'heading'     => esc_html__( 'Content Position', 'nexio' ),
 							'value'       => array(
-								esc_html__( 'Content Type 01', 'nexio' )  => '',
+								esc_html__( 'Content Type 01', 'nexio' ) => '',
 								esc_html__( 'Content Type 02', 'nexio' ) => 'type-02',
 								esc_html__( 'Content Type 03', 'nexio' ) => 'type-03',
 							),
@@ -793,7 +793,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							"heading"     => esc_html__( "Image", "nexio" ),
 							"param_name"  => "image",
 							"admin_label" => false,
-						), 
+						),
 						array(
 							'type'       => 'dropdown',
 							'param_name' => 'animate_on_scroll',
@@ -831,7 +831,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 			foreach ( $categories as $category ) {
 				$categories_array[ $category->name ] = $category->slug;
 			}
-
+			
 			vc_map(
 				array(
 					'name'        => esc_html__( 'Nexio: Blog', 'nexio' ),
@@ -853,11 +853,11 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 									'alt' => 'Style 02',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'blog/style-02.jpg',
 								),
-                                'style-03' => array(
+								'style-03' => array(
 									'alt' => 'Style 03',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'blog/style-03.jpg',
 								),
-                                'style-04' => array(
+								'style-04' => array(
 									'alt' => 'Style 04',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'blog/style-04.jpg',
 								),
@@ -867,19 +867,19 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'param_name'  => 'style',
 						),
 						array(
-							'type' => 'loop',
-							'heading' => esc_html__('Option Query', 'nexio'),
-							'param_name' => 'loop_query',
+							'type'        => 'loop',
+							'heading'     => esc_html__( 'Option Query', 'nexio' ),
+							'param_name'  => 'loop_query',
 							'save_always' => true,
-							'value' => 'post_type:post|size:10|order_by:date',
-							'settings' => array(
-								'size' => array(
+							'value'       => 'post_type:post|size:10|order_by:date',
+							'settings'    => array(
+								'size'     => array(
 									'hidden' => false,
-									'value' => 6,
+									'value'  => 6,
 								),
-								'order_by' => array('value' => 'date'),
+								'order_by' => array( 'value' => 'date' ),
 							),
-							'description' => esc_html__('Create WordPress loop, to populate content from your site.', 'nexio'),
+							'description' => esc_html__( 'Create WordPress loop, to populate content from your site.', 'nexio' ),
 						),
 						array(
 							'type'        => 'textfield',
@@ -888,9 +888,9 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'description' => esc_html__( 'The title of shortcode', 'nexio' ),
 							'admin_label' => true,
 							'std'         => '',
-                            'dependency'  => array(
+							'dependency'  => array(
 								'element' => 'style',
-								'value'   => array( 'style-02','style-03'),
+								'value'   => array( 'style-02', 'style-03' ),
 							),
 						),
 						/* Owl */
@@ -907,7 +907,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'admin_label' => false,
 							'dependency'  => array(
 								'element' => 'style',
-								'value'   => array( 'style-02','style-03'),
+								'value'   => array( 'style-02', 'style-03' ),
 							),
 						),
 						array(
@@ -924,7 +924,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'admin_label' => false,
 							'dependency'  => array(
 								'element' => 'style',
-								'value'   => array( 'style-02','style-03'),
+								'value'   => array( 'style-02', 'style-03' ),
 							),
 						),
 						array(
@@ -955,17 +955,17 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'description' => esc_html__( "Show buton dots.", 'nexio' ),
 							'group'       => esc_html__( 'Carousel settings', 'nexio' ),
 							'admin_label' => false,
-                            'dependency'  => array(
+							'dependency'  => array(
 								'element' => 'style',
-								'value'   => array( 'style-02','style-03'),
+								'value'   => array( 'style-02', 'style-03' ),
 							),
 						),
 						array(
 							'type'        => 'dropdown',
 							'value'       => array(
-								esc_html__( 'Default', 'nexio' )  => '',
-								esc_html__( 'Light', 'nexio' ) => 'dots-light',
-								esc_html__( 'Dark', 'nexio' ) => 'dots-dark',
+								esc_html__( 'Default', 'nexio' ) => '',
+								esc_html__( 'Light', 'nexio' )   => 'dots-light',
+								esc_html__( 'Dark', 'nexio' )    => 'dots-dark',
 							),
 							'std'         => '',
 							'heading'     => esc_html__( 'Dots color', 'nexio' ),
@@ -991,7 +991,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'admin_label' => false,
 							'dependency'  => array(
 								'element' => 'style',
-								'value'   => array( 'style-02','style-03'),
+								'value'   => array( 'style-02', 'style-03' ),
 							),
 						),
 						array(
@@ -1004,7 +1004,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'admin_label' => false,
 							'dependency'  => array(
 								'element' => 'style',
-								'value'   => array( 'style-02','style-03'),
+								'value'   => array( 'style-02', 'style-03' ),
 							),
 						),
 						array(
@@ -1017,7 +1017,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'admin_label' => false,
 							'dependency'  => array(
 								'element' => 'style',
-								'value'   => array( 'style-02','style-03'),
+								'value'   => array( 'style-02', 'style-03' ),
 							),
 						),
 						array(
@@ -1030,9 +1030,9 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 								esc_html__( 'Yes', 'nexio' ) => 'true',
 							),
 							'std'        => '',
-							'dependency'  => array(
+							'dependency' => array(
 								'element' => 'style',
-								'value'   => array( 'style-02','style-03'),
+								'value'   => array( 'style-02', 'style-03' ),
 							),
 						),
 						array(
@@ -1042,9 +1042,9 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							"value"       => "3",
 							'group'       => esc_html__( 'Carousel settings', 'nexio' ),
 							'admin_label' => false,
-                            'dependency'  => array(
+							'dependency'  => array(
 								'element' => 'style',
-								'value'   => array( 'style-02','style-03'),
+								'value'   => array( 'style-02', 'style-03' ),
 							),
 						),
 						array(
@@ -1056,7 +1056,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'admin_label' => false,
 							'dependency'  => array(
 								'element' => 'style',
-								'value'   => array( 'style-02','style-03'),
+								'value'   => array( 'style-02', 'style-03' ),
 							),
 						),
 						array(
@@ -1068,7 +1068,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'admin_label' => false,
 							'dependency'  => array(
 								'element' => 'style',
-								'value'   => array( 'style-02','style-03'),
+								'value'   => array( 'style-02', 'style-03' ),
 							),
 						),
 						array(
@@ -1080,7 +1080,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'admin_label' => false,
 							'dependency'  => array(
 								'element' => 'style',
-								'value'   => array( 'style-02','style-03'),
+								'value'   => array( 'style-02', 'style-03' ),
 							),
 						),
 						array(
@@ -1092,7 +1092,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'admin_label' => false,
 							'dependency'  => array(
 								'element' => 'style',
-								'value'   => array( 'style-02','style-03'),
+								'value'   => array( 'style-02', 'style-03' ),
 							),
 						),
 						array(
@@ -1104,7 +1104,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'admin_label' => false,
 							'dependency'  => array(
 								'element' => 'style',
-								'value'   => array( 'style-02','style-03'),
+								'value'   => array( 'style-02', 'style-03' ),
 							),
 						),
 						array(
@@ -1153,7 +1153,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 									'alt' => 'Style 01',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'button/style-01.jpg'
 								),
-                                'style-02' => array(
+								'style-02' => array(
 									'alt' => 'Style 02',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'button/style-02.jpg'
 								),
@@ -1167,14 +1167,14 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'heading'     => esc_html__( 'Button Link', 'nexio' ),
 							'param_name'  => 'link',
 							'description' => esc_html__( 'Add button link.', 'nexio' ),
-                            'admin_label' => true,
+							'admin_label' => true,
 						),
 						array(
 							'type'       => 'dropdown',
 							'heading'    => esc_html__( 'Choose use icon', 'nexio' ),
 							'value'      => array(
-								esc_html__( 'No', 'nexio' ) => '',
-								esc_html__( 'Yes', 'nexio' )   => 'icontype',
+								esc_html__( 'No', 'nexio' )  => '',
+								esc_html__( 'Yes', 'nexio' ) => 'icontype',
 							),
 							'param_name' => 'iconimage',
 							'std'        => '',
@@ -1270,7 +1270,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 									'alt' => 'Style 01',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'categories/style-01.jpg',
 								),
-                                'style-02' => array(
+								'style-02' => array(
 									'alt' => 'Style 02',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'categories/style-02.jpg',
 								),
@@ -1433,11 +1433,11 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 									'alt' => 'Style 03',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'custommenu/style-03.jpg',
 								),
-                                'style-04' => array(
+								'style-04' => array(
 									'alt' => 'Style 04',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'custommenu/style-04.jpg',
 								),
-                                'style-05' => array(
+								'style-05' => array(
 									'alt' => 'Style 05',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'custommenu/style-05.jpg',
 								),
@@ -1445,7 +1445,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 									'alt' => 'Style 06',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'custommenu/style-06.jpg',
 								),
-                                'style-07' => array(
+								'style-07' => array(
 									'alt' => 'Style 07',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'custommenu/style-07.jpg',
 								),
@@ -1461,10 +1461,10 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'description' => esc_html__( 'The title of shortcode', 'nexio' ),
 							'admin_label' => true,
 							'std'         => '',
-                            'dependency'  => array(
-                                'element' => 'style',
-                                'value'   => array( 'style-01','style-02','style-04','style-06','style-07'),
-                            ),
+							'dependency'  => array(
+								'element' => 'style',
+								'value'   => array( 'style-01', 'style-02', 'style-04', 'style-06', 'style-07' ),
+							),
 						),
 						array(
 							'type'        => 'dropdown',
@@ -1472,7 +1472,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'param_name'  => 'menu',
 							'value'       => $all_menu,
 							'description' => esc_html__( 'Select menu to display.', 'nexio' ),
-                            'admin_label' => true,
+							'admin_label' => true,
 						),
 						array(
 							'type'       => 'dropdown',
@@ -1541,7 +1541,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'description' => esc_html__( 'The Post, page id.', 'nexio' ),
 							'dependency'  => array(
 								'element' => 'style',
-								'value'   => array('style-02'),
+								'value'   => array( 'style-02' ),
 							),
 						),
 						array(
@@ -1550,25 +1550,25 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'param_name'  => 'link',
 							'description' => esc_html__( 'Add demo link.', 'nexio' ),
 							'admin_label' => true,
-                            'dependency'  => array(
+							'dependency'  => array(
 								'element' => 'style',
-								'value'   => array('style-01'),
+								'value'   => array( 'style-01' ),
 							),
 						),
-                        array(
-                            'type'       => 'dropdown',
-                            'heading'    => esc_html__( 'Comming soon mode', 'nexio' ),
-                            'value'      => array(
-                                esc_html__( 'Off', 'nexio' )  => '',
-                                esc_html__( 'On', 'nexio' ) => 'comming-mode',
-                            ),
-                            'param_name' => 'comming',
-                            'std'        => '',
-                            'dependency'  => array(
-                                'element' => 'style',
-                                'value'   => array( 'style-01'),
-                            ),
-                        ),
+						array(
+							'type'       => 'dropdown',
+							'heading'    => esc_html__( 'Comming soon mode', 'nexio' ),
+							'value'      => array(
+								esc_html__( 'Off', 'nexio' ) => '',
+								esc_html__( 'On', 'nexio' )  => 'comming-mode',
+							),
+							'param_name' => 'comming',
+							'std'        => '',
+							'dependency' => array(
+								'element' => 'style',
+								'value'   => array( 'style-01' ),
+							),
+						),
 						array(
 							'type'       => 'dropdown',
 							'param_name' => 'animate_on_scroll',
@@ -1615,27 +1615,27 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 									'alt' => 'Style 01',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'iconbox/style-01.jpg'
 								),
-                                'style-02' => array(
+								'style-02' => array(
 									'alt' => 'Style 02',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'iconbox/style-02.jpg'
 								),
-                                'style-03' => array(
+								'style-03' => array(
 									'alt' => 'Style 03',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'iconbox/style-03.jpg'
 								),
-                                'style-04' => array(
+								'style-04' => array(
 									'alt' => 'Style 04',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'iconbox/style-04.jpg'
 								),
-                                'style-05' => array(
+								'style-05' => array(
 									'alt' => 'Style 05',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'iconbox/style-05.jpg'
 								),
-                                'style-06' => array(
+								'style-06' => array(
 									'alt' => 'Style 06',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'iconbox/style-06.jpg'
 								),
-                                'style-07' => array(
+								'style-07' => array(
 									'alt' => 'Style 07',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'iconbox/style-07.jpg'
 								),
@@ -1651,7 +1651,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'description' => esc_html__( 'The Number of IconBox.', 'nexio' ),
 							'dependency'  => array(
 								'element' => 'style',
-								'value'   => array('style-04'),
+								'value'   => array( 'style-04' ),
 							),
 						),
 						array(
@@ -1733,16 +1733,23 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'admin_label' => true,
 							'dependency'  => array(
 								'element' => 'style',
-								'value'   => array('style-01','style-03','style-04','style-05','style-06','style-07'),
+								'value'   => array(
+									'style-01',
+									'style-03',
+									'style-04',
+									'style-05',
+									'style-06',
+									'style-07'
+								),
 							),
 						),
 						array(
 							'type'       => 'vc_link',
 							'heading'    => esc_html__( 'Link', 'nexio' ),
 							'param_name' => 'link',
-                            'dependency'  => array(
+							'dependency' => array(
 								'element' => 'style',
-								'value'   => array('style-04'),
+								'value'   => array( 'style-04' ),
 							),
 						),
 						array(
@@ -1770,7 +1777,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'type'             => 'uniqid',
 							'edit_field_class' => 'hidden',
 						),
-
+					
 					)
 				)
 			);
@@ -1789,18 +1796,18 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 					'category'                  => esc_html__( 'Content', 'nexio' ),
 					'description'               => esc_html__( 'Section for Tabs, Tours, Accordions.', 'nexio' ),
 					'params'                    => array(
-                        array(
-                            'type'        => 'textfield',
-                            'param_name'  => 'title',
-                            'heading'     => esc_html__( 'Title', 'nexio' ),
-                            'description' => esc_html__( 'Enter section title (Note: you can leave it empty).', 'nexio' ),
-                        ),
-                        array(
-                            'type'        => 'attach_image',
-                            'param_name'  => 'image',
-                            'heading'     => esc_html__( 'Image', 'nexio' ),
-                            'description' => esc_html__( 'Enter section image.', 'nexio' ),
-                        ),
+						array(
+							'type'        => 'textfield',
+							'param_name'  => 'title',
+							'heading'     => esc_html__( 'Title', 'nexio' ),
+							'description' => esc_html__( 'Enter section title (Note: you can leave it empty).', 'nexio' ),
+						),
+						array(
+							'type'        => 'attach_image',
+							'param_name'  => 'image',
+							'heading'     => esc_html__( 'Image', 'nexio' ),
+							'description' => esc_html__( 'Enter section image.', 'nexio' ),
+						),
 						array(
 							'type'        => 'el_id',
 							'param_name'  => 'tab_id',
@@ -1906,7 +1913,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 					'default_content'           => '',
 				)
 			);
-
+			
 			/*Map New section title */
 			vc_map(
 				array(
@@ -1929,23 +1936,23 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 									'alt' => 'Style 02', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'title/style-02.jpg',
 								),
-                                'style-03' => array(
+								'style-03' => array(
 									'alt' => 'Style 03', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'title/style-03.jpg',
 								),
-                                'style-04' => array(
+								'style-04' => array(
 									'alt' => 'Style 04', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'title/style-04.jpg',
 								),
-                                'style-05' => array(
+								'style-05' => array(
 									'alt' => 'Style 05', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'title/style-05.jpg',
 								),
-                                'style-06' => array(
+								'style-06' => array(
 									'alt' => 'Style 06', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'title/style-06.jpg',
 								),
-                                'style-07' => array(
+								'style-07' => array(
 									'alt' => 'Style 07', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'title/style-07.jpg',
 								),
@@ -1953,43 +1960,43 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 									'alt' => 'Style 08', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'title/style-08.jpg',
 								),
-                                'style-09' => array(
+								'style-09' => array(
 									'alt' => 'Style 09', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'title/style-09.jpg',
 								),
-                                'style-10' => array(
+								'style-10' => array(
 									'alt' => 'Style 10', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'title/style-10.jpg',
 								),
-                                'style-11' => array(
+								'style-11' => array(
 									'alt' => 'Style 11', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'title/style-11.jpg',
 								),
-                                'style-12' => array(
+								'style-12' => array(
 									'alt' => 'Style 12', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'title/style-12.jpg',
 								),
-                                'style-13' => array(
+								'style-13' => array(
 									'alt' => 'Style 13', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'title/style-13.jpg',
 								),
-                                'style-14' => array(
+								'style-14' => array(
 									'alt' => 'Style 14', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'title/style-14.jpg',
 								),
-                                'style-15' => array(
+								'style-15' => array(
 									'alt' => 'Style 15', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'title/style-15.jpg',
 								),
-                                'style-16' => array(
+								'style-16' => array(
 									'alt' => 'Style 16', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'title/style-16.jpg',
 								),
-                                'style-17' => array(
+								'style-17' => array(
 									'alt' => 'Style 17', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'title/style-17.jpg',
 								),
-                                'style-18' => array(
+								'style-18' => array(
 									'alt' => 'Style 18', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'title/style-18.jpg',
 								),
@@ -1997,11 +2004,11 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 									'alt' => 'Style 19', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'title/style-19.jpg',
 								),
-                                'style-20' => array(
+								'style-20' => array(
 									'alt' => 'Style 20', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'title/style-20.jpg',
 								),
-                                'style-21' => array(
+								'style-21' => array(
 									'alt' => 'Style 21', //NEXIO_SHORTCODE_PREVIEW
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'title/style-21.jpg',
 								),
@@ -2029,9 +2036,9 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'description' => esc_html__( 'The small title of shortcode', 'nexio' ),
 							'admin_label' => true,
 							'std'         => '',
-                            'dependency'  => array(
+							'dependency'  => array(
 								'element' => 'style',
-								'value'   => array('style-03','style-10','style-17'),
+								'value'   => array( 'style-03', 'style-10', 'style-17' ),
 							),
 						),
 						array(
@@ -2042,24 +2049,61 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'admin_label' => true,
 							'std'         => '',
 						),
-                        array(
-                            'type'        => 'textarea',
-                            'heading'     => esc_html__( 'Description', 'nexio' ),
-                            'param_name'  => 'desc',
-                            'description' => esc_html__( 'The description of shortcode', 'nexio' ),
-                            'std'         => '',
-                            'dependency'  => array(
-	                            'element' => 'style',
-	                            'value'   => array('style-01','style-02','style-03','style-06','style-07','style-09','style-10','style-13','style-16','style-18','style-19','style-21','style-22','style-23','style-24'),
-                            ),
-                        ),
+						array(
+							'type'        => 'dropdown',
+							'heading'     => esc_html__( 'Title Tag', 'nexio' ),
+							'param_name'  => 'title_tag',
+							'value'       => array(
+								esc_html__( 'H1', 'nexio' ) => 'h1',
+								esc_html__( 'H2', 'nexio' ) => 'h2',
+								esc_html__( 'H3', 'nexio' ) => 'h3',
+								esc_html__( 'H4', 'nexio' ) => 'h4',
+								esc_html__( 'H5', 'nexio' ) => 'h5',
+								esc_html__( 'H6', 'nexio' ) => 'h6',
+							),
+							'std'         => 'h3'
+						),
+						array(
+							'type'        => 'textarea',
+							'heading'     => esc_html__( 'Description', 'nexio' ),
+							'param_name'  => 'desc',
+							'description' => esc_html__( 'The description of shortcode', 'nexio' ),
+							'std'         => '',
+							'dependency'  => array(
+								'element' => 'style',
+								'value'   => array(
+									'style-01',
+									'style-02',
+									'style-03',
+									'style-06',
+									'style-07',
+									'style-09',
+									'style-10',
+									'style-13',
+									'style-16',
+									'style-18',
+									'style-19',
+									'style-21',
+									'style-22',
+									'style-23',
+									'style-24'
+								),
+							),
+						),
 						array(
 							'type'       => 'vc_link',
 							'heading'    => esc_html__( 'Link', 'nexio' ),
 							'param_name' => 'link',
-							'dependency'  => array(
+							'dependency' => array(
 								'element' => 'style',
-								'value'   => array('style-01','style-03','style-04','style-07','style-10','style-19'),
+								'value'   => array(
+									'style-01',
+									'style-03',
+									'style-04',
+									'style-07',
+									'style-10',
+									'style-19'
+								),
 							),
 						),
 						array(
@@ -2117,23 +2161,23 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'admin_label' => true,
 							'param_name'  => 'style',
 						),
-                        array(
-                            'type'        => 'textfield',
-                            'heading'     => esc_html__( 'Title', 'nexio' ),
-                            'param_name'  => 'title_tabs',
-                            'description' => esc_html__( 'The title of shortcode', 'nexio' ),
-                            'admin_label' => true,
-                            'std'         => '',
-                        ),
-                        array(
-                            'type'       => 'vc_link',
-                            'heading'    => esc_html__( 'Link', 'nexio' ),
-                            'param_name' => 'link',
-                            'dependency'  => array(
-                                'element' => 'style',
-                                'value'   => array('style-03','style-04'),
-                            ),
-                        ),
+						array(
+							'type'        => 'textfield',
+							'heading'     => esc_html__( 'Title', 'nexio' ),
+							'param_name'  => 'title_tabs',
+							'description' => esc_html__( 'The title of shortcode', 'nexio' ),
+							'admin_label' => true,
+							'std'         => '',
+						),
+						array(
+							'type'       => 'vc_link',
+							'heading'    => esc_html__( 'Link', 'nexio' ),
+							'param_name' => 'link',
+							'dependency' => array(
+								'element' => 'style',
+								'value'   => array( 'style-03', 'style-04' ),
+							),
+						),
 						vc_map_add_css_animation(),
 						array(
 							'param_name' => 'ajax_check',
@@ -2224,11 +2268,11 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 									'alt' => 'Style 01',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'video/style-01.jpg'
 								),
-                                'style-02' => array(
+								'style-02' => array(
 									'alt' => 'Style 02',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'video/style-02.jpg'
 								),
-                                'style-03' => array(
+								'style-03' => array(
 									'alt' => 'Style 03',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'video/style-03.jpg'
 								),
@@ -2245,16 +2289,16 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'type'        => 'dropdown',
 							'heading'     => esc_html__( 'Video Type', 'nexio' ),
 							'value'       => array(
-								esc_html__( 'Video html5', 'nexio' )  => 'html5',
-								esc_html__( 'Vimeo', 'nexio' )        => 'vimeo',
-								esc_html__( 'Youtube', 'nexio' )      => 'youtbe',
+								esc_html__( 'Video html5', 'nexio' ) => 'html5',
+								esc_html__( 'Vimeo', 'nexio' )       => 'vimeo',
+								esc_html__( 'Youtube', 'nexio' )     => 'youtbe',
 							),
 							'param_name'  => 'type',
 							'std'         => 'html5',
 							'description' => esc_html__( 'Select video type.', 'nexio' ),
-                            'dependency'  => array(
+							'dependency'  => array(
 								'element' => 'style',
-								'value'   => array( 'style-01'),
+								'value'   => array( 'style-01' ),
 							),
 						),
 						array(
@@ -2262,39 +2306,39 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'heading'     => esc_html__( 'Video ID', 'nexio' ),
 							'param_name'  => 'video',
 							'description' => esc_html__( 'Add video id.', 'nexio' ),
-                            'dependency'  => array(
+							'dependency'  => array(
 								'element' => 'style',
-								'value'   => array( 'style-01'),
+								'value'   => array( 'style-01' ),
 							),
 						),
 						array(
 							'type'        => 'dropdown',
 							'heading'     => esc_html__( 'Video Loop', 'nexio' ),
 							'value'       => array(
-								esc_html__( 'Yes', 'nexio' )  => 'yes',
-								esc_html__( 'No', 'nexio' )   => 'no',
+								esc_html__( 'Yes', 'nexio' ) => 'yes',
+								esc_html__( 'No', 'nexio' )  => 'no',
 							),
 							'param_name'  => 'loop',
 							'std'         => 'yes',
 							'description' => esc_html__( 'Select video loop.', 'nexio' ),
 							'dependency'  => array(
 								'element' => 'style',
-								'value'   => array( 'style-01'),
+								'value'   => array( 'style-01' ),
 							),
 						),
 						array(
 							'type'        => 'dropdown',
 							'heading'     => esc_html__( 'Video Autoplay', 'nexio' ),
 							'value'       => array(
-								esc_html__( 'Yes', 'nexio' )  => 'yes',
-								esc_html__( 'No', 'nexio' )   => 'no',
+								esc_html__( 'Yes', 'nexio' ) => 'yes',
+								esc_html__( 'No', 'nexio' )  => 'no',
 							),
 							'param_name'  => 'autoplay',
 							'std'         => 'yes',
 							'description' => esc_html__( 'Select video autoplay.', 'nexio' ),
-                            'dependency'  => array(
+							'dependency'  => array(
 								'element' => 'style',
-								'value'   => array( 'style-01'),
+								'value'   => array( 'style-01' ),
 							),
 						),
 						array(
@@ -2304,7 +2348,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'description' => esc_html__( 'Enter section image.', 'nexio' ),
 							'dependency'  => array(
 								'element' => 'style',
-								'value'   => array( 'style-02','style-03','style-04'),
+								'value'   => array( 'style-02', 'style-03', 'style-04' ),
 							),
 						),
 						array(
@@ -2314,17 +2358,17 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'description' => esc_html__( 'The Title', 'nexio' ),
 							'dependency'  => array(
 								'element' => 'style',
-								'value'   => array( 'style-03','style-04'),
+								'value'   => array( 'style-03', 'style-04' ),
 							),
 						),
-						array( 
+						array(
 							'type'        => 'vc_link',
 							'heading'     => esc_html__( 'Button Link', 'nexio' ),
 							'param_name'  => 'link',
 							'description' => esc_html__( 'Add button link.', 'nexio' ),
 							'dependency'  => array(
 								'element' => 'style',
-								'value'   => array( 'style-02','style-03','style-04'),
+								'value'   => array( 'style-02', 'style-03', 'style-04' ),
 							),
 						),
 						array(
@@ -2361,38 +2405,38 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 			$width                   = 393;
 			$height                  = 420;
 			$crop                    = 1;
-            if ( function_exists( 'wc_get_image_size' ) ) {
-	            $size      = array(
-		            "width"  => 393,
-		            "height" => 420,
-		            "crop"   => 1,
-	            );
-                $width  = isset( $size['width'] ) && is_numeric($size['width']) ? $size['width'] : $width;
-                $height = isset( $size['height']) && is_numeric($size['height']) ? $size['height'] : $height;
-                $crop   = isset( $size['crop'] ) ? $size['crop'] : $crop;
-            }
+			if ( function_exists( 'wc_get_image_size' ) ) {
+				$size   = array(
+					"width"  => 393,
+					"height" => 420,
+					"crop"   => 1,
+				);
+				$width  = isset( $size['width'] ) && is_numeric( $size['width'] ) ? $size['width'] : $width;
+				$height = isset( $size['height'] ) && is_numeric( $size['height'] ) ? $size['height'] : $height;
+				$crop   = isset( $size['crop'] ) ? $size['crop'] : $crop;
+			}
 			for ( $i = 100; $i < $width; $i = $i + 10 ) {
 				array_push( $product_size_width_list, $i );
 			}
 			$product_size_list                           = array();
 			$product_size_list[ $width . 'x' . $height ] = $width . 'x' . $height;
 			foreach ( $product_size_width_list as $k => $w ) {
-			    if(is_numeric($w)) {
-                    $w = intval( $w );
-                    if ( isset( $width ) && $width > 0 ) {
-                        $h = round( $height * $w / $width );
-                    } else {
-                        $h = $w;
-                    }
-                    $product_size_list[ $w . 'x' . $h ] = $w . 'x' . $h;
-                }
+				if ( is_numeric( $w ) ) {
+					$w = intval( $w );
+					if ( isset( $width ) && $width > 0 ) {
+						$h = round( $height * $w / $width );
+					} else {
+						$h = $w;
+					}
+					$product_size_list[ $w . 'x' . $h ] = $w . 'x' . $h;
+				}
 			}
 			$product_size_list['Custom'] = 'custom';
 			$attributes_tax              = array();
 			if ( function_exists( 'wc_get_attribute_taxonomies' ) ) {
 				$attributes_tax = wc_get_attribute_taxonomies();
 			}
-
+			
 			$attributes = array();
 			if ( is_array( $attributes_tax ) && count( $attributes_tax ) > 0 ) {
 				foreach ( $attributes_tax as $attribute ) {
@@ -2428,15 +2472,15 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 									'alt' => esc_html__( 'Style 01', 'nexio' ),
 									'img' => NEXIO_PRODUCT_STYLE_PREVIEW . 'content-product-style-1.jpg',
 								),
-                                '2' => array(
+								'2' => array(
 									'alt' => esc_html__( 'Style 02', 'nexio' ),
 									'img' => NEXIO_PRODUCT_STYLE_PREVIEW . 'content-product-style-2.jpg',
 								),
-                                '3' => array(
+								'3' => array(
 									'alt' => esc_html__( 'Style 03', 'nexio' ),
 									'img' => NEXIO_PRODUCT_STYLE_PREVIEW . 'content-product-style-3.jpg',
 								),
-                                '4' => array(
+								'4' => array(
 									'alt' => esc_html__( 'Style 04', 'nexio' ),
 									'img' => NEXIO_PRODUCT_STYLE_PREVIEW . 'content-product-style-4.jpg',
 								),
@@ -2446,24 +2490,24 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'param_name'  => 'product_style',
 							'description' => esc_html__( 'Select a style for product item', 'nexio' ),
 						),
-                        array(
-                            'type'        => 'textfield',
-                            'heading'     => esc_html__( 'Title', 'nexio' ),
-                            'param_name'  => 'title',
-                            'description' => esc_html__( 'The Title', 'nexio' ),
-                            'admin_label' => true,
-                            'dependency'  => array(
-                                'element' => 'product_style',
-                                'value'   => array( '1','2'),
-                            ),
-                        ),
+						array(
+							'type'        => 'textfield',
+							'heading'     => esc_html__( 'Title', 'nexio' ),
+							'param_name'  => 'title',
+							'description' => esc_html__( 'The Title', 'nexio' ),
+							'admin_label' => true,
+							'dependency'  => array(
+								'element' => 'product_style',
+								'value'   => array( '1', '2' ),
+							),
+						),
 						array(
 							'type'        => 'dropdown',
 							'heading'     => esc_html__( 'Text Color ', 'nexio' ),
 							'param_name'  => 'text_color',
 							'value'       => array(
-								esc_html__( 'Dark', 'nexio' ) => '',
-								esc_html__( 'Light', 'nexio' )   => 'text-light',
+								esc_html__( 'Dark', 'nexio' )  => '',
+								esc_html__( 'Light', 'nexio' ) => 'text-light',
 							),
 							'description' => esc_html__( 'choose text color', 'nexio' ),
 							'std'         => '',
@@ -2474,7 +2518,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'param_name'  => 'show_star',
 							'value'       => array(
 								esc_html__( 'Show Rating', 'nexio' ) => '',
-								esc_html__( 'None Rating', 'nexio' )   => 'no-star',
+								esc_html__( 'None Rating', 'nexio' ) => 'no-star',
 							),
 							'description' => esc_html__( 'Select show star rating', 'nexio' ),
 							'std'         => '',
@@ -2529,41 +2573,41 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'std'         => 'recent-product',
 							'group'       => esc_html__( 'Products options', 'nexio' ),
 						),
-                        array(
-                            "type"        => "taxonomy",
-                            "taxonomy"    => "product_cat",
-                            "class"       => "",
-                            "heading"     => esc_html__( "Product Category", 'nexio' ),
-                            "param_name"  => "taxonomy",
-                            "value"       => '',
-                            'parent'      => '',
-                            'multiple'    => true,
-                            'hide_empty'  => false,
-                            'placeholder' => esc_html__( 'Choose category', 'nexio' ),
-                            "description" => esc_html__( "Note: If you want to narrow output, select category(s) above. Only selected categories will be displayed.", 'nexio' ),
-                            'std'         => '',
-                            'group'       => esc_html__( 'Products options', 'nexio' ),
-                        ),
-                        array(
-                            'type'       => 'textfield',
-                            'heading'    => esc_html__( 'Total items', 'nexio' ),
-                            'param_name' => 'per_page',
-                            'value'      => 10,
-                            "dependency" => array(
-                                "element" => "target",
-                                "value"   => array(
-                                    'best-selling',
-                                    'top-rated',
-                                    'recent-product',
-                                    'product-category',
-                                    'featured_products',
-                                    'product_attribute',
-                                    'on_sale',
-                                    'on_new'
-                                )
-                            ),
-                            'group'       => esc_html__( 'Products options', 'nexio' ),
-                        ),
+						array(
+							"type"        => "taxonomy",
+							"taxonomy"    => "product_cat",
+							"class"       => "",
+							"heading"     => esc_html__( "Product Category", 'nexio' ),
+							"param_name"  => "taxonomy",
+							"value"       => '',
+							'parent'      => '',
+							'multiple'    => true,
+							'hide_empty'  => false,
+							'placeholder' => esc_html__( 'Choose category', 'nexio' ),
+							"description" => esc_html__( "Note: If you want to narrow output, select category(s) above. Only selected categories will be displayed.", 'nexio' ),
+							'std'         => '',
+							'group'       => esc_html__( 'Products options', 'nexio' ),
+						),
+						array(
+							'type'       => 'textfield',
+							'heading'    => esc_html__( 'Total items', 'nexio' ),
+							'param_name' => 'per_page',
+							'value'      => 10,
+							"dependency" => array(
+								"element" => "target",
+								"value"   => array(
+									'best-selling',
+									'top-rated',
+									'recent-product',
+									'product-category',
+									'featured_products',
+									'product_attribute',
+									'on_sale',
+									'on_new'
+								)
+							),
+							'group'      => esc_html__( 'Products options', 'nexio' ),
+						),
 						array(
 							"type"        => "dropdown",
 							"heading"     => esc_html__( "Order by", 'nexio' ),
@@ -2714,8 +2758,8 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 						array(
 							'type'        => 'dropdown',
 							'value'       => array(
-								esc_html__( 'Normal', 'nexio' )  => '',
-								esc_html__( 'Right', 'nexio' ) => 'nav-right',
+								esc_html__( 'Normal', 'nexio' ) => '',
+								esc_html__( 'Right', 'nexio' )  => 'nav-right',
 								esc_html__( 'Center', 'nexio' ) => 'nav-center',
 							),
 							'std'         => '',
@@ -2764,9 +2808,9 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 						array(
 							'type'        => 'dropdown',
 							'value'       => array(
-								esc_html__( 'Default', 'nexio' )  => '',
-								esc_html__( 'Light', 'nexio' ) => 'dots-light',
-								esc_html__( 'Dark', 'nexio' ) => 'dots-dark',
+								esc_html__( 'Default', 'nexio' ) => '',
+								esc_html__( 'Light', 'nexio' )   => 'dots-light',
+								esc_html__( 'Dark', 'nexio' )    => 'dots-dark',
 							),
 							'std'         => '',
 							'heading'     => esc_html__( 'Dots color', 'nexio' ),
@@ -2781,7 +2825,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 						array(
 							'type'        => 'dropdown',
 							'value'       => array(
-                                esc_html__( 'No', 'nexio' )  => 'false',
+								esc_html__( 'No', 'nexio' )  => 'false',
 								esc_html__( 'Yes', 'nexio' ) => 'true',
 							),
 							'std'         => false,
@@ -3556,11 +3600,11 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 									'alt' => 'Style 03',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'instagram/style-03.jpg',
 								),
-                                'style-04' => array(
+								'style-04' => array(
 									'alt' => 'Style 04',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'instagram/style-04.jpg',
 								),
-                                'style-05' => array(
+								'style-05' => array(
 									'alt' => 'Style 05',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'instagram/style-05.jpg',
 								),
@@ -3641,9 +3685,9 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'description' => esc_html__( 'The title of shortcode', 'nexio' ),
 							'admin_label' => true,
 							'std'         => '',
-                            'dependency'  => array(
+							'dependency'  => array(
 								'element' => 'style',
-								'value'   => array( 'style-01','style-03','style-04','style-05'),
+								'value'   => array( 'style-01', 'style-03', 'style-04', 'style-05' ),
 							),
 						),
 						array(
@@ -3651,9 +3695,9 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'heading'    => esc_html__( 'Description', 'nexio' ),
 							'param_name' => 'desc',
 							'std'        => '',
-                            'dependency'  => array(
+							'dependency' => array(
 								'element' => 'style',
-								'value'   => array( 'style-03','style-04','style-05'),
+								'value'   => array( 'style-03', 'style-04', 'style-05' ),
 							),
 						),
 						array(
@@ -3664,7 +3708,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'admin_label' => true,
 							'dependency'  => array(
 								'element' => 'style',
-								'value'   => array( 'style-01','style-02','style-03'),
+								'value'   => array( 'style-01', 'style-02', 'style-03' ),
 							),
 						),
 						array(
@@ -3954,7 +3998,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 									'alt' => 'Style 02',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'instagramshopwrap/style-02.jpg',
 								),
-                                'style-03' => array(
+								'style-03' => array(
 									'alt' => 'Style 03',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'instagramshopwrap/style-03.jpg',
 								),
@@ -3962,15 +4006,15 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 									'alt' => 'Style 04',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'instagramshopwrap/style-04.jpg',
 								),
-                                'style-05' => array(
+								'style-05' => array(
 									'alt' => 'Style 05',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'instagramshopwrap/style-05.jpg',
 								),
-                                'style-06' => array(
+								'style-06' => array(
 									'alt' => 'Style 06',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'instagramshopwrap/style-06.jpg',
 								),
-                                'style-07' => array(
+								'style-07' => array(
 									'alt' => 'Style 07',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'instagramshopwrap/style-07.jpg',
 								),
@@ -4048,18 +4092,25 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'heading'     => esc_html__( 'Title', 'nexio' ),
 							'param_name'  => 'title',
 							'admin_label' => true,
-                            'dependency'  => array(
+							'dependency'  => array(
 								'element' => 'style',
-								'value'   => array( 'style-01', 'style-02', 'style-03', 'style-05', 'style-06', 'style-07'),
+								'value'   => array(
+									'style-01',
+									'style-02',
+									'style-03',
+									'style-05',
+									'style-06',
+									'style-07'
+								),
 							),
 						),
 						array(
-							'type'        => 'textfield',
-							'heading'     => esc_html__( 'Description', 'nexio' ),
-							'param_name'  => 'desc',
-                            'dependency'  => array(
+							'type'       => 'textfield',
+							'heading'    => esc_html__( 'Description', 'nexio' ),
+							'param_name' => 'desc',
+							'dependency' => array(
 								'element' => 'style',
-								'value'   => array( 'style-01', 'style-05'),
+								'value'   => array( 'style-01', 'style-05' ),
 							),
 						),
 						array(
@@ -4105,8 +4156,8 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 						array(
 							'type'        => 'dropdown',
 							'value'       => array(
-								esc_html__( 'Container Large', 'nexio' ) => '',
-								esc_html__( 'Container Normal', 'nexio' )  => 'normal',
+								esc_html__( 'Container Large', 'nexio' )  => '',
+								esc_html__( 'Container Normal', 'nexio' ) => 'normal',
 							),
 							'std'         => 'false',
 							'heading'     => esc_html__( 'Select Container', 'nexio' ),
@@ -4142,7 +4193,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 					),
 				)
 			);
-
+			
 			/*Map New Newsletter*/
 			vc_map(
 				array(
@@ -4161,15 +4212,15 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 									'alt' => 'Style 01',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'newsletter/style-01.jpg',
 								),
-                                'style-02' => array(
+								'style-02' => array(
 									'alt' => 'Style 02',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'newsletter/style-02.jpg',
 								),
-                                'style-03' => array(
+								'style-03' => array(
 									'alt' => 'Style 03',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'newsletter/style-03.jpg',
 								),
-                                'style-04' => array(
+								'style-04' => array(
 									'alt' => 'Style 04',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'newsletter/style-04.jpg',
 								),
@@ -4185,7 +4236,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 									'alt' => 'Style 07',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'newsletter/style-07.jpg',
 								),
-                                'style-08' => array(
+								'style-08' => array(
 									'alt' => 'Style 08',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'newsletter/style-08.jpg',
 								),
@@ -4193,19 +4244,19 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 									'alt' => 'Style 09',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'newsletter/style-09.jpg',
 								),
-                                'style-10' => array(
+								'style-10' => array(
 									'alt' => 'Style 10',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'newsletter/style-10.jpg',
 								),
-                                'style-11' => array(
+								'style-11' => array(
 									'alt' => 'Style 11',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'newsletter/style-11.jpg',
 								),
-                                'style-12' => array(
+								'style-12' => array(
 									'alt' => 'Style 12',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'newsletter/style-12.jpg',
 								),
-                                'style-13' => array(
+								'style-13' => array(
 									'alt' => 'Style 13',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'newsletter/style-13.jpg',
 								),
@@ -4231,7 +4282,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'std'         => 'fontawesome',
 							'dependency'  => array(
 								'element' => 'style',
-								'value'   => array( 'style-08','style-09'),
+								'value'   => array( 'style-08', 'style-09' ),
 							),
 						),
 						array(
@@ -4272,7 +4323,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'std'         => '',
 							'dependency'  => array(
 								'element' => 'style',
-								'value'   => array('style-10'),
+								'value'   => array( 'style-10' ),
 							),
 						),
 						array(
@@ -4284,7 +4335,19 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'std'         => '',
 							'dependency'  => array(
 								'element' => 'style',
-								'value'   => array( 'style-01','style-02','style-03','style-04','style-06','style-07','style-10','style-11','style-12','style-13','style-14'),
+								'value'   => array(
+									'style-01',
+									'style-02',
+									'style-03',
+									'style-04',
+									'style-06',
+									'style-07',
+									'style-10',
+									'style-11',
+									'style-12',
+									'style-13',
+									'style-14'
+								),
 							),
 						),
 						array(
@@ -4292,9 +4355,22 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'heading'    => esc_html__( 'Description', 'nexio' ),
 							'param_name' => 'description',
 							'std'        => '',
-                            'dependency'  => array(
+							'dependency' => array(
 								'element' => 'style',
-								'value'   => array( 'style-01','style-02','style-03','style-04','style-06','style-07','style-08','style-10','style-11','style-12','style-13','style-14'),
+								'value'   => array(
+									'style-01',
+									'style-02',
+									'style-03',
+									'style-04',
+									'style-06',
+									'style-07',
+									'style-08',
+									'style-10',
+									'style-11',
+									'style-12',
+									'style-13',
+									'style-14'
+								),
 							),
 						),
 						array(
@@ -4310,9 +4386,20 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							"param_name"  => "button_text",
 							"admin_label" => false,
 							'std'         => 'SUBSCRIBE',
-                            'dependency'  => array(
+							'dependency'  => array(
 								'element' => 'style',
-								'value'   => array( 'style-01','style-02','style-05','style-06','style-08','style-09','style-11','style-12','style-13','style-14'),
+								'value'   => array(
+									'style-01',
+									'style-02',
+									'style-05',
+									'style-06',
+									'style-08',
+									'style-09',
+									'style-11',
+									'style-12',
+									'style-13',
+									'style-14'
+								),
 							),
 						),
 						array(
@@ -4356,12 +4443,12 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 					'js_view'                 => 'VcColumnView',
 					'icon'                    => NEXIO_SHORTCODES_ICONS_URI . 'slide.png',
 					'params'                  => array(
-                        array(
-                            'type'        => 'textfield',
-                            'heading'     => esc_html__( 'Title', 'nexio' ),
-                            'param_name'  => 'title',
-                            'admin_label' => true,
-                        ),
+						array(
+							'type'        => 'textfield',
+							'heading'     => esc_html__( 'Title', 'nexio' ),
+							'param_name'  => 'title',
+							'admin_label' => true,
+						),
 						/* Owl */
 						array(
 							'type'        => 'dropdown',
@@ -4391,10 +4478,10 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 						array(
 							'type'        => 'dropdown',
 							'value'       => array(
-								esc_html__( 'Dark', 'nexio' )  => '',
-								esc_html__( 'Dark 2', 'nexio' )  => 'nav-dark-2',
-								esc_html__( 'Light', 'nexio' ) => 'nav-light',
-								esc_html__( 'Arrow Dark', 'nexio' ) => 'nav-arrow-dark',
+								esc_html__( 'Dark', 'nexio' )        => '',
+								esc_html__( 'Dark 2', 'nexio' )      => 'nav-dark-2',
+								esc_html__( 'Light', 'nexio' )       => 'nav-light',
+								esc_html__( 'Arrow Dark', 'nexio' )  => 'nav-arrow-dark',
 								esc_html__( 'Circle Dark', 'nexio' ) => 'circle-dark',
 							),
 							'std'         => '',
@@ -4423,9 +4510,9 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 						array(
 							'type'        => 'dropdown',
 							'value'       => array(
-								esc_html__( 'Default', 'nexio' )  => '',
-								esc_html__( 'Light', 'nexio' ) => 'dots-light',
-								esc_html__( 'Dark', 'nexio' ) => 'dots-dark',
+								esc_html__( 'Default', 'nexio' ) => '',
+								esc_html__( 'Light', 'nexio' )   => 'dots-light',
+								esc_html__( 'Dark', 'nexio' )    => 'dots-dark',
 							),
 							'std'         => '',
 							'heading'     => esc_html__( 'Dots color', 'nexio' ),
@@ -4588,7 +4675,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'param_name' => 'image',
 							'dependency' => array(
 								'element' => 'style',
-								'value'   => array( 'style-01'),
+								'value'   => array( 'style-01' ),
 							),
 						),
 						array(
@@ -4605,7 +4692,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'std'        => 'rating-5',
 							'dependency' => array(
 								'element' => 'style',
-								'value'   => array( 'style-01'),
+								'value'   => array( 'style-01' ),
 							),
 						),
 						array(
@@ -4892,7 +4979,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 					),
 				)
 			);
-
+			
 			/* Map New Social */
 			$socials     = array();
 			$all_socials = nexio_get_option( 'user_all_social' );
@@ -4923,11 +5010,11 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 									'alt' => 'Style 02',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'socials/style-02.jpg',
 								),
-                                'style-03' => array(
+								'style-03' => array(
 									'alt' => 'Style 03',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'socials/style-03.jpg',
 								),
-                                'style-04' => array(
+								'style-04' => array(
 									'alt' => 'Style 04',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'socials/style-04.jpg',
 								),
@@ -4935,7 +5022,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 									'alt' => 'Style 05',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'socials/style-05.jpg',
 								),
-                                'style-06' => array(
+								'style-06' => array(
 									'alt' => 'Style 06',
 									'img' => NEXIO_SHORTCODE_PREVIEW . 'socials/style-06.jpg',
 								),
@@ -4979,7 +5066,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 					),
 				)
 			);
-
+			
 			/* Pin Mapper */
 			$all_pin_mappers      = get_posts(
 				array(
@@ -5027,7 +5114,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'type'       => 'textarea',
 							'heading'    => esc_html__( 'Title', 'nexio' ),
 							'param_name' => 'title',
-							'dependency'  => array(
+							'dependency' => array(
 								'element' => 'style',
 								'value'   => array(
 									'style-02',
@@ -5052,7 +5139,7 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'type'       => 'vc_link',
 							'heading'    => esc_html__( 'Button Link', 'nexio' ),
 							'param_name' => 'link',
-							'dependency'  => array(
+							'dependency' => array(
 								'element' => 'style',
 								'value'   => array(
 									'style-02',
@@ -5090,14 +5177,14 @@ if ( ! class_exists( 'Nexio_Visual_Composer' ) ) {
 							'param_name' => 'css',
 							'group'      => esc_html__( 'Design Options', 'nexio' ),
 						),
-
+					
 					),
 				)
 			);
-
+			
 		}
 	}
-
+	
 	new Nexio_Visual_Composer();
 }
 
@@ -5134,7 +5221,7 @@ if ( class_exists( 'Vc_Manager' ) ) {
 			vc_add_param( "vc_section", $value );
 		}
 	}
-
+	
 	change_vc_row();
 	get_template_part( 'vc_templates/vc_row.php' );
 	get_template_part( 'vc_templates/vc_section.php' );
