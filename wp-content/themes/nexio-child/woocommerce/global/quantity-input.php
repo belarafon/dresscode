@@ -35,7 +35,7 @@ if ( $max_value && $min_value === $max_value ) {
     <div class="quantity">
         <div class="control">
             <a class="btn-number qtyminus quantity-minus" href="#"><?php echo esc_html__( '-', 'nexio' ) ?></a>
-            <input type="number" data-step="<?php echo esc_attr( $step ); ?>"
+            <input type="text" readonly data-step="<?php echo esc_attr( $step ); ?>"
                    data-min="<?php echo esc_attr( $min_value ); ?>" data-max="<?php echo esc_attr( $max_value ); ?>"
                    name="<?php echo esc_attr( $input_name ); ?>" value="<?php echo esc_attr( $input_value ); ?>"
                    title="<?php echo esc_attr_x( 'Qty', 'Product quantity input tooltip', 'nexio' ) ?>"

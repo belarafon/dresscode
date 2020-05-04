@@ -67,3 +67,21 @@ function custom_override_billing_fields( $fields ) {
     unset($fields['billing_address_1']);
     return $fields;
 }
+
+add_action( 'woocommerce_product_meta_end', 'action_product_meta_add_gender' );
+function action_product_meta_add_gender() {
+    global $product;
+
+    $term_gender = wp_get_post_terms( $product->get_id(), 'gender', array('fields' => 'ids') );
+
+    echo get_the_term_list( $product->get_id(), 'gender', '<span class="ord-3">' . _n( 'Для кого:', 'Для кого:', count( $term_gender ), 'woocommerce' ) . ' ', ', ', '</span>' );
+}
+
+add_action( 'woocommerce_product_meta_end', 'action_product_meta_add_product_type' );
+function action_product_meta_add_product_type() {
+    global $product;
+
+    $term_product_type = wp_get_post_terms( $product->get_id(), 'type_of_product', array('fields' => 'ids') );
+
+    echo get_the_term_list( $product->get_id(), 'type_of_product', '<span class="ord-2">' . _n( 'Товар:', 'Товар:', count( $term_product_type ), 'woocommerce' ) . ' ', ', ', '</span>' );
+}
